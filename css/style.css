@@ -1,0 +1,155 @@
+/*GLOBAL STYLESHEET*/
+
+@import url("variables.css");
+
+/*GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*CSS IMPORTS*/
+@import url("navbar.css");
+@import url("variables.css");
+@import url("navbar.css");
+@import url("home.css");
+
+/*RESET*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:var(--body-font);
+
+    background:var(--light);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    padding-top:80px;
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+}
+
+ul{
+
+    list-style:none;
+}
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+}
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+}
+
+/*=========================================
+    REUSABLE CLASSES
+=========================================*/
+
+.container{
+
+    width:min(90%,1200px);
+
+    margin:auto;
+}
+
+.section{
+
+    padding:90px 0;
+}
+
+.section-title{
+
+    font-size:var(--fs-lg);
+
+    font-family:var(--heading-font);
+
+    margin-bottom:20px;
+
+    color:var(--secondary-color);
+}
+
+.section-subtitle{
+
+    color:var(--text-light);
+
+    margin-bottom:50px;
+}
+
+.text-center{
+
+    text-align:center;
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border-radius:var(--radius-md);
+
+    transition:var(--transition);
+
+    font-weight:600;
+}
+
+.btn-primary{
+
+    background:var(--primary-color);
+
+    color:white;
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-md);
+}
+
+.btn-outline{
+
+    border:2px solid var(--primary-color);
+
+    color:var(--primary-color);
+}
+
+.btn-outline:hover{
+
+    background:var(--primary-color);
+
+    color:white;
+}

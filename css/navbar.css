@@ -1,0 +1,347 @@
+/* HEADER */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all .3s ease;
+}
+
+/* This class will be added using JavaScript after scrolling */
+.header.scrolled{
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* LOGO */
+
+.logo{
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    transition:transform .3s ease;
+}
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+.logo span{
+    color: var(--primary-color);
+}
+
+/*
+If you later use an image logo:
+
+.logo img{
+    width:170px;
+}
+*/
+
+/* NAVIGATION LINKS */
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+
+
+/*==================================================
+            DESKTOP NAVIGATION
+==================================================*/
+
+.nav-links{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    position: static;   /* Normal document flow */
+
+}
+
+/*==================================================
+            MOBILE NAVIGATION
+==================================================*/
+
+@media (max-width: 768px){
+
+    .nav-links{
+
+        position: fixed;
+
+        top: 80px;
+
+        left: -100%;
+
+        width: 100%;
+
+        height: calc(100vh - 80px);
+
+        background: white;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        align-items: center;
+
+        padding-top: 3rem;
+
+        transition: .4s;
+
+    }
+
+    .nav-links.active{
+
+        left: 0;
+
+    }
+
+}
+
+/*==================================================
+            NAV LINK UNDERLINE
+==================================================*/
+
+/*
+Creates an animated underline that appears
+when hovering over navigation links or when
+the link represents the current page.
+*/
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary-color);
+
+    transition:width .3s ease;
+
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+.nav-links li{
+    position: relative;
+}
+
+.nav-links a{
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-links a:hover{
+    color: var(--primary-color);
+}
+
+/* Active page */
+
+.nav-links a.active{
+    color: var(--primary-color);
+}
+
+/* DROPDOWN MENU */
+
+.dropdown-menu{
+
+    position:absolute;
+
+    top:40px;
+
+    left:0;
+
+    width:240px;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:var(--shadow-md);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(15px);
+
+    transition:.3s;
+
+    overflow:hidden;
+}
+
+.dropdown:hover .dropdown-menu{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.dropdown-menu li{
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.dropdown-menu li:last-child{
+
+    border-bottom:none;
+
+}
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:15px 20px;
+
+}
+
+.dropdown-menu a:hover{
+
+    background:#f5f5f5;
+
+}
+
+/* RIGHT SIDE */
+
+.nav-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.theme-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:lightblue;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.3s;
+
+}
+
+.theme-btn:hover{
+
+    transform:rotate(25deg);
+
+}
+
+/* MOBILE MENU ICON */
+
+.hamburger{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    cursor:pointer;
+
+}
+
+.hamburger span{
+
+    width:28px;
+
+    height:3px;
+
+    background:var(--secondary-color);
+
+    transition:.3s;
+
+}
+
+/*==================================================
+                WHATSAPP BUTTON
+==================================================*/
+
+/*
+Primary quick-contact button displayed in the navbar.
+*/
+
+.whatsapp-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:all .35s ease;
+
+    box-shadow:0 8px 25px rgba(37,211,102,.25);
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(37,211,102,.35);
+
+}
+
+.whatsapp-btn i{
+
+    font-size:1.2rem;
+
+}
+
