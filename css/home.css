@@ -1232,3 +1232,213 @@ height: 220px;
 
 }
 
+
+/* ==================================================
+HOW I WORK / PROCESS SECTION
+Explains the client journey from first message
+to final delivery.
+================================================== */
+
+.process-section {
+padding: 100px 0;
+background-color: #f8fafc;
+}
+
+/* ==================================================
+PROCESS GRID
+Four equal columns on desktop.
+================================================== */
+
+.process-grid {
+position: relative;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 24px;
+}
+
+/*
+Decorative connecting line between process cards.
+It is hidden on smaller screens because the cards
+stack vertically and the horizontal line no longer fits.
+*/
+.process-grid::before {
+position: absolute;
+top: 48px;
+right: 12%;
+left: 12%;
+z-index: 0;
+height: 2px;
+background-color: rgba(37, 99, 235, 0.18);
+content: "";
+}
+
+/* ==================================================
+PROCESS CARD
+================================================== */
+
+.process-card {
+position: relative;
+z-index: 1;
+padding: 34px 24px 30px;
+text-align: center;
+}
+
+/* Step number placed in the top-right corner */
+.process-number {
+position: absolute;
+top: 20px;
+right: 20px;
+color: rgba(15, 23, 42, 0.12);
+font-size: 0.95rem;
+font-weight: 800;
+}
+
+/* Circular icon above each process title */
+.process-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 78px;
+height: 78px;
+margin: 0 auto 24px;
+border: 8px solid #f8fafc;
+border-radius: 50%;
+background-color: #2563eb;
+color: #ffffff;
+font-size: 1.55rem;
+box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+transition: transform 0.35s ease, background-color 0.35s ease;
+}
+
+.process-card:hover .process-icon {
+transform: translateY(-8px) rotate(4deg);
+background-color: #0f172a;
+}
+
+.process-card h3 {
+margin-bottom: 14px;
+color: #0f172a;
+font-size: 1.12rem;
+}
+
+.process-card p {
+margin: 0;
+color: #64748b;
+font-size: 0.94rem;
+line-height: 1.75;
+}
+
+/* ==================================================
+PROCESS CALL TO ACTION
+================================================== */
+
+.process-cta {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 24px;
+margin-top: 55px;
+padding: 28px;
+border-radius: 16px;
+background-color: #ffffff;
+box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.process-cta p {
+margin: 0;
+color: #0f172a;
+font-weight: 600;
+}
+
+/* ==================================================
+RESPONSIVE PROCESS SECTION
+================================================== */
+
+/* Tablet: two process cards per row */
+@media (max-width: 992px) {
+.process-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 32px 24px;
+}
+
+.process-grid::before {
+    display: none;
+}
+
+.process-card {
+    padding: 30px 24px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+}
+
+}
+
+/* Mobile: one process card per row */
+@media (max-width: 768px) {
+.process-section {
+padding: 75px 0;
+}
+
+.process-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.process-card {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    column-gap: 18px;
+    padding: 24px;
+    text-align: left;
+}
+
+.process-icon {
+    grid-row: span 2;
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    border-width: 6px;
+    font-size: 1.25rem;
+}
+
+.process-card h3 {
+    align-self: end;
+    margin-bottom: 8px;
+}
+
+.process-card p {
+    align-self: start;
+}
+
+.process-number {
+    top: 14px;
+    right: 16px;
+}
+
+.process-cta {
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+.process-card {
+grid-template-columns: 56px 1fr;
+column-gap: 14px;
+padding: 20px;
+}
+
+.process-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 1.1rem;
+}
+
+.process-cta {
+    padding: 24px 18px;
+}
+}
+
+
