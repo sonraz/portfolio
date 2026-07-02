@@ -1,12 +1,559 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page title shown in the browser tab and search results -->
+<title>Services | Elvis Mati</title>
+
+<!-- Font Awesome icons -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Shared website styles -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Services page styles -->
+<link rel="stylesheet" href="css/services.css">
+
 </head>
+
 <body>
-      
+
+<!-- ==================================================
+     NAVBAR
+     Copy the exact same navbar from index.html here.
+     Keeping it identical makes navigation consistent.
+=================================================== -->
+ <!-- HEADER START -->
+
+    <header>
+      <!-- Navigation goes here -->
+         <!-- HEADER -->
+
+<header class="header">
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
+
+                <!--
+                    Replace this with your logo image
+
+                    Example:
+
+                    <img src="images/logos/logo.png" alt="Elvis Mati Logo">
+                -->
+
+                Elvis<span>Mati</span>
+
+            </a>
+
+            <!-- MAIN MENU -->
+
+            <ul class="nav-links">
+
+                <li><a href="index.html" class="active">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <!-- SERVICES -->
+
+                <li class="dropdown">
+
+                    <a href="services.html">
+
+                        Services
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="web-development.html">
+                                Web Development
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="graphic-design.html">
+                                Graphic Design
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="virtual-assistant.html">
+                                Virtual Assistant
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <!-- PORTFOLIO -->
+
+                <li class="dropdown">
+
+                    <a href="portfolio.html">
+
+                        Portfolio
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li><a href="#">Web Projects</a></li>
+
+                        <li><a href="#">Graphic Designs</a></li>
+
+                        <li><a href="#">Virtual Assistant</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li><a href="pricing.html">Pricing</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="nav-actions">
+
+                <!-- Dark Mode -->
+
+                <button class="theme-btn">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+                <!-- CTA -->
+
+          <!-- ==========================================
+     WHATSAPP BUTTON
+
+     Replace the phone number below with
+     your WhatsApp number.
+
+     Example:
+     254712345678
+
+     (No + sign or spaces)
+========================================== -->
+
+<a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
+
+   class="whatsapp-btn"
+
+   target="_blank"
+
+   rel="noopener noreferrer">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+    WhatsApp
+
+</a>
+
+            </div>
+
+            <!-- Mobile Menu Button -->
+
+            <div class="hamburger">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+    </header>
+
+
+
+<main>
+
+    <!-- ==================================================
+         SERVICES PAGE HERO
+    =================================================== -->
+    <section class="services-hero">
+
+        <div class="container">
+
+            <div class="services-hero-content">
+
+                <span class="section-label">My Services</span>
+
+                <h1>
+                    Digital Services Built to Help You
+                    <span>Grow with Confidence</span>
+                </h1>
+
+                <p>
+                    From professional websites and visual design to reliable
+                    virtual support, I help individuals, businesses, and
+                    organizations present themselves better and work smarter.
+                </p>
+
+                <!-- Breadcrumb navigation -->
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Services</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SERVICES OVERVIEW
+         Main cards linking to each detailed service page.
+    =================================================== -->
+    <section class="services-overview-page">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">What I Offer</span>
+
+                <h2>
+                    Services Designed Around
+                    <span>Your Goals</span>
+                </h2>
+
+                <p>
+                    Choose the service that best fits your current needs, or
+                    contact me if you would like help combining services for
+                    one complete project.
+                </p>
+
+            </div>
+
+            <div class="services-page-grid">
+
+                <!-- ==========================================
+                     WEB DEVELOPMENT SERVICE
+                =========================================== -->
+                <article class="service-page-card">
+
+                    <div class="service-page-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <span class="service-page-number">01</span>
+
+                    <h3>Web Design & Development</h3>
+
+                    <p>
+                        Modern, responsive websites that help you build trust,
+                        explain your services, and connect with more customers
+                        online.
+                    </p>
+
+                    <ul class="service-feature-list">
+                        <li><i class="fa-solid fa-check"></i> Portfolio websites</li>
+                        <li><i class="fa-solid fa-check"></i> Business websites</li>
+                        <li><i class="fa-solid fa-check"></i> Restaurant websites</li>
+                        <li><i class="fa-solid fa-check"></i> School and institution websites</li>
+                        <li><i class="fa-solid fa-check"></i> Organization websites</li>
+                    </ul>
+
+                    <a href="web-development.html" class="service-page-link">
+                        Explore Web Development
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+                <!-- ==========================================
+                     GRAPHIC DESIGN SERVICE
+                =========================================== -->
+                <article class="service-page-card">
+
+                    <div class="service-page-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+
+                    <span class="service-page-number">02</span>
+
+                    <h3>Graphic Design</h3>
+
+                    <p>
+                        Professional visual designs that help your brand look
+                        polished, recognizable, and ready to communicate clearly.
+                    </p>
+
+                    <ul class="service-feature-list">
+                        <li><i class="fa-solid fa-check"></i> Logo design</li>
+                        <li><i class="fa-solid fa-check"></i> Posters and flyers</li>
+                        <li><i class="fa-solid fa-check"></i> Product packaging</li>
+                        <li><i class="fa-solid fa-check"></i> Business cards</li>
+                        <li><i class="fa-solid fa-check"></i> Social media graphics</li>
+                    </ul>
+
+                    <a href="graphic-design.html" class="service-page-link">
+                        Explore Graphic Design
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+                <!-- ==========================================
+                     VIRTUAL ASSISTANT SERVICE
+                =========================================== -->
+                <article class="service-page-card">
+
+                    <div class="service-page-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <span class="service-page-number">03</span>
+
+                    <h3>Virtual Assistant</h3>
+
+                    <p>
+                        Organized remote support that helps you manage tasks,
+                        stay productive, and focus more time on important work.
+                    </p>
+
+                    <ul class="service-feature-list">
+                        <li><i class="fa-solid fa-check"></i> Email and calendar support</li>
+                        <li><i class="fa-solid fa-check"></i> Data entry and research</li>
+                        <li><i class="fa-solid fa-check"></i> Document organization</li>
+                        <li><i class="fa-solid fa-check"></i> Social media support</li>
+                        <li><i class="fa-solid fa-check"></i> Administrative assistance</li>
+                    </ul>
+
+                    <a href="virtual-assistant.html" class="service-page-link">
+                        Explore Virtual Assistance
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SERVICES PAGE CTA
+    =================================================== -->
+    <section class="services-page-cta">
+
+        <div class="container">
+
+            <div class="services-page-cta-content">
+
+                <span class="final-cta-label">Not Sure What You Need?</span>
+
+                <h2>
+                    Let’s Find the Right Service
+                    <span>for Your Project.</span>
+                </h2>
+
+                <p>
+                    Send me a message with your idea, and I will help you
+                    identify the best service or combination of services.
+                </p>
+
+                <div class="final-cta-buttons">
+
+                    <!-- Replace the number with your real WhatsApp number -->
+                    <a href="https://wa.me/254700000000?text=Hello%20Elvis%2C%20I%20would%20like%20help%20choosing%20a%20service."
+                       class="btn final-whatsapp-btn"
+                       target="_blank"
+                       rel="noopener">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Chat on WhatsApp
+
+                    </a>
+
+                    <a href="order.html" class="btn final-email-btn">
+                        Start a Project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ==================================================
+     FOOTER
+     Copy the exact same footer from index.html here.
+=================================================== -->
+ <!-- ==================================================
+     FOOTER
+     Contains brand information, navigation links,
+     services, and contact/social links.
+=================================================== -->
+
+<footer class="site-footer">
+
+<div class="container">
+
+    <!-- Main footer content -->
+    <div class="footer-grid">
+
+        <!-- Brand and short introduction -->
+        <div class="footer-brand">
+
+            <!-- Replace "Elvis Mati" with your preferred brand name if needed -->
+            <a href="index.html" class="footer-logo">
+                Elvis<span>Mati</span>
+            </a>
+
+            <p>
+                Helping individuals, businesses, and organizations build a
+                stronger digital presence through web development, graphic
+                design, and virtual assistance.
+            </p>
+
+            <!-- Social links: replace # with your real profile links -->
+            <div class="footer-social-links">
+
+                <a href="https://www.linkedin.com/in/elvismati/"
+                   aria-label="Visit my LinkedIn profile"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://www.instagram.com/elvismati1/"
+                   aria-label="Visit my Instagram profile"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://github.com/sonraz"
+                   aria-label="Visit my GitHub profile"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Quick navigation links -->
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="order.html">Start a Project</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Service page links -->
+        <div class="footer-links">
+
+            <h3>My Services</h3>
+
+            <ul>
+                <li><a href="web-development.html">Web Development</a></li>
+                <li><a href="graphic-design.html">Graphic Design</a></li>
+                <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Contact details -->
+        <div class="footer-contact">
+
+            <h3>Get in Touch</h3>
+
+            <!-- Replace the WhatsApp number with my real number -->
+            <a href="https://wa.me/254700531854?text=Hello%20Elvis%2C%20I%20would%20like%20to%20discuss%20a%20project."
+               target="_blank"
+               rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i>
+                Chat on WhatsApp
+            </a>
+
+            <!-- Replace your-email@gmail.com with my real Gmail address -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elvismati.work@gmail.com&su=Project%20Inquiry"
+               target="_blank"
+               rel="noopener">
+                <i class="fa-solid fa-envelope"></i>
+                Send an Email
+            </a>
+
+            <p class="footer-availability">
+                <i class="fa-solid fa-circle"></i>
+                Available for freelance projects
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom copyright area -->
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="currentYear"></span> Elvis Mati. All rights reserved.
+        </p>
+
+        <p>
+            Designed and built with <i class="fa-solid fa-heart"></i> by Elvis Mati.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Shared JavaScript files -->
+<script src="js/script.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/back-to-top.js"></script>
+
 </body>
 </html>
