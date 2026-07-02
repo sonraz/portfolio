@@ -413,21 +413,149 @@
 
         </div>
 
-        <!-- Scroll Indicator -->
-
-        <div class="scroll-indicator">
-
-            <span>
-
-                Scroll Down
-
-            </span>
-
-            <i class="fa-solid fa-chevron-down"></i>
-
-        </div>
-
     </section>
+
+
+    <!-- ==================================================
+     SERVICES OVERVIEW SECTION
+     Shows the three main services and links visitors
+     to the detailed service pages.
+    =================================================== -->
+
+<section class="services-section" id="services">
+
+    <div class="container">
+
+    <!-- Section heading -->
+    <div class="section-heading">
+
+        <span class="section-label">What I Offer</span>
+
+        <h2>
+            Digital Services Built Around
+            <span>Your Business Goals</span>
+        </h2>
+
+        <p>
+            Whether you need a professional website, strong visual branding,
+            or reliable support with daily online tasks, I provide practical
+            digital solutions that help your business move forward.
+        </p>
+
+    </div>
+
+    <!-- Three main service cards -->
+    <div class="services-grid">
+
+        <!-- Web Design & Development -->
+        <article class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <span class="service-number">01</span>
+
+            <h3>Web Design &amp; Development</h3>
+
+            <p>
+                Modern, responsive websites designed to help your business
+                look professional, attract customers, and grow online.
+            </p>
+
+            <!-- Examples of website types offered -->
+            <div class="service-tags">
+                <span>Business Websites</span>
+                <span>Portfolio Websites</span>
+                <span>Restaurant Websites</span>
+                <span>School Websites</span>
+            </div>
+
+            <a href="services/web-development.html" class="service-link">
+                Explore Web Development
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+        <!-- Graphic Design -->
+        <article class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+
+            <span class="service-number">02</span>
+
+            <h3>Graphic Design</h3>
+
+            <p>
+                Creative visual designs that help your brand stand out and
+                communicate clearly with the people you want to reach.
+            </p>
+
+            <!-- Examples of graphic design work offered -->
+            <div class="service-tags">
+                <span>Logos</span>
+                <span>Posters</span>
+                <span>Flyers</span>
+                <span>Business Cards</span>
+            </div>
+
+            <a href="services/graphic-design.html" class="service-link">
+                Explore Graphic Design
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+        <!-- Virtual Assistant -->
+        <article class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <span class="service-number">03</span>
+
+            <h3>Virtual Assistant</h3>
+
+            <p>
+                Reliable remote support that helps you stay organized,
+                manage tasks efficiently, and focus on your priorities.
+            </p>
+
+            <!-- Examples of virtual assistant support offered -->
+            <div class="service-tags">
+                <span>Email Management</span>
+                <span>Data Entry</span>
+                <span>Research</span>
+                <span>Scheduling</span>
+            </div>
+
+            <a href="services/virtual-assistant.html" class="service-link">
+                Explore Virtual Assistance
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+    </div>
+
+    <!-- CTA below the service cards -->
+    <div class="services-cta">
+
+        <p>Not sure which service fits your project?</p>
+
+        <a href="order.html" class="btn btn-primary">
+            Request a Free Quote
+        </a>
+
+    </div>
+
+</div>
+
+</section>
 
 </main>
 
@@ -445,12 +573,29 @@
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <!--Custom JavaScript-->
+   <!-- ==================================================
+     BACK TO TOP BUTTON
+     Hidden when the page loads. JavaScript shows it
+     after the visitor scrolls down the page.
+    =================================================== -->
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript
+        Scripts are placed after the button so JavaScript
+        can find and control the button correctly. -->
+
     <script src="js/script.js"></script>
+
     <script src="js/navbar.js"></script>
+
     <script src="js/theme.js"></script>
+
     <script src="js/animations.js"></script>
 
-</body>
+    <script src="js/back-to-top.js"></script>
 
-</html>
+    </body>
+    </html>
