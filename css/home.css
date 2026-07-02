@@ -954,3 +954,281 @@ width: 44px;
 height: 44px;
 }
 }
+
+
+/* ==================================================
+FEATURED PORTFOLIO SECTION
+Displays selected projects on the homepage.
+================================================== */
+
+.featured-portfolio-section {
+padding: 100px 0;
+background-color: #ffffff;
+}
+
+/* ==================================================
+PORTFOLIO HEADING ROW
+================================================== */
+
+.portfolio-heading-row {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+gap: 30px;
+margin-bottom: 55px;
+}
+
+.portfolio-heading {
+max-width: 700px;
+margin: 0;
+text-align: left;
+}
+
+/* Link that leads visitors to the full portfolio page */
+.portfolio-view-all {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+padding-bottom: 8px;
+color: #2563eb;
+font-weight: 700;
+text-decoration: none;
+border-bottom: 2px solid #2563eb;
+transition: gap 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-view-all:hover {
+gap: 15px;
+color: #0f172a;
+}
+
+/* ==================================================
+FEATURED PROJECTS GRID
+================================================== */
+
+.featured-projects-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 28px;
+}
+
+/* ==================================================
+PROJECT CARD
+================================================== */
+
+.featured-project-card {
+overflow: hidden;
+background-color: #ffffff;
+border: 1px solid rgba(15, 23, 42, 0.08);
+border-radius: 18px;
+box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.featured-project-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 20px 45px rgba(15, 23, 42, 0.14);
+}
+
+/* ==================================================
+PROJECT IMAGE AND HOVER OVERLAY
+================================================== */
+
+.project-image {
+position: relative;
+height: 235px;
+overflow: hidden;
+background-color: #e2e8f0;
+}
+
+.project-image img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+
+/* Dark overlay that appears when a visitor hovers over an image */
+.project-overlay {
+position: absolute;
+inset: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(15, 23, 42, 0.65);
+opacity: 0;
+transition: opacity 0.35s ease;
+}
+
+.featured-project-card:hover .project-overlay {
+opacity: 1;
+}
+
+.featured-project-card:hover .project-image img {
+transform: scale(1.08);
+}
+
+/* Circular icon button inside the image overlay */
+.project-preview-link {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 52px;
+height: 52px;
+border-radius: 50%;
+background-color: #ffffff;
+color: #2563eb;
+font-size: 1.1rem;
+text-decoration: none;
+transform: translateY(12px);
+transition: transform 0.35s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.featured-project-card:hover .project-preview-link {
+transform: translateY(0);
+}
+
+.project-preview-link:hover {
+background-color: #2563eb;
+color: #ffffff;
+}
+
+/* ==================================================
+PROJECT CONTENT
+================================================== */
+
+.project-content {
+padding: 28px;
+}
+
+.project-category {
+display: inline-block;
+margin-bottom: 12px;
+color: #2563eb;
+font-size: 0.78rem;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.project-content h3 {
+margin-bottom: 14px;
+color: #0f172a;
+font-size: 1.3rem;
+}
+
+.project-content p {
+margin-bottom: 22px;
+color: #64748b;
+line-height: 1.75;
+}
+
+/* ==================================================
+PROJECT TAGS
+================================================== */
+
+.project-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 9px;
+}
+
+.project-tags span {
+padding: 7px 10px;
+border-radius: 50px;
+background-color: #f1f5f9;
+color: #475569;
+font-size: 0.75rem;
+font-weight: 600;
+}
+
+/* ==================================================
+PORTFOLIO BOTTOM CALL TO ACTION
+================================================== */
+
+.portfolio-bottom-cta {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 24px;
+margin-top: 55px;
+padding: 28px;
+border-radius: 16px;
+background-color: #f8fafc;
+}
+
+.portfolio-bottom-cta p {
+margin: 0;
+color: #0f172a;
+font-weight: 600;
+}
+
+/* ==================================================
+RESPONSIVE PORTFOLIO STYLES
+================================================== */
+
+/* Tablet: two cards per row */
+@media (max-width: 992px) {
+.featured-projects-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.featured-project-card:last-child {
+    grid-column: span 2;
+}
+
+}
+
+/* Mobile: one card per row */
+@media (max-width: 768px) {
+.featured-portfolio-section {
+padding: 75px 0;
+}
+
+.portfolio-heading-row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 45px;
+}
+
+.portfolio-heading {
+    text-align: center;
+}
+
+.featured-projects-grid {
+    grid-template-columns: 1fr;
+}
+
+.featured-project-card:last-child {
+    grid-column: auto;
+}
+
+.project-image {
+    height: 250px;
+}
+
+.portfolio-bottom-cta {
+    flex-direction: column;
+    text-align: center;
+}
+
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+.project-image {
+height: 220px;
+}
+
+.project-content {
+    padding: 24px;
+}
+
+.portfolio-bottom-cta {
+    padding: 24px 18px;
+}
+
+}
+
