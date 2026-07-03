@@ -153,3 +153,157 @@ select{
 
     color:white;
 }
+
+
+/* ==================================================
+SHARED BACK-TO-TOP BUTTON
+Used across all pages of the portfolio website.
+================================================== */
+
+.back-to-top {
+position: fixed;
+right: 24px;
+bottom: 24px;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 48px;
+height: 48px;
+padding: 0;
+border: none;
+border-radius: 50%;
+background-color: #2563eb;
+color: #ffffff;
+cursor: pointer;
+opacity: 0;
+visibility: hidden;
+transform: translateY(15px);
+box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.back-to-top.show {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+
+.back-to-top:hover {
+transform: translateY(-4px);
+background-color: #0f172a;
+}
+
+.back-to-top:focus-visible {
+outline: 3px solid rgba(37, 99, 235, 0.35);
+outline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+.back-to-top {
+right: 16px;
+bottom: 16px;
+width: 44px;
+height: 44px;
+}
+}
+
+
+/* ==================================================
+   DARK THEME
+   Applied when JavaScript adds .dark-theme to body.
+================================================== */
+
+body.dark-theme {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark-theme .header,
+body.dark-theme .navbar,
+body.dark-theme .nav-links {
+    background-color: #0f172a;
+}
+
+body.dark-theme .logo,
+body.dark-theme .nav-links a {
+    color: #f8fafc;
+}
+
+body.dark-theme .nav-links a:hover,
+body.dark-theme .nav-links a.active {
+    color: #60a5fa;
+}
+
+body.dark-theme .dropdown-menu {
+    background-color: #1e293b;
+}
+
+body.dark-theme .dropdown-menu a {
+    color: #e2e8f0;
+}
+
+body.dark-theme .dropdown-menu a:hover {
+    background-color: #334155;
+    color: #ffffff;
+}
+
+
+/* ==================================================
+   DARK THEME IMPROVEMENTS
+   Applies dark colours to shared page areas and keeps
+   the mobile hamburger icon visible.
+================================================== */
+
+body.dark-theme {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+/* Main page content */
+body.dark-theme main,
+body.dark-theme section,
+body.dark-theme footer {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+/* Common headings and paragraphs */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+    color: #f8fafc;
+}
+
+body.dark-theme p,
+body.dark-theme li {
+    color: #cbd5e1;
+}
+
+/* Cards and content boxes */
+body.dark-theme .service-card,
+body.dark-theme .project-card,
+body.dark-theme .trust-card,
+body.dark-theme .stat-card {
+    background-color: #1e293b;
+    border-color: rgba(148, 163, 184, 0.2);
+}
+
+/* Footer */
+body.dark-theme .footer {
+    background-color: #020617;
+}
+
+/* Keep the hamburger lines visible on dark mobile navigation. */
+body.dark-theme .hamburger span {
+    background-color: #f8fafc;
+}
+
+/* Keep the hamburger visible while it is in its active/open state too. */
+body.dark-theme .hamburger.active span {
+    background-color: #f8fafc;
+}
+

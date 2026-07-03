@@ -43,34 +43,52 @@ line-height: 1.8;
 }
 
 /* ==================================================
-BREADCRUMB
+   BREADCRUMB
 ================================================== */
 
 .breadcrumb {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
-margin-top: 28px;
-color: #64748b;
-font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+    font-size: 0.9rem;
 }
 
+/* Previous page: normal, clickable breadcrumb link */
 .breadcrumb a {
-color: #2563eb;
-text-decoration: none;
-transition: color 0.3s ease;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-color: #0f172a;
+    color: #2563eb;
 }
 
+/* Arrow separator */
 .breadcrumb i {
-color: #94a3b8;
-font-size: 0.75rem;
+    color: #94a3b8;
+    font-size: 0.75rem;
 }
 
+/* Current page */
+.breadcrumb .active {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+body.dark-theme .breadcrumb a {
+    color: #cbd5e1;
+}
+
+body.dark-theme .breadcrumb a:hover {
+    color: #60a5fa;
+}
+
+body.dark-theme .breadcrumb .active {
+    color: #60a5fa;
+}
 /* ==================================================
 SERVICES OVERVIEW
 ================================================== */
@@ -289,4 +307,40 @@ font-size: 1.95rem;
 .services-page-cta-content h2 {
     font-size: 1.85rem;
 }
+}
+
+
+/* ==================================================
+   DARK THEME: SERVICES PAGE CARDS
+   The cards keep their light background in dark mode,
+   so their text must remain dark and readable.
+================================================== */
+
+body.dark-theme .service-page-card {
+    background-color: #ffffff;
+    border-color: rgba(148, 163, 184, 0.25);
+}
+
+body.dark-theme .service-page-card h3 {
+    color: #0f172a;
+}
+
+body.dark-theme .service-page-card p {
+    color: #334155;
+}
+
+body.dark-theme .service-feature-list li {
+    color: #334155;
+}
+
+body.dark-theme .service-page-number {
+    color: #2563eb;
+}
+
+body.dark-theme .service-page-link {
+    color: #2563eb;
+}
+
+body.dark-theme .service-page-link:hover {
+    color: #1d4ed8;
 }

@@ -14,9 +14,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <!-- Shared website styles -->
+
 <link rel="stylesheet" href="css/style.css">
 
+<!-- Navbar styles, including dropdowns and mobile menu -->
+<link rel="stylesheet" href="css/navbar.css">
+
+<!-- Shared responsive styles, including mobile navbar behavior -->
+
+<link rel="stylesheet" href="css/responsive.css">
+
 <!-- Services page styles -->
+
 <link rel="stylesheet" href="css/services.css">
 
 </head>
@@ -28,171 +37,89 @@
      Copy the exact same navbar from index.html here.
      Keeping it identical makes navigation consistent.
 =================================================== -->
- <!-- HEADER START -->
+ 
+<!-- ==================================================
+     WEBSITE HEADER AND NAVIGATION
+     Shared navigation used across all website pages.
+================================================== -->
 
-    <header>
-      <!-- Navigation goes here -->
-         <!-- HEADER -->
-
+<!-- HEADER START -->
 <header class="header">
-
     <div class="container">
-
         <nav class="navbar">
 
-            <!-- LOGO -->
-
+            <!-- Logo -->
             <a href="index.html" class="logo">
-
-                <!--
-                    Replace this with your logo image
-
-                    Example:
-
-                    <img src="images/logos/logo.png" alt="Elvis Mati Logo">
-                -->
-
                 Elvis<span>Mati</span>
-
             </a>
 
-            <!-- MAIN MENU -->
-
+            <!-- Main navigation -->
             <ul class="nav-links">
-
-                <li><a href="index.html" class="active">Home</a></li>
-
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
 
-                <!-- SERVICES -->
-
                 <li class="dropdown">
-
-                    <a href="services.html">
-
-                        Services
-
-                        <i class="fa-solid fa-chevron-down"></i>
-
+                    <a href="services.html" class="active">
+                        Services <i class="fa-solid fa-chevron-down"></i>
                     </a>
 
                     <ul class="dropdown-menu">
-
-                        <li>
-                            <a href="web-development.html">
-                                Web Development
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="graphic-design.html">
-                                Graphic Design
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="virtual-assistant.html">
-                                Virtual Assistant
-                            </a>
-                        </li>
-
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
                     </ul>
-
                 </li>
 
-                <!-- PORTFOLIO -->
-
                 <li class="dropdown">
-
                     <a href="portfolio.html">
-
-                        Portfolio
-
-                        <i class="fa-solid fa-chevron-down"></i>
-
+                        Portfolio <i class="fa-solid fa-chevron-down"></i>
                     </a>
 
                     <ul class="dropdown-menu">
-
                         <li><a href="#">Web Projects</a></li>
-
                         <li><a href="#">Graphic Designs</a></li>
-
                         <li><a href="#">Virtual Assistant</a></li>
-
                     </ul>
-
                 </li>
 
                 <li><a href="pricing.html">Pricing</a></li>
-
                 <li><a href="contact.html">Contact</a></li>
 
+                <!-- Theme option shown inside the opened mobile menu -->
+                <li class="mobile-theme-item">
+                    <button class="theme-btn mobile-theme-btn" type="button" aria-label="Switch to dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span class="theme-btn-text">Dark</span>
+                    </button>
+                </li>
             </ul>
 
-            <!-- RIGHT SIDE -->
-
+            <!-- Desktop actions -->
             <div class="nav-actions">
-
-                <!-- Dark Mode -->
-
-                <button class="theme-btn">
-
+                <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
                     <i class="fa-solid fa-moon"></i>
-
+                    <span class="theme-btn-text">Dark</span>
                 </button>
 
-                <!-- CTA -->
-
-          <!-- ==========================================
-     WHATSAPP BUTTON
-
-     Replace the phone number below with
-     your WhatsApp number.
-
-     Example:
-     254712345678
-
-     (No + sign or spaces)
-========================================== -->
-
-<a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
-
-   class="whatsapp-btn"
-
-   target="_blank"
-
-   rel="noopener noreferrer">
-
-    <i class="fa-brands fa-whatsapp"></i>
-
-    WhatsApp
-
-</a>
-
+                <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
+                   class="whatsapp-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
             </div>
 
-            <!-- Mobile Menu Button -->
-
-            <div class="hamburger">
-
+            <!-- Keep hamburger separate because navbar.js likely expects this -->
+            <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
                 <span></span>
-
                 <span></span>
-
                 <span></span>
-
             </div>
 
         </nav>
-
     </div>
-
 </header>
-
-    </header>
-
-
 
 <main>
 
@@ -222,7 +149,7 @@
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <i class="fa-solid fa-angle-right"></i>
-                    <span>Services</span>
+                    <span class="active" aria-current="page">Services</span>
                 </div>
 
             </div>
@@ -547,6 +474,14 @@
     </div>
 
 </div>
+
+<!-- ==================================================
+     BACK-TO-TOP BUTTON
+     Appears after the visitor scrolls down the page.
+=================================================== -->
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 <!-- Shared JavaScript files -->
 <script src="js/script.js"></script>

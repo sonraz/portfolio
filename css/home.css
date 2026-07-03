@@ -901,61 +901,6 @@ font-size: 1.85rem;
 
 }
 
-
-/* ==================================================
-BACK TO TOP BUTTON
-Appears after the visitor scrolls down the page.
-================================================== */
-
-.back-to-top {
-position: fixed;
-right: 24px;
-bottom: 24px;
-z-index: 1000;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 48px;
-height: 48px;
-padding: 0;
-border: none;
-border-radius: 50%;
-background-color: #2563eb;
-color: #ffffff;
-cursor: pointer;
-opacity: 0;
-visibility: hidden;
-transform: translateY(15px);
-box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
-transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-}
-
-.back-to-top.show {
-opacity: 1;
-visibility: visible;
-transform: translateY(0);
-}
-
-.back-to-top:hover {
-transform: translateY(-4px);
-background-color: #0f172a;
-}
-
-.back-to-top:focus-visible {
-outline: 3px solid rgba(37, 99, 235, 0.35);
-outline-offset: 4px;
-}
-
-@media (max-width: 480px) {
-.back-to-top {
-right: 16px;
-bottom: 16px;
-width: 44px;
-height: 44px;
-}
-}
-
-
 /* ==================================================
 FEATURED PORTFOLIO SECTION
 Displays selected projects on the homepage.
@@ -2005,4 +1950,139 @@ gap: 32px;
 .footer-bottom {
     text-align: left;
 }
+}
+
+
+/* ==================================================
+   DARK THEME: HERO SECTION
+   Gives the hero a dark background so light heading
+   text remains readable in dark mode.
+================================================== */
+
+body.dark-theme .hero {
+    background-color: #0f172a;
+    background-image: none;
+}
+
+body.dark-theme .hero-content h1,
+body.dark-theme .hero-title {
+    color: #f8fafc;
+}
+
+/* Keep the blue highlighted words visible. */
+body.dark-theme .hero-content h1 span,
+body.dark-theme .hero-title span {
+    color: #60a5fa;
+}
+
+body.dark-theme .hero-content p,
+body.dark-theme .hero-description {
+    color: #cbd5e1;
+}
+
+
+/* ==================================================
+   DARK THEME: HERO AVAILABILITY BADGE
+   Keeps the freelance availability badge readable.
+================================================== */
+
+body.dark-theme .availability-badge {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    box-shadow: none;
+}
+
+body.dark-theme .availability-badge span,
+body.dark-theme .availability-badge p {
+    color: #f8fafc;
+}
+
+/* Keep the green availability dot visible. */
+body.dark-theme .availability-badge::before {
+    background-color: #22c55e;
+}
+
+
+/* ==================================================
+   DARK THEME: CTA TEXT ON LIGHT CTA BACKGROUNDS
+   These CTA areas keep a light background, so their
+   supporting text must remain dark and readable.
+================================================== */
+
+body.dark-theme .services-cta p,
+body.dark-theme .portfolio-bottom-cta p,
+body.dark-theme .process-cta p {
+    color: #1e293b;
+}
+
+/* Dark-mode hero trust badges */
+body.dark-theme .trust-badges span {
+    color: #f8fafc;
+}
+
+body.dark-theme .trust-badges span i {
+    color: #22c55e;
+}
+
+/* ==================================================
+   DARK THEME: HERO TECH ICONS AND PROFILE CARD
+   Improves contrast for floating technology labels
+   and profile-card text in the dark hero section.
+================================================== */
+
+/* Floating technology labels */
+body.dark-theme .tech-icon {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Keep each technology label visually recognizable. */
+body.dark-theme .tech-icon.html {
+    color: #fb923c;
+}
+
+body.dark-theme .tech-icon.css {
+    color: #60a5fa;
+}
+
+body.dark-theme .tech-icon.js {
+    color: #facc15;
+}
+
+body.dark-theme .tech-icon.php {
+    color: #a5b4fc;
+}
+
+/* Profile information card */
+body.dark-theme .profile-card {
+    background-color: #1e293b;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .profile-info h3 {
+    color: #f8fafc;
+}
+
+body.dark-theme .profile-info p {
+    color: #cbd5e1;
+}
+
+body.dark-theme .profile-info span {
+    color: #86efac;
+}
+
+
+/* ==================================================
+   DARK THEME: FEATURED PROJECT DESCRIPTION TEXT
+   Project cards remain light in dark mode, so their
+   description text must stay dark and fully visible.
+================================================== */
+
+body.dark-theme .featured-project-card .project-content p {
+    color: #334155 !important;
+    opacity: 1;
 }

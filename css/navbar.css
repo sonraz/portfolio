@@ -253,9 +253,9 @@ the link represents the current page.
 
 .theme-btn{
 
-    width:45px;
+    width:35px;
 
-    height:45px;
+    height:35px;
 
     border-radius:50%;
 
@@ -266,11 +266,9 @@ the link represents the current page.
     transition:.3s;
 
 }
-
+/* Small, calm icon movement/rotation instead of a full spin. */
 .theme-btn:hover{
-
-    transform:rotate(25deg);
-
+    transform:rotate(5deg);
 }
 
 /* MOBILE MENU ICON */
@@ -345,3 +343,31 @@ Primary quick-contact button displayed in the navbar.
 
 }
 
+
+/* ==================================================
+   THEME BUTTON WITH ICON AND LABEL
+================================================== */
+
+.theme-btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    min-width: 54px;
+    min-height: 54px;
+    padding: 7px 9px;
+    line-height: 1;
+}
+
+.theme-btn i {
+    font-size: 1rem;
+    transition: transform 0.25s ease;
+}
+
+.theme-btn-text {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1;
+}
