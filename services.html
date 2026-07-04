@@ -95,27 +95,41 @@
             </ul>
 
             <!-- Desktop actions -->
-            <div class="nav-actions">
-                <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
-                    <i class="fa-solid fa-moon"></i>
-                    <span class="theme-btn-text">Dark</span>
-                </button>
+             <!-- My existing desktop theme and WhatsApp buttons stay here -->
+                <div class="nav-actions">
+                    <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span class="theme-btn-text">Dark</span>
+                    </button>
 
-                <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
-                   class="whatsapp-btn"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                    <a
+                        href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
+                        class="whatsapp-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                 <!-- Mobile WhatsApp button -->
+                <a 
+                    href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services."
+                    class="mobile-whatsapp-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Chat with Elvis on WhatsApp">
                     <i class="fa-brands fa-whatsapp"></i>
-                    <span>WhatsApp</span>
                 </a>
-            </div>
-
-            <!-- Keep hamburger separate because navbar.js likely expects this -->
-            <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+                <!-- End of Mobile WhatsApp button -->
+                <!-- Hamburger menu on mobile -->
+                <!-- Keep hamburger separate because navbar.js likely expects this -->
+                <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
         </nav>
     </div>
@@ -145,11 +159,11 @@
                     organizations present themselves better and work smarter.
                 </p>
 
-                <!-- Breadcrumb navigation -->
+               <!-- Breadcrumb navigation -->
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <i class="fa-solid fa-angle-right"></i>
-                    <span class="active" aria-current="page">Services</span>
+                    <span class="breadcrumb-current" aria-current="page">Services</span>
                 </div>
 
             </div>
@@ -317,7 +331,7 @@
                 <div class="final-cta-buttons">
 
                     <!-- Replace the number with your real WhatsApp number -->
-                    <a href="https://wa.me/254700000000?text=Hello%20Elvis%2C%20I%20would%20like%20help%20choosing%20a%20service."
+                    <a href="https://wa.me/254700531854?text=Hello%20Elvis%2C%20I%20would%20like%20help%20choosing%20a%20service."
                        class="btn final-whatsapp-btn"
                        target="_blank"
                        rel="noopener">

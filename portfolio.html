@@ -1,12 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | Elvis Mati</title>
+    <meta name="description" content="Explore web development, graphic design, and virtual assistant projects by Elvis Mati.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
+
 <body>
-      
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+
+                <a href="index.html" class="logo">
+                    Elvis<span>Mati</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="services.html">
+                            Services <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="web-development.html">Web Development</a></li>
+                            <li><a href="graphic-design.html">Graphic Design</a></li>
+                            <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="portfolio.html" class="active">
+                            Portfolio <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#web-projects">Web Projects</a></li>
+                            <li><a href="#graphic-projects">Graphic Designs</a></li>
+                            <li><a href="#va-projects">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <!-- Theme option shown inside opened mobile menu -->
+                    <li class="mobile-theme-item">
+                        <button class="theme-btn mobile-theme-btn" type="button" aria-label="Switch to dark theme">
+                            <i class="fa-solid fa-moon"></i>
+                            <span class="theme-btn-text">Dark</span>
+                        </button>
+                    </li>
+                </ul>
+
+                 <!-- My existing desktop theme and WhatsApp buttons stay here -->
+                <div class="nav-actions">
+                    <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span class="theme-btn-text">Dark</span>
+                    </button>
+
+                    <a
+                        href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
+                        class="whatsapp-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                 <!-- Mobile WhatsApp button -->
+                <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services."
+                class="mobile-whatsapp-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with Elvis on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <!-- End of Mobile WhatsApp button -->
+                 <!-- Hamburger menu on mobile -->
+                <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==================================================
+             PORTFOLIO HERO
+        =================================================== -->
+        <section class="portfolio-hero">
+            <div class="container">
+
+                <p class="section-label">My Work</p>
+
+                <h1>Projects Built to Look Professional and Work Smoothly.</h1>
+
+                <p class="portfolio-hero-text">
+                    Explore selected website, graphic design, and virtual assistant
+                    projects created to help brands communicate clearly, build trust,
+                    and achieve practical results.
+                </p>
+
+               <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span class="breadcrumb-current" aria-current="page">Portfolio</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PORTFOLIO PROJECTS
+        =================================================== -->
+        <section class="portfolio-projects section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">Featured Work</p>
+                    <h2>Work Across Digital Services</h2>
+                    <p>
+                        A selection of projects showing how design, development,
+                        and organized support can help businesses grow online.
+                    </p>
+                </div>
+
+                <!-- Category filters -->
+                <div class="portfolio-filters" aria-label="Portfolio categories">
+                    <button class="filter-btn active" type="button" data-filter="all">All Projects</button>
+                    <button class="filter-btn" type="button" data-filter="web">Web Development</button>
+                    <button class="filter-btn" type="button" data-filter="graphic">Graphic Design</button>
+                    <button class="filter-btn" type="button" data-filter="va">Virtual Assistant</button>
+                </div>
+
+                <div class="portfolio-grid">
+
+                    <article class="portfolio-card" data-category="web" id="web-projects">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/websites/project-one.png"
+                                 alt="Preview of a modern business website project">
+
+                            <div class="portfolio-overlay">
+                                <a href="order.html" class="portfolio-view-link" aria-label="Ask about a similar business website project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Web Development</span>
+                            <h3>Modern Business Website</h3>
+                            <p>A responsive business website concept designed to build trust, explain services, and attract more customers.</p>
+
+                            <div class="portfolio-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Responsive Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="graphic" id="graphic-projects">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/graphics/project-two.png"
+                                 alt="Preview of a brand identity and logo design project">
+
+                            <div class="portfolio-overlay">
+                                <a href="order.html" class="portfolio-view-link" aria-label="Ask about a similar brand identity design project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Graphic Design</span>
+                            <h3>Brand Identity Design</h3>
+                            <p>A clean visual identity concept with a logo and supporting graphics for a modern business brand.</p>
+
+                            <div class="portfolio-tags">
+                                <span>Logo Design</span>
+                                <span>Branding</span>
+                                <span>Social Media</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/websites/project-three.png"
+                                 alt="Preview of a restaurant website project">
+
+                            <div class="portfolio-overlay">
+                                <a href="order.html" class="portfolio-view-link" aria-label="Ask about a similar restaurant website project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Web Development</span>
+                            <h3>Restaurant Website</h3>
+                            <p>A restaurant website concept with menu details, booking calls to action, and a mobile-friendly layout.</p>
+
+                            <div class="portfolio-tags">
+                                <span>UI Design</span>
+                                <span>Mobile First</span>
+                                <span>Landing Page</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="va" id="va-projects">
+                        <div class="portfolio-placeholder">
+                            <i class="fa-solid fa-headset"></i>
+                            <span>Virtual Assistant Project</span>
+                        </div>
+
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Virtual Assistant</span>
+                            <h3>Business Support Workflow</h3>
+                            <p>An organized workflow concept for email support, calendar coordination, research, and task tracking.</p>
+
+                            <div class="portfolio-tags">
+                                <span>Email Support</span>
+                                <span>Research</span>
+                                <span>Organization</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PORTFOLIO CTA
+        =================================================== -->
+        <section class="portfolio-cta">
+            <div class="container">
+                <div class="portfolio-cta-content">
+                    <p class="section-label">Let’s Work Together</p>
+                    <h2>Have a Project You Want to Bring to Life?</h2>
+                    <p>
+                        Tell me what you need, and we can discuss the right
+                        solution for your website, design, or business support work.
+                    </p>
+
+                    <div class="portfolio-cta-actions">
+                        <a href="order.html" class="btn btn-primary">Start a Project</a>
+                        <a href="contact.html" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   <!-- ==================================================
+     FOOTER
+     Contains brand information, navigation links,
+     services, and contact/social links.
+    =================================================== -->
+
+    <footer class="site-footer">
+
+    <div class="container">
+
+        <!-- Main footer content -->
+        <div class="footer-grid">
+
+            <!-- Brand and short introduction -->
+            <div class="footer-brand">
+
+                <!-- Replace "Elvis Mati" with your preferred brand name if needed -->
+                <a href="index.html" class="footer-logo">
+                    Elvis<span>Mati</span>
+                </a>
+
+                <p>
+                    Helping individuals, businesses, and organizations build a
+                    stronger digital presence through web development, graphic
+                    design, and virtual assistance.
+                </p>
+
+                <!-- Social links: replace # with your real profile links -->
+                <div class="footer-social-links">
+
+                    <a href="https://www.linkedin.com/in/elvismati/"
+                    aria-label="Visit my LinkedIn profile"
+                    target="_blank"
+                    rel="noopener">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/elvismati1/"
+                    aria-label="Visit my Instagram profile"
+                    target="_blank"
+                    rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/sonraz"
+                    aria-label="Visit my GitHub profile"
+                    target="_blank"
+                    rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick navigation links -->
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="order.html">Start a Project</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Service page links -->
+            <div class="footer-links">
+
+                <h3>My Services</h3>
+
+                <ul>
+                    <li><a href="web-development.html">Web Development</a></li>
+                    <li><a href="graphic-design.html">Graphic Design</a></li>
+                    <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Contact details -->
+            <div class="footer-contact">
+
+                <h3>Get in Touch</h3>
+
+                <!-- Replace the WhatsApp number with my real number -->
+                <a href="https://wa.me/254700531854?text=Hello%20Elvis%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                target="_blank"
+                rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Chat on WhatsApp
+                </a>
+
+                <!-- Replace your-email@gmail.com with my real Gmail address -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elvismati.work@gmail.com&su=Project%20Inquiry"
+                target="_blank"
+                rel="noopener">
+                    <i class="fa-solid fa-envelope"></i>
+                    Send an Email
+                </a>
+
+                <p class="footer-availability">
+                    <i class="fa-solid fa-circle"></i>
+                    Available for freelance projects
+                </p>
+
+            </div>
+
+        </div>
+
+    <!-- Bottom copyright area -->
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="currentYear"></span> Elvis Mati. All rights reserved.
+        </p>
+
+        <p>
+            Designed and built with <i class="fa-solid fa-heart"></i> by Elvis Mati.
+        </p>
+
+    </div>
+
+</div>
+
+    <!-- Back-to-top button -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Shared JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/back-to-top.js"></script>
+
+    <!-- Portfolio page JavaScript -->
+    <script src="js/portfolio.js"></script>
+
 </body>
 </html>
