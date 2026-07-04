@@ -1,12 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Elvis Mati</title>
+    <meta name="description" content="Learn more about Elvis Mati, a web developer, graphic designer, and virtual assistant.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- About page CSS -->
+    <link rel="stylesheet" href="css/about.css">
 </head>
+
 <body>
-      
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    Elvis<span>Mati</span>
+                </a>
+
+                <!-- Main navigation -->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="services.html">
+                            Services <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="web-development.html">Web Development</a></li>
+                            <li><a href="graphic-design.html">Graphic Design</a></li>
+                            <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="portfolio.html">
+                            Portfolio <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio.html#web-projects">Web Projects</a></li>
+                            <li><a href="portfolio.html#graphic-projects">Graphic Designs</a></li>
+                            <li><a href="portfolio.html#va-projects">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <!-- Theme option shown inside opened mobile menu -->
+                    <li class="mobile-theme-item">
+                        <button class="theme-btn mobile-theme-btn" type="button" aria-label="Switch to dark theme">
+                            <i class="fa-solid fa-moon"></i>
+                            <span class="theme-btn-text">Dark</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- My existing desktop theme and WhatsApp buttons stay here -->
+                <div class="nav-actions">
+                    <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span class="theme-btn-text">Dark</span>
+                    </button>
+
+                    <a
+                        href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
+                        class="whatsapp-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                 <!-- Mobile WhatsApp button -->
+                <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services."
+                class="mobile-whatsapp-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with Elvis on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <!-- End of Mobile WhatsApp button -->
+                 <!-- Hamburger menu on mobile -->
+                <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==================================================
+             ABOUT HERO
+        =================================================== -->
+        <section class="about-hero">
+            <div class="container">
+
+                <div class="about-hero-content">
+                    <span class="section-label">About Me</span>
+
+                    <h1>
+                        Building Digital Experiences While
+                        <span>Growing Every Day.</span>
+                    </h1>
+
+                    <p>
+                        I am Elvis Mati, a passionate digital professional focused on
+                        web development, graphic design, and virtual assistance. I enjoy
+                        using technology and creativity to solve practical problems.
+                    </p>
+
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span class="active" aria-current="page">About</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PERSONAL INTRODUCTION
+        =================================================== -->
+        <section class="about-intro section-padding">
+            <div class="container">
+
+                <div class="about-intro-grid">
+                        <div class="about-image-wrap">
+                              <img
+                                    src="assets/images/about/elvis-mati-about.png"
+                                    alt="Elvis Mati, web developer, graphic designer, and virtual assistant"
+                                    class="about-profile-image">
+
+                              <div class="about-image-badge">
+                                    <i class="fa-solid fa-code"></i>
+                                    <span>Digital Professional</span>
+                              </div>
+                        </div>
+
+                    <div class="about-intro-content">
+                        <span class="section-label">My Story</span>
+
+                        <h2>
+                            Turning Ideas Into Useful
+                            <span>Digital Solutions.</span>
+                        </h2>
+
+                        <p>
+                            I am a Computer Science student and an aspiring digital
+                            professional who enjoys learning, building, and improving.
+                            My work combines technical skills, creativity, and attention
+                            to detail to create solutions that are useful and easy to use.
+                        </p>
+
+                        <p>
+                            Whether I am designing a website, creating graphics, or
+                            supporting a business remotely, I focus on clear communication,
+                            reliable work, and results that help people move forward.
+                        </p>
+
+                        <div class="about-intro-actions">
+                            <a href="portfolio.html" class="btn btn-primary">
+                                View My Work
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                            <a href="contact.html" class="btn btn-outline">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SKILLS SECTION
+        =================================================== -->
+        <section class="about-skills section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">My Skills</span>
+
+                    <h2>
+                        Skills That Support
+                        <span>Better Digital Work.</span>
+                    </h2>
+
+                    <p>
+                        I am continuously improving my technical and professional skills
+                        to deliver more useful, <br>polished, and reliable work.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-card-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            Building responsive, modern, and user-friendly websites for
+                            individuals, businesses, and organizations.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-icon">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+
+                        <h3>Graphic Design</h3>
+
+                        <p>
+                            Creating clear and professional visual designs that help brands
+                            communicate their message with confidence.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Branding</span>
+                            <span>Logos</span>
+                            <span>Posters</span>
+                            <span>Social Media</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <h3>Virtual Assistance</h3>
+
+                        <p>
+                            Supporting busy professionals and businesses through organized,
+                            reliable, and detail-focused remote assistance.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Research</span>
+                            <span>Email Support</span>
+                            <span>Data Entry</span>
+                            <span>Organization</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <h3>Professional Strengths</h3>
+
+                        <p>
+                            The habits and soft skills that help me work well with people,
+                            understand needs, and complete tasks responsibly.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Communication</span>
+                            <span>Problem Solving</span>
+                            <span>Creativity</span>
+                            <span>Adaptability</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             CAREER JOURNEY
+        =================================================== -->
+        <section class="career-journey section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">My Journey</span>
+
+                    <h2>
+                        Learning, Building, and
+                        <span>Moving Forward.</span>
+                    </h2>
+
+                    <p>
+                        My career journey is shaped by continuous learning, practical
+                        projects, and a growing interest in helping people through digital work.
+                    </p>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">Current</span>
+                            <h3>Computer Science Student</h3>
+                            <p>
+                                Building a strong foundation in programming, databases,
+                                web development, computer systems, and digital technology.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">Growing</span>
+                            <h3>Portfolio and Project Development</h3>
+                            <p>
+                                Creating practical projects that strengthen my skills and
+                                show how I can solve real problems through technology.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">Next Step</span>
+                            <h3>Freelance and Client Work</h3>
+                            <p>
+                                Growing into professional client work by offering useful
+                                services in web development, design, and remote support.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             HOBBIES AND INTERESTS
+        =================================================== -->
+        <section class="about-interests section-padding">
+            <div class="container">
+
+                <div class="about-interests-grid">
+
+                    <div class="about-interests-content">
+                        <span class="section-label">Beyond Work</span>
+
+                        <h2>
+                            Curiosity, Creativity, and
+                            <span>Continuous Growth.</span>
+                        </h2>
+
+                        <p>
+                            Outside of projects and studies, I enjoy exploring new ideas,
+                            learning technology, connecting with people, and finding
+                            creative ways to improve my skills.
+                        </p>
+
+                        <p>
+                            This balance helps me bring fresh thinking, discipline, and
+                            genuine interest into the work I do.
+                        </p>
+                    </div>
+
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>Technology</span>
+                        </div>
+
+                        <div class="interest-item">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Learning</span>
+                        </div>
+
+                        <div class="interest-item">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Creativity</span>
+                        </div>
+
+                        <div class="interest-item">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Community</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             GALLERY
+             New items should be added at the top of gallery-grid.
+        =================================================== -->
+        <section class="about-gallery section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">Life and Work Gallery</span>
+
+                    <h2>
+                        Moments That Shape
+                        <span>My Journey.</span>
+                    </h2>
+
+                    <p>
+                        A growing collection of work, learning, events, collaborations,
+                        and personal moments. New items will be added here over time.
+                    </p>
+                </div>
+
+                <!-- Gallery filters can be activated later with js/about.js -->
+                <div class="gallery-filters" aria-label="Gallery categories">
+                    <button class="gallery-filter-btn active" type="button" data-filter="all">All</button>
+                    <button class="gallery-filter-btn" type="button" data-filter="work">Work</button>
+                    <button class="gallery-filter-btn" type="button" data-filter="events">Events</button>
+                    <button class="gallery-filter-btn" type="button" data-filter="personal">Personal</button>
+                    <button class="gallery-filter-btn" type="button" data-filter="video">Videos</button>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <!-- Add future photos and videos above this placeholder item. -->
+                    <article class="gallery-item gallery-placeholder" data-category="work">
+                        <div class="gallery-placeholder-icon">
+                            <i class="fa-solid fa-images"></i>
+                        </div>
+
+                        <!--<p class="gallery-note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        New photos and videos will be added at the top, so the newest moments appear first.
+                        </p>-->
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-category">Coming Soon</span>
+                            <h3>My Gallery Will Grow Here</h3>
+                            <p>Adding new photos, videos, events, and professional moments anytime.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             ABOUT PAGE CTA
+        =================================================== -->
+        <section class="about-cta">
+            <div class="container">
+
+                <div class="about-cta-content">
+                    <span class="section-label">Let’s Work Together</span>
+
+                    <h2>
+                        Have an Idea or Project
+                        <span>We Can Build Together?</span>
+                    </h2>
+
+                    <p>
+                        I would be glad to learn about your project and discuss the
+                        best way I can support you through design, development, or
+                        virtual assistance.
+                    </p>
+
+                    <div class="about-cta-actions">
+                        <a href="order.html" class="btn btn-primary">
+                            Start a Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="contact.html" class="btn btn-outline">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        Elvis<span>Mati</span>
+                    </a>
+
+                    <p>
+                        Helping individuals, businesses, and organizations build a
+                        stronger digital presence through web development, graphic
+                        design, and virtual assistance.
+                    </p>
+
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/elvismati/"
+                           aria-label="Visit my LinkedIn profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/elvismati1/"
+                           aria-label="Visit my Instagram profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/sonraz"
+                           aria-label="Visit my GitHub profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="order.html">Start a Project</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>My Services</h3>
+
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Get in Touch</h3>
+
+                    <a href="https://wa.me/254700531854?text=Hello%20Elvis%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Chat on WhatsApp
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elvismati.work@gmail.com&su=Project%20Inquiry"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fa-solid fa-envelope"></i>
+                        Send an Email
+                    </a>
+
+                    <p class="footer-availability">
+                        <i class="fa-solid fa-circle"></i>
+                        Available for freelance projects
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear"></span> Elvis Mati. All rights reserved.
+                </p>
+
+                <p>
+                    Designed and built with <i class="fa-solid fa-heart"></i> by Elvis Mati.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Back-to-top button -->
+        <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Shared JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/back-to-top.js"></script>
+
 </body>
 </html>
