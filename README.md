@@ -119,3 +119,39 @@ Completed the Virtual Assistant service page (`virtual-assistant.html`) as part 
 - Added subtle card lift, shadow, border, icon, and top-line hover animations for a consistent interactive feel.
 - Kept the navigation and theme button design consistent with the rest of the portfolio.
 - Used responsive media queries so cards change from multi-column layouts to one-column layouts on smaller screens.
+
+
+## Milestone: Web Development Portfolio Page
+
+### Completed
+- Created the `web-development-portfolio.html` page.
+- Added the shared website structure, including the navigation bar, footer, theme button, mobile menu, back-to-top button, and shared JavaScript links.
+- Created a page-specific stylesheet: `css/web-development-portfolio.css`.
+- Added a hero section introducing the web development portfolio.
+- Added a browser-style visual card in the hero section.
+- Created and added the hero preview image at:
+  `assets/images/portfolio/websites/web-development-hero-preview.png`
+- Styled the breadcrumb navigation, including active-page highlighting and hover effects for previous-page links.
+- Added a Featured Projects section with three project cards:
+  - Modern Business Website
+  - Restaurant Website Design
+  - Creative Portfolio Website
+- Added visual project preview areas with browser top bars, headings, buttons, and mini content cards.
+- Corrected the Creative Portfolio preview so its layout matches the other project previews.
+- Styled project technology tags and “Discuss a similar project” action links.
+- Added hover effects to project cards and action-link arrows.
+- Added a “What Every Website Needs” section explaining responsive layouts, clear visual design, and conversion-focused structure.
+- Added a final call-to-action section with WhatsApp and project-start buttons.
+- Confirmed the page works in both light mode and dark mode.
+- Fixed the navigation by reusing the already working navbar structure from the Home page.
+- Kept Portfolio category filters on the main Portfolio page unchanged for later refinement.
+
+### Design and Implementation Notes
+- The individual portfolio page uses the same shared navigation, footer, theme-switching, animation, and back-to-top features as the rest of the website.
+- The hero visual uses a locally stored image rather than a placeholder-only layout, making the page feel more complete.
+- The project cards use consistent preview heights and structures to create a balanced grid layout.
+- The page is designed to act as a detailed portfolio category page, while `portfolio.html` remains the main portfolio hub page.
+- On mobile, visitors can access individual portfolio pages through the portfolio hub cards and category filters. Mobile dropdown navigation will be polished later so the chevron can open submenus separately from the main page links.
+
+### Git Commit
+`Create and style web development portfolio page`
