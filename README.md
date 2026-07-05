@@ -95,3 +95,27 @@ The Graphic Design service page has been completed as part of the portfolio proj
 - The floating labels represent key graphic design services: branding, social media, and creative work.
 - Real completed client projects can later replace the placeholder project cards in the Selected Work section.
 - Shared navigation, footer, theme toggle, and responsive styles are reused across the portfolio website for consistency.
+
+
+## Virtual Assistant Service Page
+
+Completed the Virtual Assistant service page (`virtual-assistant.html`) as part of the portfolio website.
+
+### Features implemented
+- Created a service-focused hero section with a task-dashboard visual and floating support tags.
+- Added responsive layouts for desktop, tablet, and mobile screens.
+- Built an introduction section explaining the value of virtual assistant support.
+- Added a styled “VA Benefits” area highlighting time savings, organization, and reliable remote support.
+- Created a “What I Can Help With” services grid with hover effects.
+- Added a four-step work process section with animated hover effects.
+- Added tools, selected work/project cards, and a final call-to-action section.
+- Styled breadcrumb navigation with hover states and an active-page highlight.
+- Added light-theme and dark-theme styling for the page.
+- Improved CTA button spacing and icon alignment, including the WhatsApp button.
+
+### Design and implementation notes
+- Used a green accent color for virtual assistant content to distinguish it from other service pages.
+- Used reusable class names beginning with `va-` to keep page-specific CSS organized.
+- Added subtle card lift, shadow, border, icon, and top-line hover animations for a consistent interactive feel.
+- Kept the navigation and theme button design consistent with the rest of the portfolio.
+- Used responsive media queries so cards change from multi-column layouts to one-column layouts on smaller screens.
