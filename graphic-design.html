@@ -1,12 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Graphic Design | Elvis Mati</title>
+    <meta name="description" content="Professional graphic design services by Elvis Mati, including social media designs, brand visuals, posters, flyers, and digital marketing graphics.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="css/graphic-design.css">
 </head>
+
 <body>
-      
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+
+                <a href="index.html" class="logo">
+                    Elvis<span>Mati</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="services.html" class="active">
+                            Services <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="web-development.html">Web Development</a></li>
+                            <li><a href="graphic-design.html" class="active">Graphic Design</a></li>
+                            <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="portfolio.html">
+                            Portfolio <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio.html#web-projects">Web Projects</a></li>
+                            <li><a href="portfolio.html#graphic-projects">Graphic Designs</a></li>
+                            <li><a href="portfolio.html#va-projects">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="mobile-theme-item">
+                        <button class="theme-btn mobile-theme-btn" type="button" aria-label="Switch to dark theme">
+                            <i class="fa-solid fa-moon"></i>
+                            <span class="theme-btn-text">Dark</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span class="theme-btn-text">Dark</span>
+                    </button>
+
+                    <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20graphic%20design%20services."
+                       class="whatsapp-btn"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20am%20interested%20in%20your%20graphic%20design%20services."
+                   class="mobile-whatsapp-btn"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Chat with Elvis on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==================================================
+             GRAPHIC DESIGN HERO
+        =================================================== -->
+        <section class="graphic-design-hero">
+            <div class="container">
+                <div class="graphic-design-hero-grid">
+
+                    <div class="graphic-design-hero-content">
+                        <span class="section-label">Graphic Design</span>
+
+                        <h1>
+                            Visual Designs That Help Your Brand
+                            <span>Stand Out With Confidence.</span>
+                        </h1>
+
+                        <p>
+                            I create clean, memorable, and purposeful visual designs for
+                            businesses, organizations, personal brands, and campaigns that
+                            want to communicate clearly and look professional.
+                        </p>
+
+                        <div class="graphic-design-hero-actions">
+                            <a href="order.html" class="btn btn-primary">
+                                <span>Start a Design Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                            <a href="portfolio.html#graphic-projects" class="btn btn-outline">
+                                View Design Work
+                            </a>
+                        </div>
+
+                        <!-- Breadcrumb -->
+                        <nav class="breadcrumb" aria-label="Breadcrumb">
+                            <a href="index.html">Home</a>
+                            <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                            <a href="services.html">Services</a>
+                            <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                            <span class="active" aria-current="page">Graphic Design</span>
+                        </nav>
+                    </div>
+
+                    <div class="graphic-design-hero-visual" aria-hidden="true">
+                        <div class="design-board">
+                            <div class="design-board-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="design-board-content">
+                                <div class="design-poster">
+                                    <span class="design-poster-label">CREATE</span>
+                                    <strong>YOUR<br>IDEAS</strong>
+                                    <div class="design-poster-shape shape-one"></div>
+                                    <div class="design-poster-shape shape-two"></div>
+                                </div>
+
+                                <div class="design-mini-cards">
+                                    <div class="design-mini-card mini-card-one"></div>
+                                    <div class="design-mini-card mini-card-two"></div>
+                                    <div class="design-mini-card mini-card-three"></div>
+                                    <div class="design-mini-card mini-card-four"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="design-floating-tag tag-branding">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>Branding</span>
+                        </div>
+
+                        <div class="design-floating-tag tag-social">
+                            <i class="fa-solid fa-hashtag"></i>
+                            <span>Social Media</span>
+                        </div>
+
+                        <div class="design-floating-tag tag-creative">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Creative</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             INTRODUCTION
+        =================================================== -->
+        <section class="graphic-design-intro section-padding">
+            <div class="container">
+                <div class="graphic-design-intro-grid">
+
+                    <div class="graphic-design-intro-content">
+                        <span class="section-label">Design With Purpose</span>
+
+                        <h2>
+                            Good Design Makes Your Message
+                            <span>Easier to Remember.</span>
+                        </h2>
+
+                        <p>
+                            Design is more than making something look attractive. It helps
+                            people understand your message, recognize your brand, and take
+                            your business or campaign seriously.
+                        </p>
+
+                        <p>
+                            I combine clear layouts, suitable colors, strong typography,
+                            and attention to detail to create visuals that work across
+                            social media, print, presentations, and digital platforms.
+                        </p>
+
+                        <a href="contact.html" class="text-link">
+                            Discuss your design idea
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="graphic-design-benefits">
+                        <div class="graphic-design-benefit-card">
+                            <div class="graphic-design-benefit-icon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                            <div>
+                                <h3>Clear Visual Communication</h3>
+                                <p>Designs that make important information easy to notice and understand.</p>
+                            </div>
+                        </div>
+
+                        <div class="graphic-design-benefit-card">
+                            <div class="graphic-design-benefit-icon">
+                                <i class="fa-solid fa-fingerprint"></i>
+                            </div>
+
+                            <div>
+                                <h3>Consistent Brand Identity</h3>
+                                <p>Visuals that help your brand feel recognizable across different platforms.</p>
+                            </div>
+                        </div>
+
+                        <div class="graphic-design-benefit-card">
+                            <div class="graphic-design-benefit-icon">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+
+                            <div>
+                                <h3>Designs for Real Goals</h3>
+                                <p>Creative work planned around promotion, awareness, sales, events, or engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             DESIGN SERVICES
+        =================================================== -->
+        <section class="design-services section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">What I Can Design</span>
+
+                    <h2>
+                        Creative Design Support for
+                        <span>Different Brand Needs.</span>
+                    </h2>
+
+                    <p>
+                        From everyday social media content to professional brand materials,
+                        each design can be created around your audience, message, and goals.
+                    </p>
+                </div>
+
+                <div class="design-services-grid">
+
+                    <article class="design-service-card">
+                        <div class="design-service-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3>Social Media Designs</h3>
+                        <p>Posts, stories, banners, and campaign visuals that help your content look consistent and more engaging online.</p>
+                    </article>
+
+                    <article class="design-service-card">
+                        <div class="design-service-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3>Brand Identity Designs</h3>
+                        <p>Logo concepts, color direction, branded graphics, and visual elements that support a clear and professional identity.</p>
+                    </article>
+
+                    <article class="design-service-card">
+                        <div class="design-service-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <h3>Flyers & Posters</h3>
+                        <p>Promotional designs for events, businesses, announcements, offers, campaigns, and community activities.</p>
+                    </article>
+
+                    <article class="design-service-card">
+                        <div class="design-service-icon">
+                            <i class="fa-solid fa-rectangle-ad"></i>
+                        </div>
+                        <h3>Digital Advertisements</h3>
+                        <p>Attention-grabbing graphics for online promotions, product launches, services, and paid advertising campaigns.</p>
+                    </article>
+
+                    <article class="design-service-card">
+                        <div class="design-service-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3>Presentation Designs</h3>
+                        <p>Clean presentation slides and visual documents that make your ideas easier to explain to an audience.</p>
+                    </article>
+
+                    <article class="design-service-card">
+                        <div class="design-service-icon">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                        <h3>Custom Digital Graphics</h3>
+                        <p>Flexible design support for online profiles, announcements, certificates, invitations, and other digital needs.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             DESIGN PROCESS
+        =================================================== -->
+        <section class="graphic-design-process section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">How We Work</span>
+
+                    <h2>
+                        From Your Idea to a
+                        <span>Finished Design.</span>
+                    </h2>
+
+                    <p>
+                        A simple process keeps the project organized and helps make sure
+                        the final design matches what you need.
+                    </p>
+                </div>
+
+                <div class="design-process-steps">
+
+                    <article class="design-process-step">
+                        <span class="design-process-number">01</span>
+                        <div class="design-process-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h3>Brief &amp; Discussion</h3>
+                        <p>We discuss your goal, audience, preferred style, content, colors, and where the design will be used.</p>
+                    </article>
+
+                    <article class="design-process-step">
+                        <span class="design-process-number">02</span>
+                        <div class="design-process-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>Creative Direction</h3>
+                        <p>I organize the content and choose a visual direction that fits your message and brand personality.</p>
+                    </article>
+
+                    <article class="design-process-step">
+                        <span class="design-process-number">03</span>
+                        <div class="design-process-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+                        <h3>Design Creation</h3>
+                        <p>The design is created with clear hierarchy, balanced layout, and visual details that support your main message.</p>
+                    </article>
+
+                    <article class="design-process-step">
+                        <span class="design-process-number">04</span>
+                        <div class="design-process-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h3>Review &amp; Delivery</h3>
+                        <p>After feedback and final adjustments, the completed files are prepared in the right format for your intended use.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             DESIGN TOOLS
+        =================================================== -->
+        <section class="graphic-design-tools section-padding">
+            <div class="container">
+                <div class="graphic-design-tools-grid">
+
+                    <div class="graphic-design-tools-content">
+                        <span class="section-label">Tools &amp; Approach</span>
+
+                        <h2>
+                            Creative Tools Used With
+                            <span>Attention to Detail.</span>
+                        </h2>
+
+                        <p>
+                            I use practical design tools and organized workflows to create
+                            high-quality graphics that are suitable for digital and print use.
+                        </p>
+                    </div>
+
+                    <div class="design-tools-list">
+                        <div class="design-tool-item"><i class="fa-solid fa-pen-nib"></i><span>Canva</span></div>
+                        <div class="design-tool-item"><i class="fa-solid fa-bezier-curve"></i><span>Adobe Illustrator</span></div>
+                        <div class="design-tool-item"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Adobe Photoshop</span></div>
+                        <div class="design-tool-item"><i class="fa-solid fa-font"></i><span>Typography</span></div>
+                        <div class="design-tool-item"><i class="fa-solid fa-swatchbook"></i><span>Color &amp; Layout</span></div>
+                        <div class="design-tool-item"><i class="fa-solid fa-file-export"></i><span>Digital &amp; Print Files</span></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             RELATED DESIGN WORK
+        =================================================== -->
+        <section class="graphic-design-projects section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">Selected Work</span>
+
+                    <h2>
+                        A Look at Related
+                        <span>Design Projects.</span>
+                    </h2>
+
+                    <p>
+                        These are example design categories that will be updated with more
+                        completed work as the portfolio continues to grow.
+                    </p>
+                </div>
+
+                <div class="graphic-design-project-grid">
+
+                    <article class="graphic-design-project-card">
+                        <div class="graphic-design-project-placeholder poster-project">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Event Poster Design</span>
+                        </div>
+
+                        <div class="graphic-design-project-content">
+                            <span>Graphic Design</span>
+                            <h3>Event Promotion Poster</h3>
+                            <p>A clear and energetic poster concept designed to promote an event and share key details.</p>
+
+                            <a href="portfolio.html#graphic-projects" class="project-view-btn">
+                                View design work
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="graphic-design-project-card">
+                        <div class="graphic-design-project-placeholder social-project">
+                            <i class="fa-solid fa-hashtag"></i>
+                            <span>Social Media Campaign</span>
+                        </div>
+
+                        <div class="graphic-design-project-content">
+                            <span>Graphic Design</span>
+                            <h3>Social Media Content Set</h3>
+                            <p>A coordinated set of social media visuals created to keep a brand active and recognizable.</p>
+
+                            <a href="portfolio.html#graphic-projects" class="project-view-btn">
+                                View design work
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="graphic-design-project-card">
+                        <div class="graphic-design-project-placeholder brand-project">
+                            <i class="fa-solid fa-certificate"></i>
+                            <span>Brand Visuals</span>
+                        </div>
+
+                        <div class="graphic-design-project-content">
+                            <span>Graphic Design</span>
+                            <h3>Brand Identity Concept</h3>
+                            <p>A visual identity concept that brings together color, typography, and branded design elements.</p>
+
+                            <a href="portfolio.html#graphic-projects" class="project-view-btn">
+                                View design work
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             FINAL CTA
+        =================================================== -->
+        <section class="graphic-design-cta">
+            <div class="container">
+                <div class="graphic-design-cta-content">
+
+                    <span class="section-label">Ready to Create?</span>
+
+                    <h2>
+                        Let's Create Visuals That
+                        <span>Represent Your Brand Well.</span>
+                    </h2>
+
+                    <p>
+                        Share your idea, message, or campaign goal and I will help you
+                        turn it into a professional design that people can understand
+                        and remember.
+                    </p>
+
+                    <div class="graphic-design-cta-actions">
+                        <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20am%20interested%20in%20starting%20a%20graphic%20design%20project."
+                           class="btn btn-primary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+
+                        <a href="order.html" class="btn btn-outline">
+                            <span>Start a Project</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        Elvis<span>Mati</span>
+                    </a>
+
+                    <p>
+                        Helping individuals, businesses, and organizations build a
+                        stronger digital presence through web development, graphic
+                        design, and virtual assistance.
+                    </p>
+
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/elvismati/"
+                           aria-label="Visit my LinkedIn profile"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/elvismati1/"
+                           aria-label="Visit my Instagram profile"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/sonraz"
+                           aria-label="Visit my GitHub profile"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="order.html">Start a Project</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>My Services</h3>
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Get in Touch</h3>
+
+                    <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project."
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elvismati.work@gmail.com&su=Project%20Inquiry"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Send an Email</span>
+                    </a>
+
+                    <p class="footer-availability">
+                        <i class="fa-solid fa-circle"></i>
+                        Available for freelance projects
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Elvis Mati. All rights reserved.</p>
+
+                <p>
+                    Designed and built with <i class="fa-solid fa-heart"></i> by Elvis Mati.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Shared JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/back-to-top.js"></script>
+
 </body>
 </html>

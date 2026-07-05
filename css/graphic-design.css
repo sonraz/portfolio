@@ -1,0 +1,1208 @@
+/* ==================================================
+   GRAPHIC DESIGN PAGE
+   Page-specific styles for graphic-design.html
+================================================== */
+
+/* ==================================================
+   GRAPHIC DESIGN HERO
+================================================== */
+
+.graphic-design-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 145px 0 100px;
+    background:
+        linear-gradient(135deg, #fff7ed 0%, #ffffff 52%, #fff1f2 100%);
+}
+
+.graphic-design-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 88% 18%, rgba(244, 63, 94, 0.10), transparent 25%),
+        radial-gradient(circle at 72% 75%, rgba(249, 115, 22, 0.10), transparent 26%);
+}
+
+.graphic-design-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.graphic-design-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+    align-items: center;
+    gap: 70px;
+}
+
+.graphic-design-hero-content {
+    max-width: 660px;
+}
+
+.graphic-design-hero-content .section-label {
+    display: inline-flex;
+    margin-bottom: 18px;
+    color: #be123c;
+    background-color: #fff1f2;
+}
+
+.graphic-design-hero-content h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(2.35rem, 4vw, 4.3rem);
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+}
+
+.graphic-design-hero-content h1 span {
+    color: #e11d48;
+}
+
+.graphic-design-hero-content > p {
+    max-width: 610px;
+    margin: 24px 0 30px;
+    color: #475569;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.graphic-design-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.graphic-design-hero-actions .btn {
+    min-width: 190px;
+    justify-content: center;
+}
+
+.graphic-design-hero-actions .btn-primary {
+    background-color: #e11d48;
+    border-color: #e11d48;
+}
+
+.graphic-design-hero-actions .btn-primary:hover {
+    background-color: #be123c;
+    border-color: #be123c;
+}
+
+
+/* ==================================================
+   GRAPHIC DESIGN BREADCRUMB
+================================================== */
+
+.graphic-design-hero .breadcrumb {
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.graphic-design-hero .breadcrumb .active {
+    color: #e11d48;
+    font-weight: 700;
+}
+
+.graphic-design-hero .breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+    color: #64748b;
+    font-size: 0.92rem;
+}
+
+.graphic-design-hero .breadcrumb a {
+    position: relative;
+    color: #64748b;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+/* Small underline that appears on hover */
+.graphic-design-hero .breadcrumb a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #2563eb;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.graphic-design-hero .breadcrumb a:hover {
+    color: #2563eb;
+}
+
+.graphic-design-hero .breadcrumb a:hover::after {
+    transform: scaleX(1);
+}
+
+.graphic-design-hero .breadcrumb i {
+    color: #94a3b8;
+    font-size: 0.72rem;
+}
+
+.graphic-design-hero .breadcrumb .active {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+/* Dark theme */
+body.dark-theme .graphic-design-hero .breadcrumb {
+    color: #cbd5e1;
+}
+
+body.dark-theme .graphic-design-hero .breadcrumb a {
+    color: #cbd5e1;
+}
+
+body.dark-theme .graphic-design-hero .breadcrumb a:hover {
+    color: #93c5fd;
+}
+
+body.dark-theme .graphic-design-hero .breadcrumb a::after {
+    background-color: #60a5fa;
+}
+
+body.dark-theme .graphic-design-hero .breadcrumb i {
+    color: #64748b;
+}
+
+body.dark-theme .graphic-design-hero .breadcrumb .active {
+    color: #93c5fd;
+}
+
+/* ==================================================
+   HERO DESIGN BOARD
+================================================== */
+
+.graphic-design-hero-visual {
+    position: relative;
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphic-design-hero-visual::before {
+    content: "";
+    position: absolute;
+    width: 315px;
+    height: 315px;
+    right: 15px;
+    bottom: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        rgba(244, 63, 94, 0.15),
+        rgba(249, 115, 22, 0.14)
+    );
+}
+
+.design-board {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    border: 1px solid #fed7aa;
+    border-radius: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 28px 60px rgba(15, 23, 42, 0.14);
+}
+
+.design-board-top {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    height: 48px;
+    padding: 0 18px;
+    border-bottom: 1px solid #ffedd5;
+    background-color: #fffaf7;
+}
+
+.design-board-top span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.design-board-top span:nth-child(1) {
+    background-color: #fb7185;
+}
+
+.design-board-top span:nth-child(2) {
+    background-color: #fbbf24;
+}
+
+.design-board-top span:nth-child(3) {
+    background-color: #4ade80;
+}
+
+.design-board-content {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 18px;
+    min-height: 300px;
+    padding: 24px;
+    background: linear-gradient(145deg, #ffffff, #fff7ed);
+}
+
+.design-poster {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 245px;
+    padding: 24px;
+    border-radius: 18px;
+    color: #ffffff;
+    background: linear-gradient(145deg, #e11d48, #f97316);
+}
+
+.design-poster-label {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.design-poster strong {
+    position: relative;
+    z-index: 2;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+}
+
+.design-poster-shape {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.shape-one {
+    width: 150px;
+    height: 150px;
+    right: -65px;
+    top: -45px;
+    border: 24px solid rgba(255, 255, 255, 0.18);
+}
+
+.shape-two {
+    width: 110px;
+    height: 110px;
+    left: -45px;
+    bottom: -45px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.design-mini-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.design-mini-card {
+    min-height: 112px;
+    border-radius: 15px;
+}
+
+.mini-card-one {
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.25), transparent),
+        #f97316;
+}
+
+.mini-card-two {
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.25), transparent),
+        #e11d48;
+}
+
+.mini-card-three {
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.25), transparent),
+        #7c3aed;
+}
+
+.mini-card-four {
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.25), transparent),
+        #0f766e;
+}
+
+.design-floating-tag {
+    position: absolute;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 16px;
+    border: 1px solid #fed7aa;
+    border-radius: 14px;
+    color: #9f1239;
+    background-color: #ffffff;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.10);
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+.design-floating-tag i {
+    color: #e11d48;
+}
+
+.tag-branding {
+    top: 22px;
+    left: -12px;
+}
+
+.tag-social {
+    right: -15px;
+    bottom: 85px;
+}
+
+.tag-creative {
+    left: 28px;
+    bottom: 8px;
+}
+
+/* ==================================================
+   INTRODUCTION
+================================================== */
+
+.graphic-design-intro {
+    padding: 105px 0;
+    background-color: #ffffff;
+}
+
+.graphic-design-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+    align-items: center;
+    gap: 75px;
+}
+
+.graphic-design-intro-content h2,
+.graphic-design-tools-content h2 {
+    margin: 18px 0 20px;
+    color: #0f172a;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.22;
+}
+
+.graphic-design-intro-content h2 span,
+.graphic-design-tools-content h2 span {
+    color: #e11d48;
+}
+
+.graphic-design-intro-content p,
+.graphic-design-tools-content p {
+    margin-bottom: 16px;
+    color: #64748b;
+    line-height: 1.8;
+}
+
+/* Introduction CTA button */
+.graphic-design-intro-content .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 13px 18px;
+    border: 1px solid #2563eb;
+    border-radius: 10px;
+    color: #2563eb;
+    background-color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.08);
+    transition: transform 0.25s ease, background-color 0.25s ease,
+        color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.graphic-design-intro-content .text-link i {
+    transition: transform 0.25s ease;
+}
+
+.graphic-design-intro-content .text-link:hover {
+    transform: translateY(-3px);
+    color: #ffffff;
+    background-color: #2563eb;
+    box-shadow: 0 14px 26px rgba(37, 99, 235, 0.22);
+}
+
+.graphic-design-intro-content .text-link:hover i {
+    transform: translateX(4px);
+}
+.graphic-design-benefits {
+    display: grid;
+    gap: 16px;
+}
+
+body.dark-theme .graphic-design-intro-content .text-link {
+    border-color: #60a5fa;
+    color: #93c5fd;
+    background-color: #162033;
+}
+
+body.dark-theme .graphic-design-intro-content .text-link:hover {
+    color: #0f172a;
+    background-color: #93c5fd;
+    box-shadow: 0 14px 26px rgba(96, 165, 250, 0.2);
+}
+.graphic-design-benefit-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 23px;
+    border: 1px solid #ffe4e6;
+    border-radius: 18px;
+    background-color: #fffafb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.graphic-design-benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(225, 29, 72, 0.10);
+}
+
+.graphic-design-benefit-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    color: #e11d48;
+    background-color: #ffe4e6;
+    font-size: 1.1rem;
+}
+
+.graphic-design-benefit-card h3 {
+    margin-bottom: 7px;
+    color: #0f172a;
+    font-size: 1.06rem;
+}
+
+.graphic-design-benefit-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.93rem;
+    line-height: 1.7;
+}
+
+/* ==================================================
+   DESIGN SERVICES
+================================================== */
+
+.design-services {
+    padding: 105px 0;
+    background-color: #fff7f8;
+}
+
+.design-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 52px;
+}
+
+.design-service-card {
+    position: relative;
+    overflow: hidden;
+    padding: 32px 28px;
+    border: 1px solid #ffe4e6;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.design-service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #e11d48, #f97316);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.design-service-card:hover {
+    transform: translateY(-8px);
+    border-color: #fecdd3;
+    box-shadow: 0 20px 38px rgba(225, 29, 72, 0.12);
+}
+
+.design-service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.design-service-icon {
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    color: #e11d48;
+    background-color: #fff1f2;
+    font-size: 1.4rem;
+}
+
+.design-service-card h3 {
+    margin-bottom: 12px;
+    color: #0f172a;
+    font-size: 1.2rem;
+}
+
+.design-service-card p {
+    color: #64748b;
+    line-height: 1.75;
+}
+
+/* ==================================================
+   DESIGN PROCESS
+================================================== */
+
+.graphic-design-process {
+    padding: 105px 0;
+    background-color: #ffffff;
+}
+
+.design-process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 55px;
+}
+
+.design-process-step {
+    position: relative;
+    padding: 32px 24px 28px;
+    border: 1px solid #ffe4e6;
+    border-radius: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design-process-step:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 36px rgba(225, 29, 72, 0.11);
+}
+
+.design-process-number {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    color: #fda4af;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.design-process-icon {
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 20px;
+    border-radius: 17px;
+    color: #e11d48;
+    background-color: #fff1f2;
+    font-size: 1.3rem;
+}
+
+.design-process-step h3 {
+    margin-bottom: 10px;
+    color: #0f172a;
+    font-size: 1.08rem;
+}
+
+.design-process-step p {
+    color: #64748b;
+    font-size: 0.93rem;
+    line-height: 1.7;
+}
+
+/* ==================================================
+   DESIGN TOOLS
+================================================== */
+
+.graphic-design-tools {
+    padding: 105px 0;
+    background-color: #fff7f8;
+}
+
+.graphic-design-tools-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 75px;
+}
+
+.design-tools-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.design-tool-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 18px;
+    border: 1px solid #ffe4e6;
+    border-radius: 15px;
+    color: #334155;
+    background-color: #ffffff;
+    font-weight: 700;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.design-tool-item:hover {
+    transform: translateY(-5px);
+    border-color: #fda4af;
+    box-shadow: 0 14px 26px rgba(225, 29, 72, 0.10);
+}
+
+.design-tool-item i {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    color: #e11d48;
+    background-color: #fff1f2;
+}
+
+/* ==================================================
+   RELATED PROJECTS
+================================================== */
+
+.graphic-design-projects {
+    padding: 105px 0;
+    background-color: #ffffff;
+}
+
+.graphic-design-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 52px;
+}
+
+.graphic-design-project-card {
+    overflow: hidden;
+    border: 1px solid #ffe4e6;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.graphic-design-project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 38px rgba(225, 29, 72, 0.12);
+}
+
+.graphic-design-project-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 205px;
+    color: #ffffff;
+    font-size: 0.96rem;
+    font-weight: 700;
+}
+
+.graphic-design-project-placeholder i {
+    font-size: 2.1rem;
+}
+
+.poster-project {
+    background: linear-gradient(135deg, #e11d48, #fb7185);
+}
+
+.social-project {
+    background: linear-gradient(135deg, #f97316, #fbbf24);
+}
+
+.brand-project {
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+}
+
+.graphic-design-project-content {
+    padding: 25px;
+}
+
+.graphic-design-project-content > span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #e11d48;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.graphic-design-project-content h3 {
+    margin-bottom: 10px;
+    color: #0f172a;
+    font-size: 1.15rem;
+}
+
+.graphic-design-project-content p {
+    margin-bottom: 18px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* ==================================================
+   FINAL CTA
+================================================== */
+
+.graphic-design-cta {
+    position: relative;
+    overflow: hidden;
+    padding: 95px 0;
+    background:
+        radial-gradient(circle at top right, rgba(251, 113, 133, 0.26), transparent 30%),
+        linear-gradient(135deg, #be123c 0%, #e11d48 55%, #f97316 100%);
+}
+
+.graphic-design-cta::before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    bottom: -180px;
+    left: -100px;
+    border: 55px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+}
+
+.graphic-design-cta .container {
+    position: relative;
+    z-index: 1;
+}
+
+.graphic-design-cta-content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.graphic-design-cta .section-label {
+    color: #fff1f2;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.graphic-design-cta h2 {
+    margin: 18px 0;
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.2;
+}
+
+.graphic-design-cta h2 span {
+    color: #ffe4e6;
+}
+
+.graphic-design-cta p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #fff1f2;
+    line-height: 1.8;
+}
+
+.graphic-design-cta-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.graphic-design-cta .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #be123c;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.graphic-design-cta .btn-primary:hover {
+    color: #9f1239;
+    background-color: #fff1f2;
+    border-color: #fff1f2;
+}
+
+.graphic-design-cta .btn-outline {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.70);
+    background-color: transparent;
+}
+
+.graphic-design-cta .btn-outline:hover {
+    color: #be123c;
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
+/* ==================================================
+   DARK THEME
+================================================== */
+
+body.dark-theme .graphic-design-hero {
+    background:
+        radial-gradient(circle at top right, rgba(225, 29, 72, 0.15), transparent 32%),
+        #0f172a;
+}
+
+body.dark-theme .graphic-design-hero::before {
+    background:
+        radial-gradient(circle at 88% 18%, rgba(244, 63, 94, 0.12), transparent 25%),
+        radial-gradient(circle at 72% 75%, rgba(249, 115, 22, 0.10), transparent 26%);
+}
+
+body.dark-theme .graphic-design-hero-content h1,
+body.dark-theme .graphic-design-intro-content h2,
+body.dark-theme .graphic-design-tools-content h2,
+body.dark-theme .design-service-card h3,
+body.dark-theme .design-process-step h3,
+body.dark-theme .graphic-design-benefit-card h3,
+body.dark-theme .graphic-design-project-content h3 {
+    color: #f8fafc;
+}
+
+body.dark-theme .graphic-design-hero-content > p,
+body.dark-theme .graphic-design-intro-content p,
+body.dark-theme .graphic-design-tools-content p,
+body.dark-theme .design-service-card p,
+body.dark-theme .design-process-step p,
+body.dark-theme .graphic-design-benefit-card p,
+body.dark-theme .graphic-design-project-content p {
+    color: #cbd5e1;
+}
+
+body.dark-theme .graphic-design-hero-content .section-label {
+    color: #fecdd3;
+    background-color: rgba(225, 29, 72, 0.18);
+}
+
+body.dark-theme .graphic-design-hero .breadcrumb .active {
+    color: #fda4af;
+}
+
+body.dark-theme .design-board {
+    border-color: #475569;
+    background-color: #162033;
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-theme .design-board-top {
+    border-color: #334155;
+    background-color: #1e293b;
+}
+
+body.dark-theme .design-board-content {
+    background: linear-gradient(145deg, #162033, #111827);
+}
+
+body.dark-theme .design-floating-tag {
+    border-color: #475569;
+    color: #fecdd3;
+    background-color: #1e293b;
+}
+
+body.dark-theme .graphic-design-intro,
+body.dark-theme .graphic-design-process,
+body.dark-theme .graphic-design-projects {
+    background-color: #0f172a;
+}
+
+body.dark-theme .design-services,
+body.dark-theme .graphic-design-tools {
+    background-color: #111827;
+}
+
+body.dark-theme .graphic-design-benefit-card,
+body.dark-theme .design-service-card,
+body.dark-theme .design-process-step,
+body.dark-theme .design-tool-item,
+body.dark-theme .graphic-design-project-card {
+    border-color: #334155;
+    background-color: #162033;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.20);
+}
+
+body.dark-theme .graphic-design-benefit-icon,
+body.dark-theme .design-service-icon,
+body.dark-theme .design-process-icon,
+body.dark-theme .design-tool-item i {
+    color: #fda4af;
+    background-color: rgba(225, 29, 72, 0.18);
+}
+
+body.dark-theme .design-tool-item {
+    color: #e2e8f0;
+}
+
+/* ==================================================
+   RESPONSIVE DESIGN
+================================================== */
+
+@media (max-width: 992px) {
+    .graphic-design-hero {
+        padding: 130px 0 85px;
+    }
+
+    .graphic-design-hero-grid,
+    .graphic-design-intro-grid,
+    .graphic-design-tools-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .graphic-design-hero-content {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .graphic-design-hero-content > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .graphic-design-hero-actions,
+    .graphic-design-hero .breadcrumb {
+        justify-content: center;
+    }
+
+    .graphic-design-intro-content,
+    .graphic-design-tools-content {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .design-services-grid,
+    .graphic-design-project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .design-process-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .graphic-design-hero {
+        padding: 115px 0 75px;
+    }
+
+    .graphic-design-hero-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .graphic-design-hero-content > p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .graphic-design-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .graphic-design-hero-actions .btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .graphic-design-hero-visual {
+        min-height: 330px;
+    }
+
+    .design-board {
+        border-radius: 18px;
+    }
+
+    .design-board-content {
+        gap: 12px;
+        min-height: 240px;
+        padding: 16px;
+    }
+
+    .design-poster {
+        min-height: 205px;
+        padding: 17px;
+        border-radius: 14px;
+    }
+
+    .design-poster strong {
+        font-size: 1.55rem;
+    }
+
+    .design-mini-cards {
+        gap: 8px;
+    }
+
+    .design-mini-card {
+        min-height: 96px;
+        border-radius: 11px;
+    }
+
+    .design-floating-tag {
+        gap: 6px;
+        padding: 9px 11px;
+        border-radius: 11px;
+        font-size: 0.72rem;
+    }
+
+    .tag-branding {
+        top: 5px;
+        left: -4px;
+    }
+
+    .tag-social {
+        right: -4px;
+        bottom: 55px;
+    }
+
+    .tag-creative {
+        left: 8px;
+        bottom: -3px;
+    }
+
+    .graphic-design-intro,
+    .design-services,
+    .graphic-design-process,
+    .graphic-design-tools,
+    .graphic-design-projects {
+        padding: 75px 0;
+    }
+
+    .design-services-grid,
+    .design-process-steps,
+    .design-tools-list,
+    .graphic-design-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .design-services-grid,
+    .graphic-design-project-grid {
+        margin-top: 38px;
+    }
+
+    .design-process-steps {
+        margin-top: 38px;
+        gap: 18px;
+    }
+
+    .graphic-design-benefit-card {
+        padding: 19px;
+    }
+
+    .graphic-design-cta {
+        padding: 75px 0;
+    }
+
+    .graphic-design-cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .graphic-design-cta-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/* ==================================================
+   FORCE STYLE: SELECTED WORK - VIEW DESIGN WORK BUTTONS
+
+================================================== */
+
+
+/* ==================================================
+   SELECTED WORK - PROJECT BUTTONS
+================================================== */
+
+.project-view-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 10px;
+    padding: 11px 16px;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    color: #1d4ed8;
+    background-color: #eff6ff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: transform 0.25s ease, background-color 0.25s ease,
+        color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-view-btn i {
+    font-size: 0.8rem;
+    transition: transform 0.25s ease;
+}
+
+.project-view-btn:hover {
+    transform: translateY(-3px);
+    border-color: #2563eb;
+    color: #ffffff;
+    background-color: #2563eb;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.22);
+}
+
+.project-view-btn:hover i {
+    transform: translateX(4px);
+}
+
+.project-view-btn:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.35);
+    outline-offset: 3px;
+}
+
+/* Dark theme */
+body.dark-theme .project-view-btn {
+    border-color: #334155;
+    color: #bfdbfe;
+    background-color: #1e3a5f;
+}
+
+body.dark-theme .project-view-btn:hover {
+    border-color: #3b82f6;
+    color: #ffffff;
+    background-color: #2563eb;
+}

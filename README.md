@@ -70,3 +70,28 @@ Commit message used:
 
 ```text
 Build web development service page
+
+
+## Graphic Design Service Page
+
+The Graphic Design service page has been completed as part of the portfolio project.
+
+### Features added
+- Professional hero section with a graphic-design visual board and floating service tags
+- Breadcrumb navigation: Home → Services → Graphic Design
+- Introduction section explaining the value of purposeful design
+- Design benefit cards for visual communication, brand identity, and goal-focused design
+- Service cards for social media graphics, branding, posters, digital ads, presentations, and custom graphics
+- Four-step design process section
+- Tools and approach section
+- Selected work section with project cards and interactive “View design work” buttons
+- Final call-to-action section with WhatsApp and project-start buttons
+- Dark theme support
+- Responsive layouts for desktop, tablet, and mobile devices
+- Hover effects for cards, links, buttons, breadcrumbs, and project actions
+
+### Design decisions
+- The hero visual uses a custom design-board illustration rather than real client work so the page looks polished while the portfolio is still growing.
+- The floating labels represent key graphic design services: branding, social media, and creative work.
+- Real completed client projects can later replace the placeholder project cards in the Selected Work section.
+- Shared navigation, footer, theme toggle, and responsive styles are reused across the portfolio website for consistency.
