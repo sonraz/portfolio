@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Web Development Portfolio | Elvis Mati</title>
-    <meta name="description" content="A collection of web development projects by Elvis Mati, featuring responsive business websites, landing pages, and user-focused digital experiences.">
+    <meta name="description" content="Explore web development portfolio projects by Elvis Mati, including business websites, restaurant websites, and creative portfolio websites.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Page CSS -->
+    <!-- Page-specific CSS -->
     <link rel="stylesheet" href="css/web-development-portfolio.css">
 </head>
 
 <body>
 
-    <!-- ==================================================
+   <!-- ==================================================
          HEADER / NAVIGATION
     =================================================== -->
     <header class="header">
@@ -38,7 +38,7 @@
                 </a>
 
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
 
                     <li class="dropdown">
@@ -54,12 +54,12 @@
                     </li>
 
                     <li class="dropdown">
-                        <a href="portfolio.html" class="active">
+                        <a href="portfolio.html">
                             Portfolio <i class="fa-solid fa-chevron-down"></i>
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a href="portfolio.html#web-projects" class="active">Web Projects</a></li>
+                            <li><a href="portfolio.html#web-projects">Web Projects</a></li>
                             <li><a href="portfolio.html#graphic-projects">Graphic Designs</a></li>
                             <li><a href="portfolio.html#va-projects">Virtual Assistant</a></li>
                         </ul>
@@ -68,44 +68,46 @@
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact.html">Contact</a></li>
 
-                    <!-- Theme button inside mobile menu -->
                     <li class="mobile-theme-item">
-                        <button class="theme-btn mobile-theme-btn" type="button" aria-label="Switch theme">
+                        <button class="theme-btn mobile-theme-btn" type="button" aria-label="Switch to dark theme">
                             <i class="fa-solid fa-moon"></i>
-                            <span>Dark</span>
+                            <span class="theme-btn-text">Dark</span>
                         </button>
                     </li>
-
-                    <!-- WhatsApp button inside mobile menu -->
-                    <li class="mobile-whatsapp-item">
-                        <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20am%20interested%20in%20your%20web%20development%20services."
-                           class="nav-whatsapp-btn"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            WhatsApp
-                        </a>
-                    </li>
                 </ul>
-
+                <!-- My existing desktop theme and WhatsApp buttons stay here -->
                 <div class="nav-actions">
-                    <button class="theme-btn" type="button" aria-label="Switch theme">
+                    <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
                         <i class="fa-solid fa-moon"></i>
-                        <span>Dark</span>
+                        <span class="theme-btn-text">Dark</span>
                     </button>
 
-                    <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20am%20interested%20in%20your%20web%20development%20services."
-                       class="nav-whatsapp-btn"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                    <a
+                        href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
+                        class="whatsapp-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <i class="fa-brands fa-whatsapp"></i>
-                        WhatsApp
+                        <span>WhatsApp</span>
                     </a>
                 </div>
 
-                <button class="menu-toggle" type="button" aria-label="Open navigation menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                 <!-- Mobile WhatsApp button -->
+                <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services."
+                class="mobile-whatsapp-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with Elvis on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <!-- End of Mobile WhatsApp button -->
+                 <!-- Hamburger menu on mobile -->
+                <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
             </nav>
         </div>
@@ -114,7 +116,7 @@
     <main>
 
         <!-- ==================================================
-             WEB DEVELOPMENT PORTFOLIO HERO
+             HERO
         =================================================== -->
         <section class="web-portfolio-hero">
             <div class="container">
@@ -133,9 +135,8 @@
                         </h1>
 
                         <p>
-                            A collection of web development projects focused on clean design,
-                            responsive layouts, clear user experiences, and websites that help
-                            businesses present their services professionally online.
+                            Explore website concepts designed around clean layouts, responsive
+                            experiences, clear messaging, and practical business goals.
                         </p>
 
                         <div class="web-portfolio-hero-actions">
@@ -151,12 +152,22 @@
                         </div>
 
                         <div class="web-portfolio-tags">
-                            <span><i class="fa-solid fa-mobile-screen-button"></i> Responsive Design</span>
-                            <span><i class="fa-solid fa-laptop-code"></i> Clean Development</span>
-                            <span><i class="fa-solid fa-bullseye"></i> Business Focused</span>
+                            <span>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Responsive Design
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-laptop-code"></i>
+                                Clean Development
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-bullseye"></i>
+                                Business Focused
+                            </span>
                         </div>
                     </div>
-
                     <div class="web-portfolio-hero-visual">
                         <div class="web-browser-card">
                             <div class="browser-top">
@@ -165,33 +176,22 @@
                                 <span></span>
                             </div>
 
-                            <div class="browser-content">
-                                <div class="browser-logo">Elvis<span>Mati</span></div>
-
-                                <div class="browser-hero-lines">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-
-                                <div class="browser-button-line"></div>
-
-                                <div class="browser-service-cards">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
+                            <div class="browser-image-wrap">
+                                <img
+                                    src="assets/images/portfolio/websites/web-development-hero-preview.png"
+                                    alt="Modern business website preview designed by Elvis Mati"
+                                >
                             </div>
                         </div>
 
                         <div class="web-visual-badge badge-code">
                             <i class="fa-solid fa-code"></i>
-                            Clean Code
+                            <span>Clean Code</span>
                         </div>
 
                         <div class="web-visual-badge badge-responsive">
                             <i class="fa-solid fa-mobile-screen-button"></i>
-                            Mobile Ready
+                            <span>Mobile Ready</span>
                         </div>
                     </div>
 
@@ -218,7 +218,7 @@
         </section>
 
         <!-- ==================================================
-             FEATURED WEB PROJECTS
+             FEATURED PROJECTS
         =================================================== -->
         <section class="web-portfolio-projects section-padding" id="web-projects">
             <div class="container">
@@ -232,13 +232,14 @@
                     </h2>
 
                     <p>
-                        These sample projects demonstrate how thoughtful layouts, strong visual
-                        structure, and responsive design can help a business stand out online.
+                        These project concepts show how thoughtful design and clear structure
+                        can help a business present its services professionally online.
                     </p>
                 </div>
 
                 <div class="web-portfolio-project-grid">
 
+                    <!-- Project 1 -->
                     <article class="web-portfolio-project-card">
                         <div class="web-project-preview business-preview">
                             <div class="project-preview-topbar">
@@ -251,6 +252,7 @@
                                 <span class="preview-logo">DIGITAL CRAFT</span>
                                 <h3>Innovative Digital Solutions</h3>
                                 <p>For Your Business Growth</p>
+
                                 <div class="preview-button"></div>
 
                                 <div class="preview-mini-cards">
@@ -270,8 +272,8 @@
                             <h3>Modern Business Website</h3>
 
                             <p>
-                                A professional business website concept designed to present
-                                services clearly, build trust, and guide visitors toward inquiry.
+                                A professional website concept created to explain services,
+                                build trust, and guide visitors toward making an inquiry.
                             </p>
 
                             <div class="project-tech-tags">
@@ -287,6 +289,7 @@
                         </div>
                     </article>
 
+                    <!-- Project 2 -->
                     <article class="web-portfolio-project-card">
                         <div class="web-project-preview restaurant-preview">
                             <div class="project-preview-topbar">
@@ -299,6 +302,7 @@
                                 <span class="restaurant-logo">SAVOUR</span>
                                 <h3>Authentic Dining Experience</h3>
                                 <p>Fresh flavours. Memorable moments.</p>
+
                                 <div class="preview-button"></div>
 
                                 <div class="restaurant-menu-preview">
@@ -318,8 +322,8 @@
                             <h3>Restaurant Website Design</h3>
 
                             <p>
-                                A warm, visual restaurant website concept that highlights food,
-                                menu options, reservations, and the dining experience.
+                                A visual restaurant website concept that highlights menus,
+                                reservations, food imagery, and the overall dining experience.
                             </p>
 
                             <div class="project-tech-tags">
@@ -335,26 +339,29 @@
                         </div>
                     </article>
 
+                    <!-- Project 3 -->
                     <article class="web-portfolio-project-card">
-                        <div class="web-project-preview portfolio-preview">
+                        <div class="web-project-preview creative-preview">
                             <div class="project-preview-topbar">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </div>
 
-                            <div class="portfolio-preview-content">
+                            <div class="creative-preview-content">
                                 <span class="preview-logo">CREATIVE STUDIO</span>
                                 <h3>Creative Work That Speaks</h3>
                                 <p>Design. Strategy. Digital presence.</p>
 
-                                <div class="portfolio-preview-gallery">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                                <div class="creative-preview-button"></div>
+
+                                <div class="creative-preview-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
+                        </div>
                         </div>
 
                         <div class="web-project-card-content">
@@ -366,8 +373,8 @@
                             <h3>Creative Portfolio Website</h3>
 
                             <p>
-                                A clean portfolio website concept created to showcase creative
-                                work, services, project samples, and client-focused messaging.
+                                A clean portfolio website concept for showcasing creative work,
+                                services, project samples, and client-focused messaging.
                             </p>
 
                             <div class="project-tech-tags">
@@ -389,7 +396,7 @@
         </section>
 
         <!-- ==================================================
-             WEB DEVELOPMENT APPROACH
+             APPROACH
         =================================================== -->
         <section class="web-portfolio-approach section-padding">
             <div class="container">
@@ -405,9 +412,9 @@
                         </h2>
 
                         <p>
-                            A website should not only look good. It should make it easy for
-                            visitors to understand your business, trust your brand, and take
-                            the next step.
+                            A website should do more than look attractive. It should help
+                            visitors understand your business, trust your brand, and take
+                            the next step with confidence.
                         </p>
 
                         <a href="web-development.html" class="text-link">
@@ -418,38 +425,47 @@
 
                     <div class="web-portfolio-feature-list">
 
-                        <div class="web-portfolio-feature-card">
+                        <article class="web-portfolio-feature-card">
                             <div class="web-feature-icon">
                                 <i class="fa-solid fa-mobile-screen-button"></i>
                             </div>
 
                             <div>
                                 <h3>Responsive Layouts</h3>
-                                <p>Your website adapts smoothly across phones, tablets, laptops, and larger screens.</p>
+                                <p>
+                                    Websites that adapt smoothly across phones, tablets,
+                                    laptops, and larger screens.
+                                </p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="web-portfolio-feature-card">
+                        <article class="web-portfolio-feature-card">
                             <div class="web-feature-icon">
                                 <i class="fa-solid fa-wand-magic-sparkles"></i>
                             </div>
 
                             <div>
                                 <h3>Clear Visual Design</h3>
-                                <p>Strong structure, readable content, and visual hierarchy that makes information easy to follow.</p>
+                                <p>
+                                    Readable content, strong hierarchy, and organized sections
+                                    that are easy for visitors to follow.
+                                </p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="web-portfolio-feature-card">
+                        <article class="web-portfolio-feature-card">
                             <div class="web-feature-icon">
                                 <i class="fa-solid fa-chart-line"></i>
                             </div>
 
                             <div>
                                 <h3>Conversion Focused</h3>
-                                <p>Calls to action and page sections are arranged to encourage inquiries, bookings, or purchases.</p>
+                                <p>
+                                    Calls to action and page content arranged to encourage
+                                    inquiries, bookings, or project discussions.
+                                </p>
                             </div>
-                        </div>
+                        </article>
 
                     </div>
 
@@ -463,8 +479,8 @@
         =================================================== -->
         <section class="web-portfolio-cta">
             <div class="container">
-                <div class="web-portfolio-cta-content">
 
+                <div class="web-portfolio-cta-content">
                     <span class="section-label">Need a Website?</span>
 
                     <h2>
@@ -473,8 +489,8 @@
                     </h2>
 
                     <p>
-                        Whether you need a business website, portfolio, landing page, or
-                        service website, I can help you create a professional online presence.
+                        Whether you need a business website, landing page, service website,
+                        or creative portfolio, I can help you build a professional online presence.
                     </p>
 
                     <div class="web-portfolio-cta-actions">
@@ -491,8 +507,8 @@
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
-
                 </div>
+
             </div>
         </section>
 
@@ -570,14 +586,14 @@
                        target="_blank"
                        rel="noopener">
                         <i class="fa-brands fa-whatsapp"></i>
-                        Chat on WhatsApp
+                        <span>Chat on WhatsApp</span>
                     </a>
 
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elvismati.work@gmail.com&su=Project%20Inquiry"
                        target="_blank"
                        rel="noopener">
                         <i class="fa-solid fa-envelope"></i>
-                        Send an Email
+                        <span>Send an Email</span>
                     </a>
 
                     <p class="footer-availability">
