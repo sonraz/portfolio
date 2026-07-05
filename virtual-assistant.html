@@ -1,12 +1,831 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Assistant | Elvis Mati</title>
+    <meta name="description" content="Professional virtual assistant services by Elvis Mati, including administrative support, research, email management, data entry, scheduling, and digital organization.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="css/virtual-assistant.css">
 </head>
+
 <body>
-      
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+
+                <a href="index.html" class="logo">
+                    Elvis<span>Mati</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="services.html" class="active">
+                            Services <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="web-development.html">Web Development</a></li>
+                            <li><a href="graphic-design.html">Graphic Design</a></li>
+                            <li><a href="virtual-assistant.html" class="active">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="portfolio.html">
+                            Portfolio <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio.html#web-projects">Web Projects</a></li>
+                            <li><a href="portfolio.html#graphic-projects">Graphic Designs</a></li>
+                            <li><a href="portfolio.html#va-projects">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <!-- Theme button inside mobile menu -->
+                    <li class="mobile-theme-item">
+                        <button class="theme-btn mobile-theme-btn" type="button" aria-label="Switch to dark theme">
+                            <i class="fa-solid fa-moon"></i>
+                            <span class="theme-btn-text">Dark</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span class="theme-btn-text">Dark</span>
+                    </button>
+
+                    <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I%20am%20interested%20in%20your%20virtual%20assistant%20services."
+                       class="whatsapp-btn"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile WhatsApp shortcut -->
+                <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20am%20interested%20in%20your%20virtual%20assistant%20services."
+                   class="mobile-whatsapp-btn"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Chat with Elvis on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==================================================
+             VIRTUAL ASSISTANT HERO
+        =================================================== -->
+        <section class="virtual-assistant-hero">
+            <div class="container">
+                <div class="virtual-assistant-hero-grid">
+
+                    <div class="virtual-assistant-hero-content">
+                        <span class="section-label">Virtual Assistant Services</span>
+
+                        <h1>
+                            Reliable Support That Helps You
+                            <span>Stay Organized and Productive.</span>
+                        </h1>
+
+                        <p>
+                            I provide dependable virtual assistance for individuals,
+                            entrepreneurs, businesses, and teams that need help managing
+                            everyday tasks, digital work, communication, and organization.
+                        </p>
+
+                        <div class="virtual-assistant-hero-actions">
+                            <a href="order.html" class="btn btn-primary">
+                                Get Virtual Support
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                            <a href="portfolio.html#va-projects" class="btn btn-outline">
+                                View Related Work
+                            </a>
+                        </div>
+
+                        <div class="breadcrumb">
+                            <a href="index.html">Home</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <a href="services.html">Services</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <span class="active" aria-current="page">Virtual Assistant</span>
+                        </div>
+                    </div>
+
+                    <div class="virtual-assistant-hero-visual" aria-hidden="true">
+
+                        <div class="va-dashboard-card">
+                            <div class="va-dashboard-top">
+                                <div class="va-dashboard-profile">
+                                    <div class="va-profile-avatar">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Daily Tasks</strong>
+                                        <span>Organized and managed</span>
+                                    </div>
+                                </div>
+
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+
+                            <div class="va-task-list">
+                                <div class="va-task-item completed">
+                                    <span class="va-task-check">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+
+                                    <div>
+                                        <strong>Respond to emails</strong>
+                                        <span>Completed today</span>
+                                    </div>
+                                </div>
+
+                                <div class="va-task-item completed">
+                                    <span class="va-task-check">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+
+                                    <div>
+                                        <strong>Update client records</strong>
+                                        <span>Completed today</span>
+                                    </div>
+                                </div>
+
+                                <div class="va-task-item">
+                                    <span class="va-task-check"></span>
+
+                                    <div>
+                                        <strong>Schedule weekly meeting</strong>
+                                        <span>In progress</span>
+                                    </div>
+                                </div>
+
+                                <div class="va-task-item">
+                                    <span class="va-task-check"></span>
+
+                                    <div>
+                                        <strong>Prepare research notes</strong>
+                                        <span>Planned task</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="va-dashboard-progress">
+                                <div class="va-progress-heading">
+                                    <span>Today's Progress</span>
+                                    <strong>75%</strong>
+                                </div>
+
+                                <div class="va-progress-bar">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="va-floating-tag tag-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email Support
+                        </div>
+
+                        <div class="va-floating-tag tag-calendar">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Scheduling
+                        </div>
+
+                        <div class="va-floating-tag tag-research">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                        Research
+                        </div>
+
+                        <div class="va-floating-tag         tag-data-entry">
+                              <i class="fa-solid fa-table"></i>
+                        Data Entry
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             INTRODUCTION
+        =================================================== -->
+        <section class="virtual-assistant-intro section-padding">
+            <div class="container">
+                <div class="virtual-assistant-intro-grid">
+
+                    <div class="virtual-assistant-intro-content">
+                        <span class="section-label">Support That Makes Work Easier</span>
+
+                        <h2>
+                            More Time for What
+                            <span>Matters Most.</span>
+                        </h2>
+
+                        <p>
+                            Running a business, managing projects, or handling personal
+                            responsibilities can become overwhelming when small tasks begin
+                            taking up too much time.
+                        </p>
+
+                        <p>
+                            With organized virtual support, you can focus more on your
+                            main goals while routine tasks, communication, research, and
+                            digital organization are handled carefully and professionally.
+                        </p>
+
+                        <a href="contact.html" class="text-link">
+                            Discuss your support needs
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                  <!-- ==================================================
+                        VIRTUAL ASSISTANT BENEFITS
+                        Highlights the key advantages clients receive from
+                        virtual assistant support: time savings, better
+                        organization, and dependable remote assistance.
+                        ==================================================
+                  -->
+                    <div class="virtual-assistant-benefits">
+
+                        <div class="va-benefits-heading">
+                              <span class="va-benefits-kicker">
+                                    <i class="fa-solid fa-sparkles"></i>
+                                    VA Benefits
+                              </span>
+                              <h3>Support that makes your work easier.</h3>
+                              <p>Practical assistance that gives you more time and keeps everyday work organized.</p>
+                        </div>
+
+                        <div class="virtual-assistant-benefit-card">
+                            <div class="virtual-assistant-benefit-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <h3>Save Valuable Time</h3>
+                                <p>Get support with routine tasks so you can focus on important priorities.</p>
+                            </div>
+                        </div>
+
+                        <div class="virtual-assistant-benefit-card">
+                            <div class="virtual-assistant-benefit-icon">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </div>
+
+                            <div>
+                                <h3>Better Organization</h3>
+                                <p>Keep files, schedules, information, and digital tasks more structured.</p>
+                            </div>
+                        </div>
+
+                        <div class="virtual-assistant-benefit-card">
+                            <div class="virtual-assistant-benefit-icon">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+
+                            <div>
+                                <h3>Reliable Remote Support</h3>
+                                <p>Receive dependable assistance without needing a full-time in-office employee.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             VIRTUAL ASSISTANT SERVICES
+        =================================================== -->
+        <section class="va-services section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">What I Can Help With</span>
+
+                    <h2>
+                        Practical Support for
+                        <span>Everyday Digital Tasks.</span>
+                    </h2>
+
+                    <p>
+                        Virtual assistant services can be tailored around your workload,
+                        business needs, personal projects, and daily administrative tasks.
+                    </p>
+                </div>
+
+                <div class="va-services-grid">
+
+                    <article class="va-service-card">
+                        <div class="va-service-icon">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+
+                        <h3>Email Management</h3>
+
+                        <p>
+                            Organizing inboxes, sorting messages, responding to basic
+                            inquiries, and helping important communication stay visible.
+                        </p>
+                    </article>
+
+                    <article class="va-service-card">
+                        <div class="va-service-icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+                        <h3>Calendar & Scheduling</h3>
+
+                        <p>
+                            Managing appointments, reminders, meetings, deadlines, and
+                            schedules to help you stay prepared and organized.
+                        </p>
+                    </article>
+
+                    <article class="va-service-card">
+                        <div class="va-service-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <h3>Data Entry & Records</h3>
+
+                        <p>
+                            Entering, updating, organizing, and maintaining information in
+                            spreadsheets, documents, forms, and digital systems.
+                        </p>
+                    </article>
+
+                    <article class="va-service-card">
+                        <div class="va-service-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <h3>Online Research</h3>
+
+                        <p>
+                            Finding useful information, comparing options, gathering
+                            resources, and preparing organized research notes.
+                        </p>
+                    </article>
+
+                    <article class="va-service-card">
+                        <div class="va-service-icon">
+                            <i class="fa-solid fa-file-word"></i>
+                        </div>
+
+                        <h3>Document Support</h3>
+
+                        <p>
+                            Creating, formatting, editing, and organizing documents,
+                            reports, presentations, and professional files.
+                        </p>
+                    </article>
+
+                    <article class="va-service-card">
+                        <div class="va-service-icon">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+
+                        <h3>Social Media Assistance</h3>
+
+                        <p>
+                            Supporting content scheduling, caption preparation, basic
+                            engagement, and organized social media activity.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             WORK PROCESS
+        =================================================== -->
+        <section class="virtual-assistant-process section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">How We Work</span>
+
+                    <h2>
+                        A Clear Process for
+                        <span>Smooth Remote Support.</span>
+                    </h2>
+
+                    <p>
+                        A simple workflow helps make sure tasks are understood, completed
+                        properly, and delivered in an organized way.
+                    </p>
+                </div>
+
+                <div class="va-process-steps">
+
+                    <article class="va-process-step">
+                        <span class="va-process-number">01</span>
+
+                        <div class="va-process-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <h3>Task Discussion</h3>
+
+                        <p>
+                            We discuss the work you need help with, your expectations,
+                            deadlines, preferred tools, and priorities.
+                        </p>
+                    </article>
+
+                    <article class="va-process-step">
+                        <span class="va-process-number">02</span>
+
+                        <div class="va-process-icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+
+                        <h3>Task Planning</h3>
+
+                        <p>
+                            The tasks are organized into a clear plan so the work can be
+                            handled efficiently and in the right order.
+                        </p>
+                    </article>
+
+                    <article class="va-process-step">
+                        <span class="va-process-number">03</span>
+
+                        <div class="va-process-icon">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+
+                        <h3>Work in Progress</h3>
+
+                        <p>
+                            Tasks are completed carefully while communication stays clear
+                            whenever updates, questions, or feedback are needed.
+                        </p>
+                    </article>
+
+                    <article class="va-process-step">
+                        <span class="va-process-number">04</span>
+
+                        <div class="va-process-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <h3>Review & Delivery</h3>
+
+                        <p>
+                            Completed work is reviewed, shared, and adjusted where needed
+                            to make sure it meets the agreed requirements.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             TOOLS & WORKFLOW
+        =================================================== -->
+        <section class="virtual-assistant-tools section-padding">
+            <div class="container">
+                <div class="virtual-assistant-tools-grid">
+
+                    <div class="virtual-assistant-tools-content">
+                        <span class="section-label">Tools & Workflow</span>
+
+                        <h2>
+                            Organized Work Using
+                            <span>Practical Digital Tools.</span>
+                        </h2>
+
+                        <p>
+                            I use reliable digital tools to communicate, organize tasks,
+                            manage files, and complete virtual support work efficiently.
+                        </p>
+                    </div>
+
+                    <div class="va-tools-list">
+                        <div class="va-tool-item">
+                            <i class="fa-brands fa-google-drive"></i>
+                            <span>Google Workspace</span>
+                        </div>
+
+                        <div class="va-tool-item">
+                            <i class="fa-solid fa-table"></i>
+                            <span>Google Sheets & Excel</span>
+                        </div>
+
+                        <div class="va-tool-item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span>Google Calendar</span>
+                        </div>
+
+                        <div class="va-tool-item">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Task Management Tools</span>
+                        </div>
+
+                        <div class="va-tool-item">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Documents & Reports</span>
+                        </div>
+
+                        <div class="va-tool-item">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <span>Cloud File Organization</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             RELATED WORK
+        =================================================== -->
+        <section class="virtual-assistant-projects section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">Selected Work</span>
+
+                    <h2>
+                        Examples of Virtual
+                        <span>Support Projects.</span>
+                    </h2>
+
+                    <p>
+                        These are example service categories that will be updated with
+                        completed virtual assistant work as the portfolio grows.
+                    </p>
+                </div>
+
+                <div class="va-project-grid">
+
+                    <article class="va-project-card">
+                        <div class="va-project-placeholder email-project">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                            <span>Email Organization</span>
+                        </div>
+
+                        <div class="va-project-content">
+                            <span>Virtual Assistant</span>
+                            <h3>Inbox Management Support</h3>
+                            <p>Organizing email communication to make important messages, follow-ups, and tasks easier to manage.</p>
+
+                            <a href="portfolio.html#va-projects" class="text-link">
+                                View related work
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="va-project-card">
+                        <div class="va-project-placeholder research-project">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Research & Records</span>
+                        </div>
+
+                        <div class="va-project-content">
+                            <span>Virtual Assistant</span>
+                            <h3>Online Research Support</h3>
+                            <p>Gathering useful information and presenting it in an organized format for easier decision-making.</p>
+
+                            <a href="portfolio.html#va-projects" class="text-link">
+                                View related work
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="va-project-card">
+                        <div class="va-project-placeholder schedule-project">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>Schedule Planning</span>
+                        </div>
+
+                        <div class="va-project-content">
+                            <span>Virtual Assistant</span>
+                            <h3>Calendar & Task Planning</h3>
+                            <p>Helping organize appointments, deadlines, meetings, reminders, and important weekly priorities.</p>
+
+                            <a href="portfolio.html#va-projects" class="text-link">
+                                View related work
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             FINAL CTA
+        =================================================== -->
+        <section class="virtual-assistant-cta">
+            <div class="container">
+                <div class="virtual-assistant-cta-content">
+
+                    <span class="section-label">Ready for Support?</span>
+
+                    <h2>
+                        Let’s Make Your Workload
+                        <span>More Manageable.</span>
+                    </h2>
+
+                    <p>
+                        Share the tasks you need help with and I will support you with
+                        organized, reliable, and professional virtual assistance.
+                    </p>
+
+                    <div class="virtual-assistant-cta-actions">
+                        <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20am%20interested%20in%20your%20virtual%20assistant%20services."
+                           class="btn btn-primary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+
+                        <a href="order.html" class="btn btn-outline">
+                            Start a Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        Elvis<span>Mati</span>
+                    </a>
+
+                    <p>
+                        Helping individuals, businesses, and organizations build a
+                        stronger digital presence through web development, graphic
+                        design, and virtual assistance.
+                    </p>
+
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/elvismati/"
+                           aria-label="Visit my LinkedIn profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/elvismati1/"
+                           aria-label="Visit my Instagram profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/sonraz"
+                           aria-label="Visit my GitHub profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="order.html">Start a Project</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>My Services</h3>
+
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Get in Touch</h3>
+
+                    <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project."
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Chat on WhatsApp
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elvismati.work@gmail.com&su=Project%20Inquiry"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fa-solid fa-envelope"></i>
+                        Send an Email
+                    </a>
+
+                    <p class="footer-availability">
+                        <i class="fa-solid fa-circle"></i>
+                        Available for freelance projects
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear"></span> Elvis Mati. All rights reserved.
+                </p>
+
+                <p>
+                    Designed and built with <i class="fa-solid fa-heart"></i> by Elvis Mati.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Back-to-top button -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Shared JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/back-to-top.js"></script>
+
 </body>
 </html>
