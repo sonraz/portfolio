@@ -155,3 +155,385 @@ Completed the Virtual Assistant service page (`virtual-assistant.html`) as part 
 
 ### Git Commit
 `Create and style web development portfolio page`
+
+# Portfolio Pages Milestone Documentation
+
+## Project
+Personal Portfolio Website — Elvis Mati
+
+## Milestone Summary
+This milestone focused on building and styling the individual portfolio pages for the services offered on the website.
+
+The completed portfolio pages are:
+
+1. Web Development Portfolio
+2. Graphic Design Portfolio
+3. Virtual Assistant Portfolio
+
+Each page follows the same shared website structure while using page-specific content, visuals, and styling.
+
+---
+
+# 1. Shared Structure Used Across Portfolio Pages
+
+Each portfolio page uses the same main website components so that the portfolio remains consistent and professional.
+
+## Shared Header and Navigation
+
+Every page includes:
+
+- The Elvis Mati logo
+- Main navigation links
+- Services dropdown menu
+- Portfolio dropdown menu
+- Theme switch button
+- WhatsApp contact button
+- Mobile hamburger navigation
+- Mobile WhatsApp button
+
+The navigation is shared across the website using:
+
+- `css/navbar.css`
+- `js/navbar.js`
+- `js/theme.js`
+
+Using the same navigation structure prevents inconsistencies between pages and ensures the dark mode and mobile menu work the same way everywhere.
+
+## Shared Footer
+
+Each portfolio page contains the shared footer with:
+
+- Personal brand information
+- Social media links
+- Quick navigation links
+- Service links
+- WhatsApp and email contact links
+- Availability status
+- Dynamic copyright year
+
+The year is updated automatically through JavaScript.
+
+## Shared JavaScript Files
+
+The portfolio pages use the following shared JavaScript files:
+
+- `js/script.js` — general website functionality
+- `js/navbar.js` — mobile navigation and dropdown behavior
+- `js/theme.js` — light and dark mode switching
+- `js/animations.js` — page animation effects
+- `js/back-to-top.js` — back-to-top button functionality
+
+---
+
+# 2. Web Development Portfolio Page
+
+## File Name
+
+`web-development-portfolio.html`
+
+## Page-Specific CSS
+
+`css/web-development-portfolio.css`
+
+## Purpose
+
+The Web Development Portfolio page presents website concepts and web development work. It shows how websites can be designed to help businesses communicate clearly, build trust, and encourage visitors to take action.
+
+## Main Sections
+
+### Hero Section
+
+The hero introduces the web development portfolio with:
+
+- A Web Development Portfolio label
+- A headline focused on business growth
+- Call-to-action buttons
+- Feature tags such as Responsive Design, Clean Development, and Business Focused
+- A browser-style website preview image
+- Floating badges for Clean Code and Mobile Ready
+
+The hero preview image is stored in:
+
+`assets/images/portfolio/websites/web-development-hero-preview.png`
+
+### Breadcrumb Section
+
+The breadcrumb helps visitors understand their location on the website:
+
+Home > Portfolio > Web Development
+
+It improves navigation and makes the page structure clearer.
+
+### Featured Projects Section
+
+This section contains three web project concepts:
+
+1. Modern Business Website
+2. Restaurant Website Design
+3. Creative Portfolio Website
+
+Each project card includes:
+
+- A browser-style preview
+- Project category
+- Project title
+- Short description
+- Technology or design tags
+- A link to discuss a similar project
+
+The cards use hover effects to create a more interactive experience.
+
+### Website Approach Section
+
+This section explains the main principles behind a good website:
+
+- Responsive Layouts
+- Clear Visual Design
+- Conversion Focused Structure
+
+### Final Call-to-Action Section
+
+The final section encourages visitors to start a website project through:
+
+- WhatsApp
+- Project order page
+
+---
+
+# 3. Graphic Design Portfolio Page
+
+## File Name
+
+`graphic-design-portfolio.html`
+
+## Page-Specific CSS
+
+`css/graphic-design-portfolio.css`
+
+## Purpose
+
+The Graphic Design Portfolio page presents visual design work and sample design concepts. It demonstrates how branding and visual content can help businesses become more recognizable and professional.
+
+## Main Sections
+
+### Hero Section
+
+The hero introduces the graphic design portfolio with:
+
+- A graphic design label
+- A headline focused on stronger visual identity
+- Call-to-action buttons
+- Graphic design feature tags
+- A design-board visual
+- Floating badges for Creative Design and Strong Visuals
+
+The floating badges use subtle animation to make the hero section feel more active and modern.
+
+### Breadcrumb Section
+
+The breadcrumb shows:
+
+Home > Portfolio > Graphic Design
+
+### Featured Design Projects Section
+
+This section displays sample graphic design project categories such as:
+
+- Brand identity design
+- Social media graphics
+- Marketing posters and flyers
+
+Each design card includes:
+
+- A visual design preview
+- Category label
+- Project title
+- Description
+- Design service tags
+- Contact link for similar work
+
+### Design Value Section
+
+This section explains the value of professional graphic design through areas such as:
+
+- Strong brand identity
+- Clear visual communication
+- Consistent marketing materials
+
+### Final Call-to-Action Section
+
+The final CTA encourages potential clients to discuss their design needs through WhatsApp or the project order page.
+
+---
+
+# 4. Virtual Assistant Portfolio Page
+
+## File Name
+
+`virtual-assistant-portfolio.html`
+
+## Page-Specific CSS
+
+`css/virtual-assistant-portfolio.css`
+
+## Purpose
+
+The Virtual Assistant Portfolio page presents remote support services and task-management examples. It shows how virtual assistance can help clients stay organized, save time, and manage work more efficiently.
+
+## Main Sections
+
+### Hero Section
+
+The hero introduces virtual assistant support with:
+
+- A Virtual Assistant Portfolio label
+- A headline focused on organized remote support
+- Call-to-action buttons
+- Service tags
+- A task-management visual
+- Floating support-related badges
+
+### Breadcrumb Section
+
+The breadcrumb shows:
+
+Home > Portfolio > Virtual Assistant
+
+The breadcrumb is styled using the `.breadcrumb-section`, `.breadcrumb`, and `.active-page` classes. It includes chevron icons between each navigation level.
+
+### Featured Support Projects Section
+
+This section presents examples of virtual assistant work, such as:
+
+- Email and communication support
+- Calendar and task organization
+- Research and data support
+
+Each project card includes:
+
+- A task or workspace preview
+- Category label
+- Project title
+- Description
+- Relevant service tags
+- A link to discuss similar support needs
+
+### Support Approach Section
+
+This section explains the main benefits of virtual assistant services:
+
+- Better organization
+- Clear communication
+- Reliable task support
+
+### Final Call-to-Action Section
+
+The final CTA allows visitors to contact Elvis through WhatsApp or begin a project through the order page.
+
+---
+
+# 5. Responsive Design
+
+The portfolio pages are designed to work across different screen sizes.
+
+## Desktop
+
+On larger screens:
+
+- Content appears in multi-column layouts
+- Hero sections use text and visual content side by side
+- Project cards appear in grids
+- Floating badges appear around hero visuals
+
+## Tablet and Mobile
+
+On smaller screens:
+
+- Grid layouts stack into one column
+- Navigation changes to a hamburger menu
+- Buttons wrap or stack when necessary
+- Floating badges are repositioned so they remain visible
+- Text sizes and spacing are adjusted for readability
+
+The main responsive rules are handled through:
+
+`css/responsive.css`
+
+Additional page-specific mobile adjustments are included in each portfolio page CSS file.
+
+---
+
+# 6. Light and Dark Theme Support
+
+The website supports both light mode and dark mode.
+
+The theme button allows visitors to switch between the two themes.
+
+Portfolio page components such as:
+
+- Cards
+- Borders
+- Text
+- Breadcrumbs
+- Floating badges
+- Backgrounds
+
+are styled to remain readable and visually balanced in both themes.
+
+The dark theme is controlled through the `dark-theme` class added to the `body` element by `js/theme.js`.
+
+---
+
+# 7. Files Added or Updated in This Milestone
+
+## HTML Files
+
+- `web-development-portfolio.html`
+- `graphic-design-portfolio.html`
+- `virtual-assistant-portfolio.html`
+
+## CSS Files
+
+- `css/web-development-portfolio.css`
+- `css/graphic-design-portfolio.css`
+- `css/virtual-assistant-portfolio.css`
+
+## Image Assets
+
+- `assets/images/portfolio/websites/web-development-hero-preview.png`
+
+## Documentation
+
+- `PORTFOLIO-PAGES-MILESTONE.md`
+
+---
+
+# 8. Skills Demonstrated
+
+This milestone demonstrates practical skills in:
+
+- HTML page structure
+- Semantic HTML sections
+- CSS Grid and Flexbox
+- Responsive web design
+- Light and dark theme styling
+- Navigation and dropdown structure
+- Mobile navigation design
+- CSS hover effects
+- CSS keyframe animations
+- Reusable shared website components
+- Portfolio presentation design
+- Git and GitHub version control
+
+---
+
+# 9. Next Steps
+
+The next stage of the portfolio project can include:
+
+- Reviewing and improving portfolio category filters
+- Adding real completed client projects in the future
+- Improving the order page
+- Final website testing on mobile and desktop
+- Checking all links and forms
+- Publishing the completed website
