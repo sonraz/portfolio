@@ -1,0 +1,1007 @@
+/* ==================================================
+   VIRTUAL ASSISTANT PORTFOLIO PAGE
+================================================== */
+
+/* ==================================================
+   HERO
+================================================== */
+
+.va-portfolio-hero {
+    padding: 150px 0 90px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 85% 18%, rgba(38, 101, 235, 0.12), transparent 28%),
+        var(--light-bg);
+}
+
+.va-portfolio-hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.va-portfolio-hero-content h1 {
+    max-width: 680px;
+    margin: 18px 0;
+    font-size: clamp(2.4rem, 5vw, 4.4rem);
+    line-height: 1.12;
+}
+
+.va-portfolio-hero-content h1 span,
+.va-portfolio-approach-content h2 span,
+.va-portfolio-cta-content h2 span {
+    color: var(--primary-color);
+}
+
+.va-portfolio-hero-content > p {
+    max-width: 620px;
+    margin-bottom: 28px;
+    color: var(--text-light);
+    font-size: 1.02rem;
+    line-height: 1.8;
+}
+
+.va-portfolio-hero-actions,
+.va-portfolio-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.va-portfolio-hero-actions .btn,
+.va-portfolio-cta-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.va-portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.va-portfolio-tags span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text-light);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.va-portfolio-tags i {
+    color: var(--primary-color);
+}
+
+/* ==================================================
+   HERO WORKSPACE VISUAL
+================================================== */
+
+.va-portfolio-hero-visual {
+    position: relative;
+    min-height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.va-workspace-card {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 450px);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    background: var(--card-bg);
+    box-shadow: 0 25px 55px rgba(20, 35, 65, 0.16);
+}
+
+.va-workspace-topbar {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 15px 18px;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(38, 101, 235, 0.06);
+}
+
+.va-workspace-topbar span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    opacity: 0.65;
+}
+
+.va-workspace-topbar span:nth-child(2) {
+    opacity: 0.42;
+}
+
+.va-workspace-topbar span:nth-child(3) {
+    opacity: 0.24;
+}
+
+.va-workspace-content {
+    padding: 28px;
+}
+
+.va-workspace-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.va-workspace-label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--primary-color);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.va-workspace-heading h3 {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.va-workspace-avatar {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(38, 101, 235, 0.12);
+    color: var(--primary-color);
+}
+
+.va-task-list {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.va-task-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+    background: var(--light-bg);
+    color: var(--text-light);
+    font-size: 0.84rem;
+    font-weight: 600;
+}
+
+.va-task-item i {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.va-task-item.completed {
+    border-color: rgba(38, 101, 235, 0.22);
+    background: rgba(38, 101, 235, 0.08);
+    color: var(--text-color);
+}
+
+.va-workspace-summary {
+    padding: 16px;
+    border-radius: 10px;
+    background: rgba(38, 101, 235, 0.08);
+}
+
+.va-workspace-summary > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 12px;
+    color: var(--text-light);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.va-workspace-summary strong {
+    color: var(--primary-color);
+}
+
+.va-summary-progress {
+    height: 8px;
+    overflow: hidden;
+    border-radius: 99px;
+    background: rgba(38, 101, 235, 0.16);
+}
+
+.va-summary-progress span {
+    display: block;
+    width: 67%;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--primary-color);
+}
+
+/* Floating badges */
+
+.va-visual-badge {
+    position: absolute;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    width: max-content;
+    max-width: calc(100% - 20px);
+    padding: 11px 15px;
+    border: 1px solid rgba(38, 101, 235, 0.18);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.94);
+    color: var(--text-color);
+    box-shadow: 0 14px 30px rgba(20, 35, 65, 0.14);
+    font-size: 0.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+    backdrop-filter: blur(10px);
+}
+
+.va-visual-badge i {
+    color: var(--primary-color);
+}
+
+.badge-organized {
+    top: 13%;
+    right: -32px;
+    animation: vaBadgeFloatOne 4s ease-in-out infinite;
+}
+
+.badge-available {
+    right: -30px;
+    bottom: 13%;
+    animation: vaBadgeFloatTwo 4.5s ease-in-out infinite;
+}
+
+@keyframes vaBadgeFloatOne {
+    0%,
+    100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+}
+
+@keyframes vaBadgeFloatTwo {
+    0%,
+    100% {
+        transform: translateY(0) rotate(1deg);
+    }
+
+    50% {
+        transform: translateY(10px) rotate(-1deg);
+    }
+}
+
+/* ==================================================
+   FEATURED SUPPORT EXAMPLES
+================================================== */
+
+.va-portfolio-projects {
+    background: var(--light-bg);
+}
+
+.va-portfolio-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.va-portfolio-project-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background: var(--card-bg);
+    box-shadow: 0 10px 28px rgba(20, 35, 65, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.va-portfolio-project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(20, 35, 65, 0.14);
+}
+
+.va-project-preview {
+    min-height: 235px;
+    padding: 14px;
+    overflow: hidden;
+}
+
+.va-preview-topbar {
+    display: flex;
+    gap: 6px;
+    padding-bottom: 12px;
+}
+
+.va-preview-topbar span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.62);
+}
+
+.email-preview {
+    background: linear-gradient(135deg, #163e6d, #2674b9);
+}
+
+.research-preview {
+    background: linear-gradient(135deg, #26324d, #52627d);
+}
+
+.calendar-preview {
+    background: linear-gradient(135deg, #31564f, #5d927f);
+}
+
+/* Email preview */
+
+.email-preview-content,
+.research-preview-content,
+.calendar-preview-content {
+    min-height: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.email-preview-heading,
+.research-preview-heading {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 15px;
+    color: #244f8b;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.email-preview-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+    border-top: 1px solid rgba(31, 55, 90, 0.09);
+}
+
+.email-preview-message > span {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #dce9f8;
+}
+
+.email-preview-message div {
+    display: grid;
+    gap: 3px;
+}
+
+.email-preview-message strong {
+    color: #24334c;
+    font-size: 0.74rem;
+}
+
+.email-preview-message small {
+    color: #71809a;
+    font-size: 0.64rem;
+}
+
+.email-preview-message.important > span {
+    background: #9fc6f0;
+}
+
+/* Research preview */
+
+.research-preview-heading {
+    color: #3f526f;
+}
+
+.research-search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    padding: 10px 11px;
+    border: 1px solid #dbe2ed;
+    border-radius: 6px;
+    color: #78869c;
+    font-size: 0.67rem;
+}
+
+.research-result-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px;
+    border-radius: 7px;
+    background: #eef3f8;
+}
+
+.research-result-icon {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+    border-radius: 6px;
+    background: #d9e4f1;
+    color: #3f526f;
+    font-size: 0.75rem;
+}
+
+.research-result-card div {
+    display: grid;
+    gap: 3px;
+}
+
+.research-result-card strong {
+    color: #2d3c55;
+    font-size: 0.72rem;
+}
+
+.research-result-card small {
+    color: #71809a;
+    font-size: 0.62rem;
+}
+
+.research-result-lines {
+    display: grid;
+    gap: 7px;
+    margin-top: 14px;
+}
+
+.research-result-lines span {
+    display: block;
+    height: 6px;
+    border-radius: 99px;
+    background: #dce4ee;
+}
+
+.research-result-lines span:nth-child(2) {
+    width: 82%;
+}
+
+.research-result-lines span:nth-child(3) {
+    width: 62%;
+}
+
+/* Calendar preview */
+
+.calendar-preview-content {
+    color: #294a43;
+}
+
+.calendar-preview-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.calendar-preview-heading span {
+    display: block;
+    margin-bottom: 3px;
+    color: #6d877f;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.calendar-preview-heading strong {
+    font-size: 1rem;
+}
+
+.calendar-preview-heading i {
+    color: #4b7b6d;
+    font-size: 1.25rem;
+}
+
+.calendar-days,
+.calendar-events {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+}
+
+.calendar-days {
+    margin-bottom: 8px;
+    color: #6d877f;
+    font-size: 0.58rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.calendar-events {
+    margin-bottom: 16px;
+}
+
+.calendar-events span {
+    height: 42px;
+    border-radius: 5px;
+    background: #d9ebe4;
+}
+
+.calendar-events span:nth-child(2),
+.calendar-events span:nth-child(4) {
+    background: #92c2b1;
+}
+
+.calendar-reminder {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px;
+    border-radius: 6px;
+    background: #edf6f2;
+    color: #52756a;
+    font-size: 0.64rem;
+    font-weight: 700;
+}
+
+/* Project content */
+
+.va-project-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 26px;
+}
+
+.va-project-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 13px;
+    color: var(--primary-color);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.va-project-card-content h3 {
+    margin-bottom: 12px;
+    font-size: 1.24rem;
+}
+
+.va-project-card-content > p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.va-project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.va-project-tags span {
+    padding: 6px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--light-bg);
+    color: var(--text-light);
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.va-project-card-content .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    margin-top: auto;
+    color: var(--primary-color);
+    font-size: 0.86rem;
+    font-weight: 800;
+}
+
+.va-project-card-content .text-link i {
+    transition: transform 0.25s ease;
+}
+
+.va-project-card-content .text-link:hover i {
+    transform: translateX(5px);
+}
+
+/* ==================================================
+   SUPPORT APPROACH
+================================================== */
+
+.va-portfolio-approach {
+    background: var(--card-bg);
+}
+
+.va-portfolio-approach-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.va-portfolio-approach-content h2 {
+    margin: 16px 0;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.2;
+}
+
+.va-portfolio-approach-content > p {
+    max-width: 540px;
+    margin-bottom: 24px;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.va-portfolio-approach-content .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+.va-portfolio-feature-list {
+    display: grid;
+    gap: 16px;
+}
+
+.va-portfolio-feature-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--light-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.va-portfolio-feature-card:hover {
+    transform: translateX(8px);
+    box-shadow: 0 14px 28px rgba(20, 35, 65, 0.09);
+}
+
+.va-feature-icon {
+    display: grid;
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    place-items: center;
+    border-radius: 10px;
+    background: rgba(38, 101, 235, 0.12);
+    color: var(--primary-color);
+    font-size: 1.05rem;
+}
+
+.va-portfolio-feature-card h3 {
+    margin-bottom: 7px;
+    font-size: 1.02rem;
+}
+
+.va-portfolio-feature-card p {
+    color: var(--text-light);
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+/* ==================================================
+   FINAL CTA
+================================================== */
+
+.va-portfolio-cta {
+    padding: 90px 0;
+    background:
+        linear-gradient(rgba(13, 31, 58, 0.91), rgba(13, 31, 58, 0.95)),
+        radial-gradient(circle at top right, rgba(38, 101, 235, 0.6), transparent 35%);
+}
+
+.va-portfolio-cta-content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.va-portfolio-cta .section-label {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.1);
+    color: #dbe9ff;
+}
+
+.va-portfolio-cta-content h2 {
+    margin: 18px 0;
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 3.35rem);
+    line-height: 1.2;
+}
+
+.va-portfolio-cta-content h2 span {
+    color: #8db9ff;
+}
+
+.va-portfolio-cta-content > p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: rgba(255, 255, 255, 0.76);
+    line-height: 1.8;
+}
+
+.va-portfolio-cta-actions {
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.va-portfolio-cta .btn-outline {
+    border-color: rgba(255, 255, 255, 0.55);
+    color: #ffffff;
+}
+
+.va-portfolio-cta .btn-outline:hover {
+    border-color: #ffffff;
+    background: #ffffff;
+    color: #17335f;
+}
+
+/* ==================================================
+   DARK MODE
+================================================== */
+
+body.dark-theme .va-portfolio-hero {
+    background:
+        radial-gradient(circle at 85% 18%, rgba(77, 140, 255, 0.14), transparent 28%),
+        var(--light-bg);
+}
+
+body.dark-theme .va-workspace-topbar {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+body.dark-theme .va-task-item {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+body.dark-theme .va-task-item.completed,
+body.dark-theme .va-workspace-summary {
+    background: rgba(77, 140, 255, 0.12);
+}
+
+body.dark-theme .va-visual-badge {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(25, 35, 58, 0.94);
+    color: #f4f7fb;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-theme .va-portfolio-feature-card {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+body.dark-theme .va-project-tags span {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1050px) {
+    .va-portfolio-hero-grid,
+    .va-portfolio-approach-grid {
+        gap: 45px;
+    }
+
+    .va-portfolio-project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .va-portfolio-project-card:last-child {
+        grid-column: 1 / -1;
+        max-width: calc(50% - 13px);
+    }
+}
+
+@media (max-width: 768px) {
+    .va-portfolio-hero {
+        padding: 125px 0 70px;
+    }
+
+    .va-portfolio-hero-grid,
+    .va-portfolio-approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .va-portfolio-hero-grid {
+        gap: 50px;
+    }
+
+    .va-portfolio-hero-visual {
+        min-height: 370px;
+    }
+
+    .va-workspace-card {
+        width: min(100%, 430px);
+    }
+
+    .badge-organized {
+        top: 5%;
+        right: 4px;
+    }
+
+    .badge-available {
+        right: 4px;
+        bottom: 5%;
+    }
+
+    .va-visual-badge {
+        padding: 9px 11px;
+        font-size: 0.72rem;
+    }
+
+    .va-portfolio-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .va-portfolio-project-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .va-portfolio-approach-grid {
+        gap: 35px;
+    }
+}
+
+@media (max-width: 520px) {
+    .va-portfolio-hero-actions,
+    .va-portfolio-cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .va-portfolio-hero-actions .btn,
+    .va-portfolio-cta-actions .btn {
+        width: 100%;
+    }
+
+    .va-portfolio-tags {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .va-portfolio-tags span {
+        justify-content: center;
+    }
+
+    .va-workspace-content {
+        padding: 22px 16px;
+    }
+
+    .va-workspace-heading {
+        margin-bottom: 18px;
+    }
+
+    .va-task-item {
+        padding: 11px;
+        font-size: 0.76rem;
+    }
+
+    .va-visual-badge {
+        max-width: calc(100% - 10px);
+        padding: 8px 10px;
+        font-size: 0.67rem;
+    }
+
+    .badge-organized {
+        top: -10px;
+        right: 0;
+    }
+
+    .badge-available {
+        right: 0;
+        bottom: -10px;
+    }
+
+    .va-project-card-content {
+        padding: 22px;
+    }
+
+    .va-portfolio-feature-card {
+        gap: 14px;
+        padding: 18px;
+    }
+
+    .va-feature-icon {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+
+/* ==================================================
+   VIRTUAL ASSISTANT PORTFOLIO BREADCRUMB
+================================================== */
+
+.breadcrumb-section {
+    padding: 18px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    background: var(--light-bg);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--text-light);
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.breadcrumb a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb i {
+    color: var(--primary-color);
+    font-size: 0.68rem;
+}
+
+.breadcrumb .active-page {
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+/* Dark mode */
+body.dark-theme .breadcrumb-section {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: var(--light-bg);
+}
+
+body.dark-theme .breadcrumb .active-page {
+    color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .breadcrumb-section {
+        padding: 15px 0;
+    }
+
+    .breadcrumb {
+        gap: 8px;
+        font-size: 0.8rem;
+    }
+
+    .breadcrumb i {
+        font-size: 0.58rem;
+    }
+}
