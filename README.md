@@ -605,3 +605,34 @@ Completed the Contact page for the Elvis Mati Portfolio website.
 3. Formspree forwards the inquiry to `elvismati.work@gmail.com`.
 4. The message includes the visitor’s name, email, phone number, service, budget, and project details.
 5. Replying to the notification email addresses the response to the visitor automatically.
+
+
+## Milestone: Order / Project Request Page
+
+The Order page was created to allow visitors to submit project inquiries directly from the portfolio website.
+
+### Features added
+
+- Created `order.html` as the main project request page.
+- Connected the project request form to Formspree using the same endpoint as the Contact page.
+- Added fields for:
+  - Full name
+  - Email address
+  - Phone / WhatsApp number
+  - Service needed
+  - Estimated budget
+  - Preferred project timeline
+  - Project details
+  - Project inquiry agreement checkbox
+- Added form validation using required fields.
+- Added a styled project agreement checkbox to confirm that submitting the form does not create a payment obligation.
+- Added a WhatsApp call-to-action for visitors who prefer a faster conversation.
+- Styled form inputs, select fields, and the project details textarea so they are clearly visible and interactive.
+- Improved dark mode styling by adding stronger card borders and clearer form field backgrounds.
+- Added responsive styling so the page works well on desktop, tablet, and mobile screens.
+
+### Files added or updated
+
+- `order.html`
+- `css/order.css`
+- `README.md`

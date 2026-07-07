@@ -1,0 +1,1279 @@
+/* ==================================================
+   ORDER PAGE
+================================================== */
+
+/* --------------------------------------------------
+   HERO
+-------------------------------------------------- */
+.order-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0 88px;
+    background:
+        radial-gradient(circle at 10% 15%, rgba(37, 99, 235, 0.14), transparent 34%),
+        radial-gradient(circle at 88% 85%, rgba(14, 165, 233, 0.12), transparent 30%),
+        var(--bg-color);
+}
+
+.order-hero::before,
+.order-hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.order-hero::before {
+    width: 320px;
+    height: 320px;
+    top: -140px;
+    right: -110px;
+    background: rgba(37, 99, 235, 0.08);
+}
+
+.order-hero::after {
+    width: 240px;
+    height: 240px;
+    bottom: -130px;
+    left: 5%;
+    background: rgba(14, 165, 233, 0.08);
+}
+
+.order-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.order-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+    gap: 64px;
+    align-items: center;
+}
+
+.order-hero-content {
+    max-width: 680px;
+}
+
+.order-hero h1 {
+    margin: 18px 0 20px;
+    font-size: clamp(2.35rem, 5vw, 4.4rem);
+    line-height: 1.12;
+    letter-spacing: -0.045em;
+    color: var(--heading-color);
+}
+
+.order-hero h1 span,
+.order-main h2 span,
+.order-process h2 span,
+.order-faq h2 span,
+.order-cta h2 span {
+    color: var(--primary-color);
+}
+
+.order-hero-content > p {
+    max-width: 620px;
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.order-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.order-hero-actions .btn,
+.order-cta-actions .btn,
+.order-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.order-hero-actions .btn i,
+.order-cta-actions .btn i,
+.order-submit-btn i {
+    margin-left: 0;
+}
+
+.order-hero-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.order-hero-points span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 13px;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background: var(--card-bg);
+    color: var(--heading-color);
+    font-size: 0.88rem;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+}
+
+.order-hero-points i {
+    color: var(--primary-color);
+}
+
+/* --------------------------------------------------
+   HERO SUMMARY CARD
+-------------------------------------------------- */
+.order-hero-visual {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    justify-self: end;
+    padding: 16px 10px 22px;
+}
+
+.order-visual-card {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    background: var(--card-bg);
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
+
+.order-visual-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.order-visual-heading {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--heading-color);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.order-visual-heading i {
+    color: var(--primary-color);
+}
+
+.order-visual-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.12);
+    color: #16803c;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.order-visual-status i {
+    font-size: 0.62rem;
+}
+
+.order-visual-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 24px 0;
+}
+
+.order-visual-title span {
+    color: var(--text-color);
+    font-size: 0.98rem;
+}
+
+.order-visual-title strong {
+    color: var(--heading-color);
+    font-size: clamp(1.35rem, 2vw, 1.65rem);
+    line-height: 1.35;
+}
+
+.order-visual-steps {
+    display: grid;
+    gap: 12px;
+}
+
+.order-visual-step {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    background: var(--bg-color);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.order-visual-step:hover {
+    transform: translateX(4px);
+    border-color: var(--primary-color);
+}
+
+.order-step-number {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    place-items: center;
+    border-radius: 12px;
+    background: rgba(37, 99, 235, 0.12);
+    color: var(--primary-color);
+    font-size: 0.82rem;
+    font-weight: 800;
+}
+
+.order-visual-step h3 {
+    margin: 0 0 3px;
+    color: var(--heading-color);
+    font-size: 0.93rem;
+}
+
+.order-visual-step p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+.order-visual-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border-color);
+    color: var(--primary-color);
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.order-floating-badge {
+    position: absolute;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 13px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--card-bg);
+    color: var(--heading-color);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+    animation: orderFloat 4s ease-in-out infinite;
+}
+
+.order-floating-badge i {
+    color: var(--primary-color);
+}
+
+.order-badge-one {
+    top: 0;
+    right: -8px;
+}
+
+.order-badge-two {
+    bottom: 0;
+    left: -18px;
+    animation-delay: 1.2s;
+}
+
+@keyframes orderFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* --------------------------------------------------
+   BREADCRUMB
+-------------------------------------------------- */
+.breadcrumb-section {
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    background: var(--card-bg);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb > i {
+    color: var(--text-color);
+    font-size: 0.7rem;
+    opacity: 0.65;
+}
+
+.breadcrumb .active-page {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* --------------------------------------------------
+   MAIN FORM AREA
+-------------------------------------------------- */
+.order-main {
+    background: var(--bg-color);
+}
+
+.order-main-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+    gap: 44px;
+    align-items: start;
+}
+
+.order-form-wrapper {
+    padding: clamp(24px, 4vw, 42px);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    background: var(--card-bg);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+}
+
+.order-form-wrapper h2,
+.order-details-card h2,
+.order-process h2,
+.order-faq h2,
+.order-cta h2 {
+    margin: 16px 0;
+    color: var(--heading-color);
+    font-size: clamp(1.8rem, 3vw, 2.55rem);
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+}
+
+.order-form-wrapper > p,
+.order-details-card > p {
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.75;
+}
+
+.order-form {
+    margin-top: 30px;
+}
+
+.order-form .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.order-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.order-form label {
+    color: var(--heading-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    outline: none;
+    background: var(--bg-color);
+    color: var(--heading-color);
+    font: inherit;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.order-form input,
+.order-form select {
+    min-height: 52px;
+    padding: 0 15px;
+}
+
+.order-form textarea {
+    min-height: 150px;
+    padding: 14px 15px;
+    resize: vertical;
+}
+
+.order-form input::placeholder,
+.order-form textarea::placeholder {
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.order-submit-btn {
+    width: 100%;
+    margin-top: 4px;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+/* --------------------------------------------------
+   ORDER DETAILS CARD
+-------------------------------------------------- */
+.order-details-card {
+    position: sticky;
+    top: 110px;
+    padding: clamp(24px, 3vw, 34px);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(37, 99, 235, 0.12), transparent 36%),
+        var(--card-bg);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+}
+
+.order-details-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.order-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--bg-color);
+}
+
+.order-detail-icon {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    place-items: center;
+    border-radius: 12px;
+    background: rgba(37, 99, 235, 0.12);
+    color: var(--primary-color);
+}
+
+.order-detail-item div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.order-detail-item span {
+    color: var(--text-color);
+    font-size: 0.78rem;
+}
+
+.order-detail-item strong {
+    color: var(--heading-color);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.order-details-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 14px;
+    background: rgba(37, 99, 235, 0.09);
+}
+
+.order-details-note i {
+    margin-top: 3px;
+    color: var(--primary-color);
+}
+
+.order-details-note p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.87rem;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------
+   PROCESS SECTION
+-------------------------------------------------- */
+.order-process {
+    background: var(--card-bg);
+}
+
+.order-process .section-heading,
+.order-faq .section-heading {
+    max-width: 700px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.order-process .section-heading p,
+.order-faq .section-heading p {
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.75;
+}
+
+.order-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.order-process-card {
+    position: relative;
+    padding: 26px 22px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background: var(--bg-color);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.order-process-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 32px rgba(15, 23, 42, 0.08);
+}
+
+.order-process-number {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 20px;
+    place-items: center;
+    border-radius: 14px;
+    background: var(--primary-color);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.order-process-card h3 {
+    margin: 0 0 10px;
+    color: var(--heading-color);
+    font-size: 1.05rem;
+}
+
+.order-process-card p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+/* --------------------------------------------------
+   FAQ
+-------------------------------------------------- */
+.order-faq {
+    background: var(--bg-color);
+}
+
+.order-faq-list {
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    gap: 13px;
+}
+
+.order-faq .faq-item {
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--card-bg);
+}
+
+.order-faq .faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 19px 20px;
+    cursor: pointer;
+    color: var(--heading-color);
+    font-weight: 700;
+    list-style: none;
+}
+
+.order-faq .faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.order-faq .faq-item summary i {
+    color: var(--primary-color);
+    transition: transform 0.25s ease;
+}
+
+.order-faq .faq-item[open] summary i {
+    transform: rotate(45deg);
+}
+
+.order-faq .faq-item p {
+    margin: 0;
+    padding: 0 20px 20px;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* --------------------------------------------------
+   FINAL CTA
+-------------------------------------------------- */
+.order-cta {
+    position: relative;
+    overflow: hidden;
+    padding: 88px 0;
+    background:
+        radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.14), transparent 25%),
+        linear-gradient(135deg, var(--primary-color), #0f4fc9);
+}
+
+.order-cta::before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    right: -90px;
+    bottom: -190px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.order-cta .container {
+    position: relative;
+    z-index: 1;
+}
+
+.order-cta-content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.order-cta .section-label {
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+.order-cta h2,
+.order-cta h2 span,
+.order-cta p {
+    color: #ffffff;
+}
+
+.order-cta p {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.75;
+    opacity: 0.88;
+}
+
+.order-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.order-cta .btn-primary {
+    background: #ffffff;
+    color: var(--primary-color);
+}
+
+.order-cta .btn-outline {
+    border-color: rgba(255, 255, 255, 0.55);
+    color: #ffffff;
+}
+
+.order-cta .btn-outline:hover {
+    background: #ffffff;
+    color: var(--primary-color);
+}
+
+/* --------------------------------------------------
+   DARK THEME
+-------------------------------------------------- */
+body.dark-theme .order-hero {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(74, 132, 255, 0.17), transparent 34%),
+        radial-gradient(circle at 88% 85%, rgba(56, 189, 248, 0.11), transparent 30%),
+        var(--bg-color);
+}
+
+body.dark-theme .order-visual-card,
+body.dark-theme .order-form-wrapper,
+body.dark-theme .order-details-card,
+body.dark-theme .order-floating-badge,
+body.dark-theme .order-faq .faq-item {
+    border-color: rgba(148, 163, 184, 0.2);
+}
+
+body.dark-theme .order-visual-step,
+body.dark-theme .order-detail-item,
+body.dark-theme .order-process-card {
+    border-color: rgba(148, 163, 184, 0.18);
+}
+
+body.dark-theme .order-visual-status {
+    background: rgba(34, 197, 94, 0.16);
+    color: #86efac;
+}
+
+body.dark-theme .order-form input,
+body.dark-theme .order-form select,
+body.dark-theme .order-form textarea {
+    border-color: rgba(148, 163, 184, 0.22);
+}
+
+body.dark-theme .order-form input:focus,
+body.dark-theme .order-form select:focus,
+body.dark-theme .order-form textarea:focus {
+    border-color: #79a7ff;
+    box-shadow: 0 0 0 4px rgba(121, 167, 255, 0.14);
+}
+
+body.dark-theme .order-hero-points span {
+    border-color: rgba(148, 163, 184, 0.2);
+    box-shadow: none;
+}
+
+/* --------------------------------------------------
+   TABLET
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+    .order-hero {
+        padding: 135px 0 76px;
+    }
+
+    .order-hero-grid {
+        gap: 38px;
+    }
+
+    .order-hero-visual {
+        max-width: 450px;
+    }
+
+    .order-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .order-main-grid {
+        gap: 28px;
+    }
+
+    .order-badge-one {
+        right: 0;
+    }
+
+    .order-badge-two {
+        left: 0;
+    }
+}
+
+/* --------------------------------------------------
+   MOBILE
+-------------------------------------------------- */
+@media (max-width: 768px) {
+    .order-hero {
+        padding: 120px 0 65px;
+    }
+
+    .order-hero-grid,
+    .order-main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-hero-content {
+        max-width: none;
+        text-align: center;
+    }
+
+    .order-hero-content > p {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .order-hero-actions,
+    .order-hero-points {
+        justify-content: center;
+    }
+
+    .order-hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-hero-actions .btn {
+        width: min(100%, 330px);
+    }
+
+    .order-hero-visual {
+        max-width: 520px;
+        justify-self: center;
+        margin-top: 10px;
+        padding: 18px 4px 28px;
+    }
+
+    .order-visual-card {
+        padding: 22px 17px;
+        border-radius: 20px;
+    }
+
+    .order-visual-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .order-visual-status {
+        align-self: flex-start;
+    }
+
+    .order-floating-badge {
+        padding: 8px 10px;
+        font-size: 0.7rem;
+    }
+
+    .order-badge-one {
+        top: 2px;
+        right: 0;
+    }
+
+    .order-badge-two {
+        bottom: 0;
+        left: 0;
+    }
+
+    .order-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .order-details-card {
+        position: static;
+    }
+
+    .order-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-cta {
+        padding: 70px 0;
+    }
+
+    .order-cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-cta-actions .btn {
+        width: min(100%, 330px);
+    }
+}
+
+@media (max-width: 480px) {
+    .order-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .order-hero-points {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .order-hero-points span {
+        justify-content: center;
+    }
+
+    .order-visual-title strong {
+        font-size: 1.3rem;
+    }
+
+    .order-visual-step {
+        padding: 12px;
+    }
+
+    .order-form-wrapper,
+    .order-details-card {
+        padding: 21px 16px;
+        border-radius: 18px;
+    }
+
+    .order-faq .faq-item summary {
+        padding: 17px 15px;
+        font-size: 0.92rem;
+    }
+
+    .order-faq .faq-item p {
+        padding: 0 15px 17px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ==================================================
+   ORDER PAGE – FORM VISIBILITY + CHECKBOX FIXES
+   Add this at the very bottom of order.css
+================================================== */
+
+/* --------------------------------------------------
+   1. Make all cards and form sections clearer
+-------------------------------------------------- */
+.order-form-wrapper,
+.order-details-card,
+.order-process-card,
+.order-faq .faq-item,
+.order-visual-card,
+.order-visual-step,
+.order-detail-item {
+    border: 1px solid rgba(37, 99, 235, 0.22);
+}
+
+/* --------------------------------------------------
+   2. Project Details textarea visibility
+-------------------------------------------------- */
+.order-form textarea {
+    display: block;
+    width: 100%;
+    min-height: 165px;
+    padding: 15px 16px;
+    border: 1px solid rgba(37, 99, 235, 0.35);
+    border-radius: 12px;
+    background: #ffffff;
+    color: #172033;
+    font-family: inherit;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.order-form textarea::placeholder {
+    color: #64748b;
+    opacity: 1;
+}
+
+.order-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.14);
+}
+
+/* --------------------------------------------------
+   3. Checkbox agreement row
+   This expects a wrapper class called .form-checkbox
+-------------------------------------------------- */
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    margin: 4px 0 22px;
+    padding: 14px 15px;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 12px;
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin: 2px 0 0;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.55;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------
+   4. Stronger dark mode borders and fields
+-------------------------------------------------- */
+body.dark-theme .order-form-wrapper,
+body.dark-theme .order-details-card,
+body.dark-theme .order-process-card,
+body.dark-theme .order-faq .faq-item,
+body.dark-theme .order-visual-card {
+    border-color: rgba(121, 167, 255, 0.45) !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+body.dark-theme .order-visual-step,
+body.dark-theme .order-detail-item {
+    border-color: rgba(121, 167, 255, 0.3) !important;
+}
+
+body.dark-theme .order-form input,
+body.dark-theme .order-form select,
+body.dark-theme .order-form textarea {
+    background: #101d3d !important;
+    border-color: rgba(121, 167, 255, 0.42) !important;
+    color: #ffffff !important;
+}
+
+body.dark-theme .order-form input::placeholder,
+body.dark-theme .order-form textarea::placeholder {
+    color: #b9ccff !important;
+    opacity: 0.8;
+}
+
+body.dark-theme .order-form select {
+    color-scheme: dark;
+}
+
+body.dark-theme .order-form textarea:focus,
+body.dark-theme .order-form input:focus,
+body.dark-theme .order-form select:focus {
+    border-color: #79a7ff !important;
+    box-shadow: 0 0 0 4px rgba(121, 167, 255, 0.16) !important;
+}
+
+/* ==================================================
+   PROJECT AGREEMENT CHECKBOX
+================================================== */
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 6px 0 24px;
+    padding: 15px 16px;
+    border: 1px solid rgba(37, 99, 235, 0.24);
+    border-radius: 14px;
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.form-check input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin: 2px 0 0;
+    padding: 0;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.form-check label {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+/* Show a clear focus state when navigating with a keyboard */
+.form-check input[type="checkbox"]:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.3);
+    outline-offset: 3px;
+}
+
+/* Dark mode */
+body.dark-theme .form-check {
+    border-color: rgba(121, 167, 255, 0.42);
+    background: rgba(121, 167, 255, 0.1);
+}
+
+body.dark-theme .form-check label {
+    color: #e5edff;
+}
+
+body.dark-theme .form-check input[type="checkbox"] {
+    accent-color: #79a7ff;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .form-check {
+        gap: 10px;
+        padding: 13px;
+    }
+
+    .form-check label {
+        font-size: 0.85rem;
+    }
+}
+
+/* ==================================================
+   PROJECT REQUEST FORM – CLEAR, CLICKABLE FIELDS
+================================================== */
+
+/* Labels are easier to scan */
+.order-form .form-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 2px;
+    color: var(--heading-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Inputs, dropdowns, and message box */
+.order-form input,
+.order-form select,
+.order-form textarea {
+    border: 1.5px solid rgba(37, 99, 235, 0.32) !important;
+    background: #f8fbff !important;
+    color: #172033 !important;
+    box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.04);
+    cursor: text;
+}
+
+/* Dropdown should show it can be opened */
+.order-form select {
+    cursor: pointer;
+}
+
+/* Make the message area especially obvious */
+.order-form textarea {
+    min-height: 180px;
+    border-width: 2px !important;
+}
+
+/* Hover tells the visitor the field is interactive */
+.order-form input:hover,
+.order-form select:hover,
+.order-form textarea:hover {
+    border-color: rgba(37, 99, 235, 0.7) !important;
+    background: #ffffff !important;
+}
+
+/* Click/focus state */
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+    border-color: var(--primary-color) !important;
+    background: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.14) !important;
+}
+
+/* Placeholder text */
+.order-form input::placeholder,
+.order-form textarea::placeholder {
+    color: #64748b !important;
+    opacity: 1;
+}
+
+/* Dropdown placeholder option */
+.order-form select:invalid {
+    color: #64748b !important;
+}
+
+/* --------------------------------------------------
+   Dark mode: fields remain distinct from the page
+-------------------------------------------------- */
+body.dark-theme .order-form input,
+body.dark-theme .order-form select,
+body.dark-theme .order-form textarea {
+    border-color: rgba(121, 167, 255, 0.58) !important;
+    background: #0b1833 !important;
+    color: #f8fbff !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-theme .order-form input:hover,
+body.dark-theme .order-form select:hover,
+body.dark-theme .order-form textarea:hover {
+    border-color: #79a7ff !important;
+    background: #10234a !important;
+}
+
+body.dark-theme .order-form input:focus,
+body.dark-theme .order-form select:focus,
+body.dark-theme .order-form textarea:focus {
+    border-color: #9cc0ff !important;
+    background: #10234a !important;
+    box-shadow: 0 0 0 4px rgba(121, 167, 255, 0.18) !important;
+}
+
+body.dark-theme .order-form input::placeholder,
+body.dark-theme .order-form textarea::placeholder {
+    color: #a9bce8 !important;
+}
+
+body.dark-theme .order-form select:invalid {
+    color: #a9bce8 !important;
+}
+
+/* Keep dropdown menu readable in dark mode */
+body.dark-theme .order-form select option {
+    background: #10234a;
+    color: #ffffff;
+}
+
+/* WhatsApp button: space between icon and text */
+.order-whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    margin-top: 10px;
+}
+
+.order-whatsapp-btn i {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* Optional: keep the information icon separated from its paragraph too */
+.order-details-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.order-details-note i {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.order-details-note p {
+    margin: 0;
+}
