@@ -537,3 +537,39 @@ The next stage of the portfolio project can include:
 - Final website testing on mobile and desktop
 - Checking all links and forms
 - Publishing the completed website
+
+
+## Milestone: Pricing Page Completed
+
+The Pricing page has been designed and completed for the Elvis Mati portfolio website.
+
+### Features completed
+- Created a professional pricing hero section with a clear heading and call-to-action buttons.
+- Added service pricing for:
+  - Web Development
+  - Graphic Design
+  - Virtual Assistance
+- Added a pricing summary card with:
+  - Project quote heading
+  - Clear and flexible pricing status
+  - Service price badges
+  - Project quotation notes
+  - Custom package availability message
+- Added floating badges for:
+  - Clear pricing
+  - Free consultation
+- Improved the payment process section and final call-to-action section.
+- Added correct spacing between button text and icons.
+- Improved spacing between CTA buttons on desktop and mobile.
+- Styled the pricing card for both light mode and dark mode.
+- Improved card text contrast so headings, prices, notes, and icons remain readable.
+- Made the layout responsive for desktop, tablet, and mobile screens.
+- Adjusted floating badges so they remain visible on smaller screens.
+
+### Files updated
+- `pricing.html`
+- `css/pricing.css`
+- `css/responsive.css`
+
+### Git commit
+Pricing page completed with responsive light and dark mode styling.

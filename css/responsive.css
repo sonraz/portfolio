@@ -192,3 +192,261 @@ width:320px;
         display: none;
     }
 }
+
+
+/* ==================================================
+   PRICING PAGE — MOBILE FIXES
+   Put this at the very bottom of responsive.css
+================================================== */
+
+@media (max-width: 768px) {
+
+    /* ------------------------------
+       BUTTON SPACING
+    ------------------------------ */
+
+    .pricing-payment-content .btn,
+    .pricing-cta-actions .btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 12px !important;
+    }
+
+    .pricing-payment-content .btn i,
+    .pricing-cta-actions .btn i {
+        margin: 0 !important;
+    }
+
+    .pricing-cta-actions {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px !important;
+    }
+
+    .pricing-cta-actions .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* ------------------------------
+       PRICING HERO CARD
+    ------------------------------ */
+
+    .pricing-hero-visual {
+        width: 100%;
+        margin-top: 32px;
+        padding: 0 4px;
+    }
+
+    .pricing-visual-card {
+        width: 100%;
+        padding: 22px 18px;
+        background: #162a57 !important;
+        border: 1px solid rgba(74, 132, 255, 0.65) !important;
+        border-radius: 20px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+    }
+
+    .pricing-visual-top {
+        padding-bottom: 16px;
+        margin-bottom: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .pricing-visual-top > span:first-child,
+    .pricing-visual-title strong,
+    .pricing-visual-service h3 {
+        color: #ffffff !important;
+    }
+
+    .pricing-visual-title > span,
+    .pricing-visual-service p {
+        color: #b9ccff !important;
+    }
+
+    .pricing-visual-status {
+        background: rgba(47, 104, 235, 0.3) !important;
+        color: #dce8ff !important;
+    }
+
+    .pricing-visual-services {
+        gap: 12px;
+    }
+
+    .pricing-visual-service {
+        padding: 14px;
+        background: rgba(255, 255, 255, 0.09) !important;
+        border: 1px solid rgba(255, 255, 255, 0.13) !important;
+        border-radius: 14px;
+    }
+
+    .pricing-visual-icon {
+        background: rgba(47, 104, 235, 0.38) !important;
+        color: #79a7ff !important;
+    }
+
+
+    /* ------------------------------
+       NOTES BELOW SERVICE PRICES
+    ------------------------------ */
+
+    .pricing-visual-notes {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 24px;
+        padding: 20px 0 2px;
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .pricing-visual-notes span {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        color: #ffffff !important;
+        font-size: 0.92rem;
+        font-weight: 500;
+        line-height: 1.45;
+    }
+
+    .pricing-visual-notes span i {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 19px;
+        height: 19px;
+        margin-top: 1px;
+        color: #8db4ff !important;
+        font-size: 1rem;
+    }
+
+
+    /* ------------------------------
+       HERO NOTES CARD
+    ------------------------------ */
+
+    .pricing-hero-notes-card {
+        margin-top: 14px;
+        padding: 16px;
+        background: rgba(22, 42, 87, 0.95) !important;
+        border: 1px solid rgba(74, 132, 255, 0.45) !important;
+        border-radius: 14px;
+    }
+
+    .pricing-hero-notes-card span {
+        color: #ffffff !important;
+    }
+
+    .pricing-hero-notes-card i {
+        color: #79a7ff !important;
+    }
+
+
+    /* ------------------------------
+       CARD FOOTER
+    ------------------------------ */
+
+    .pricing-visual-footer {
+        margin-top: 20px;
+        padding-top: 16px;
+        color: #79a7ff !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+
+    /* ------------------------------
+       FLOATING BADGES
+    ------------------------------ */
+
+    .pricing-floating-badge {
+        padding: 9px 11px;
+        font-size: 0.75rem;
+    }
+
+    .pricing-badge-one {
+        top: -12px;
+        right: -4px;
+    }
+
+    .pricing-badge-two {
+        bottom: -14px;
+        left: -4px;
+    }
+}
+
+
+/* =========================================
+   PRICING HERO – MOBILE FREE CONSULTATION BADGE FIX
+   Keep this at the very bottom of responsive.css
+========================================= */
+
+@media (max-width: 768px) {
+    .pricing-badge-two {
+        left: 8px !important;      /* moves it inside the card */
+        bottom: 10px !important;   /* moves it upward */
+        padding: 7px 10px !important;
+        font-size: 0.68rem !important;
+        gap: 6px !important;
+        white-space: nowrap;
+        z-index: 5;
+    }
+
+    .pricing-badge-two i {
+        font-size: 0.72rem !important;
+    }
+}
+
+
+/* =========================================
+   PRICING HERO – MOBILE "CLEAR PRICING" BADGE POSITION
+========================================= */
+
+@media (max-width: 768px) {
+    .pricing-badge-one {
+        right: 12px !important; /* pulls badge left so it stays visible */
+        left: auto !important;
+        top: -14px !important;
+        z-index: 10;
+    }
+}
+
+
+/* =========================================
+   PRICING CARD TITLE – MOBILE VISIBILITY FIX
+========================================= */
+
+@media (max-width: 768px) {
+    .pricing-hero-visual .pricing-visual-card .pricing-visual-title {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+        margin: 24px 0 22px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .pricing-hero-visual .pricing-visual-card .pricing-visual-title > span {
+        display: block !important;
+        color: #dce8ff !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        line-height: 1.4 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .pricing-hero-visual .pricing-visual-card .pricing-visual-title strong {
+        display: block !important;
+        color: #ffffff !important;
+        font-size: 1.35rem !important;
+        font-weight: 800 !important;
+        line-height: 1.3 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) !important;
+    }
+}

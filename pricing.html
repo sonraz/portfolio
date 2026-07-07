@@ -1,12 +1,1157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pricing | Elvis Mati</title>
+    <meta name="description" content="View website development, graphic design, and virtual assistant pricing by Elvis Mati. Clear starting prices for professional digital services.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="css/pricing.css">
 </head>
+
 <body>
-      
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+
+                <a href="index.html" class="logo">
+                    Elvis<span>Mati</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="services.html">
+                            Services <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="web-development.html">Web Development</a></li>
+                            <li><a href="graphic-design.html">Graphic Design</a></li>
+                            <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="portfolio.html">
+                            Portfolio <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="web-development-portfolio.html">Web Development</a></li>
+                            <li><a href="graphic-design-portfolio.html">Graphic Design</a></li>
+                            <li><a href="virtual-assistant-portfolio.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="mobile-theme-item">
+                        <button class="theme-btn mobile-theme-btn" type="button" aria-label="Switch to dark theme">
+                            <i class="fa-solid fa-moon"></i>
+                            <span class="theme-btn-text">Dark</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span class="theme-btn-text">Dark</span>
+                    </button>
+
+                    <a
+                        href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
+                        class="whatsapp-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <a
+                    href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services."
+                    class="mobile-whatsapp-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Chat with Elvis on WhatsApp"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================================================
+            PRICING HERO
+        ================================================== -->
+        <section class="pricing-hero">
+            <div class="container">
+
+                <div class="pricing-hero-grid">
+
+                    <!-- Left: Main pricing introduction -->
+                    <div class="pricing-hero-content">
+                        <span class="section-label">
+                            <i class="fa-solid fa-tags"></i>
+                            Service Pricing
+                        </span>
+
+                        <h1>
+                            Clear Pricing for
+                            <span>Professional Digital Services.</span>
+                        </h1>
+
+                        <p>
+                            Explore starting prices for website development, graphic design,
+                            and virtual assistant services. Every project is different, so the
+                            final quotation is confirmed after discussing your exact needs.
+                        </p>
+
+                        <div class="pricing-hero-actions">
+                            <a href="#website-pricing" class="btn btn-primary">
+                                <span>View Pricing</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </a>
+
+                            <a
+                                href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20a%20quotation%20for%20a%20project."
+                                class="btn btn-outline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span>Request a Quote</span>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Pricing summary card -->
+                    <div class="pricing-hero-visual">
+
+                        <div class="pricing-visual-card">
+
+                            <div class="pricing-visual-top">
+                                <span class="pricing-visual-heading">
+                                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                                    Project Quote
+                                </span>
+
+                                <span class="pricing-visual-status">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    Clear &amp; Flexible
+                                </span>
+                            </div>
+
+                            <div class="pricing-visual-title">
+                                <span>Professional digital</span>
+                                <strong>services for your goals.</strong>
+                            </div>
+
+                            <div class="pricing-visual-services">
+
+                                <div class="pricing-visual-service">
+                                    <div class="pricing-visual-icon">
+                                        <i class="fa-solid fa-code"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3>Web Development</h3>
+                                        <p>From KES 12,000</p>
+                                    </div>
+                                </div>
+
+                                <div class="pricing-visual-service">
+                                    <div class="pricing-visual-icon">
+                                        <i class="fa-solid fa-palette"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3>Graphic Design</h3>
+                                        <p>From KES 500</p>
+                                    </div>
+                                </div>
+
+                                <div class="pricing-visual-service">
+                                    <div class="pricing-visual-icon">
+                                        <i class="fa-solid fa-headset"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3>Virtual Assistance</h3>
+                                        <p>From KES 500 / hour</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Notes moved into the right-side card -->
+                            <div class="pricing-visual-notes">
+                                <div class="pricing-visual-note">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Clear project quotations</span>
+                                </div>
+
+                                <div class="pricing-visual-note">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Flexible service packages</span>
+                                </div>
+
+                                <div class="pricing-visual-note">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Support before and after delivery</span>
+                                </div>
+                            </div>
+
+                            <div class="pricing-visual-footer">
+                                <span>Custom packages available</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="pricing-floating-badge pricing-badge-one">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Clear pricing</span>
+                        </div>
+
+                        <div class="pricing-floating-badge pricing-badge-two">
+                            <i class="fa-solid fa-comments"></i>
+                            <span>Free consultation</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             BREADCRUMB
+        =================================================== -->
+        <section class="breadcrumb-section">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="active-page">Pricing</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PRICING INTRODUCTION
+        =================================================== -->
+        <section class="pricing-intro section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">How Pricing Works</span>
+
+                    <h2>
+                        Simple Prices With
+                        <span>Room for Your Needs.</span>
+                    </h2>
+
+                    <p>
+                        The prices below are starting estimates for common projects. The
+                        final cost depends on your project size, features, content, timeline,
+                        and any special requirements.
+                    </p>
+                </div>
+
+                <div class="pricing-intro-grid">
+
+                    <article class="pricing-intro-card">
+                        <div class="pricing-intro-number"></div>
+
+                        <div class="pricing-intro-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <h3>Discuss Your Project</h3>
+
+                        <p>
+                            We talk about what you need, your goals, preferred style,
+                            deadline, and the features required.
+                        </p>
+                    </article>
+
+                    <article class="pricing-intro-card">
+                        <div class="pricing-intro-number"></div>
+
+                        <div class="pricing-intro-icon">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+
+                        <h3>Receive a Clear Quote</h3>
+
+                        <p>
+                            You receive a clear quotation showing the project cost,
+                            deliverables, timeline, and payment plan.
+                        </p>
+                    </article>
+
+                    <article class="pricing-intro-card">
+                        <div class="pricing-intro-number"></div>
+
+                        <div class="pricing-intro-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+
+                        <h3>Work Begins</h3>
+
+                        <p>
+                            Once the details are agreed and the deposit is paid, the
+                            project starts with regular communication and updates.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             WEBSITE PRICING
+        =================================================== -->
+        <section class="pricing-service-section section-padding" id="website-pricing">
+            <div class="container">
+
+                <div class="pricing-service-heading">
+                    <div>
+                        <span class="section-label">
+                            <i class="fa-solid fa-code"></i>
+                            Web Development
+                        </span>
+
+                        <h2>
+                            Website Development
+                            <span>Starting Prices.</span>
+                        </h2>
+
+                        <p>
+                            Professional websites designed to help individuals, businesses,
+                            schools, churches, and organizations build a strong online presence.
+                        </p>
+                    </div>
+
+                    <a href="web-development.html" class="text-link">
+                        Explore web development
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="pricing-card-grid">
+
+                    <article class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Personal Brand</span>
+                        </div>
+
+                        <h3>Portfolio Website</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 12,000</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            A professional personal website for students, freelancers,
+                            creatives, job seekers, and professionals.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Home, About, Services and Contact pages</li>
+                            <li><i class="fa-solid fa-check"></i> Mobile responsive layout</li>
+                            <li><i class="fa-solid fa-check"></i> Portfolio or project showcase</li>
+                            <li><i class="fa-solid fa-check"></i> WhatsApp and social media links</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing-card pricing-card-featured">
+                        <span class="popular-badge">Most Requested</span>
+
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Business</span>
+                        </div>
+
+                        <h3>Business Website</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 20,000</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            A business website built to explain services, build trust,
+                            and encourage clients to make inquiries.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Up to 6 main pages</li>
+                            <li><i class="fa-solid fa-check"></i> Service and pricing sections</li>
+                            <li><i class="fa-solid fa-check"></i> Contact form and WhatsApp button</li>
+                            <li><i class="fa-solid fa-check"></i> Basic SEO setup</li>
+                            <li><i class="fa-solid fa-check"></i> Mobile and tablet responsive design</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Institution</span>
+                        </div>
+
+                        <h3>School / Organization Website</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 30,000</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            A structured website for schools, churches, NGOs, SACCOs,
+                            community groups, and other organizations.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Multiple information pages</li>
+                            <li><i class="fa-solid fa-check"></i> Programs, departments or ministries</li>
+                            <li><i class="fa-solid fa-check"></i> News, events or announcements section</li>
+                            <li><i class="fa-solid fa-check"></i> Contact and location details</li>
+                            <li><i class="fa-solid fa-check"></i> Custom quotation for extra features</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Online Selling</span>
+                        </div>
+
+                        <h3>E-Commerce Website</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 45,000</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            An online store designed for businesses that want to display
+                            products, receive orders, and sell online.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Product catalogue and categories</li>
+                            <li><i class="fa-solid fa-check"></i> Cart and order process</li>
+                            <li><i class="fa-solid fa-check"></i> Payment integration options</li>
+                            <li><i class="fa-solid fa-check"></i> Inventory and product management setup</li>
+                            <li><i class="fa-solid fa-check"></i> Training on basic updates</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                </div>
+
+                <p class="pricing-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Domain name, hosting, premium tools, paid plugins, and third-party service fees are quoted separately where needed.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             GRAPHIC DESIGN PRICING
+        =================================================== -->
+        <section class="pricing-service-section pricing-alt-section section-padding">
+            <div class="container">
+
+                <div class="pricing-service-heading">
+                    <div>
+                        <span class="section-label">
+                            <i class="fa-solid fa-palette"></i>
+                            Graphic Design
+                        </span>
+
+                        <h2>
+                            Design Services That
+                            <span>Make Your Brand Visible.</span>
+                        </h2>
+
+                        <p>
+                            Clear, professional designs for businesses, events, personal
+                            brands, and marketing campaigns.
+                        </p>
+                    </div>
+
+                    <a href="graphic-design.html" class="text-link">
+                        Explore graphic design
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="pricing-card-grid pricing-card-grid-three">
+
+                    <article class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Brand Identity</span>
+                        </div>
+
+                        <h3>Logo Design</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 3,500</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            A custom logo designed to represent your business, organization,
+                            or personal brand professionally.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> 2 initial logo concepts</li>
+                            <li><i class="fa-solid fa-check"></i> Up to 2 revision rounds</li>
+                            <li><i class="fa-solid fa-check"></i> PNG and JPG files</li>
+                            <li><i class="fa-solid fa-check"></i> Basic logo usage guidance</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Marketing Design</span>
+                        </div>
+
+                        <h3>Poster / Flyer Design</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 1,000</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            Promotional designs for events, businesses, campaigns,
+                            products, announcements, and social media.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> One professional design concept</li>
+                            <li><i class="fa-solid fa-check"></i> Print or social media format</li>
+                            <li><i class="fa-solid fa-check"></i> Up to 2 revision rounds</li>
+                            <li><i class="fa-solid fa-check"></i> High-quality final file</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-id-card"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Business Materials</span>
+                        </div>
+
+                        <h3>Business Card Design</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 1,500</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            Clean business card designs that make your contact details
+                            easy to read and your brand easy to remember.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Front and back design</li>
+                            <li><i class="fa-solid fa-check"></i> Print-ready layout</li>
+                            <li><i class="fa-solid fa-check"></i> Up to 2 revision rounds</li>
+                            <li><i class="fa-solid fa-check"></i> High-resolution PDF and image files</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Social Media</span>
+                        </div>
+
+                        <h3>Social Media Graphics</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 500</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            Consistent visual posts for businesses that want to promote
+                            their services and communicate better online.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Single post or custom package</li>
+                            <li><i class="fa-solid fa-check"></i> Instagram, Facebook and WhatsApp formats</li>
+                            <li><i class="fa-solid fa-check"></i> Brand colour consistency</li>
+                            <li><i class="fa-solid fa-check"></i> Monthly design packages available</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             VIRTUAL ASSISTANT PRICING
+        =================================================== -->
+        <section class="pricing-service-section section-padding">
+            <div class="container">
+
+                <div class="pricing-service-heading">
+                    <div>
+                        <span class="section-label">
+                            <i class="fa-solid fa-headset"></i>
+                            Virtual Assistant
+                        </span>
+
+                        <h2>
+                            Flexible Support for
+                            <span>Busy Workdays.</span>
+                        </h2>
+
+                        <p>
+                            Virtual assistant support for professionals, small businesses,
+                            students, and teams that need help staying organized.
+                        </p>
+                    </div>
+
+                    <a href="virtual-assistant.html" class="text-link">
+                        Explore virtual assistance
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="pricing-card-grid pricing-card-grid-three">
+
+                    <article class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Flexible Support</span>
+                        </div>
+
+                        <h3>Hourly Support</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 500 / hour</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            Suitable for short tasks, one-time support, research,
+                            document formatting, or urgent administrative work.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Task-based assistance</li>
+                            <li><i class="fa-solid fa-check"></i> Research and data entry</li>
+                            <li><i class="fa-solid fa-check"></i> Document formatting</li>
+                            <li><i class="fa-solid fa-check"></i> Email and communication support</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing-card pricing-card-featured">
+                        <span class="popular-badge">Best Value</span>
+
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-calendar-week"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Weekly Support</span>
+                        </div>
+
+                        <h3>Weekly Assistant Package</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 3,500 / week</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            Reliable support for clients who need help managing regular
+                            tasks throughout the week.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Up to 8 support hours weekly</li>
+                            <li><i class="fa-solid fa-check"></i> Task and calendar organization</li>
+                            <li><i class="fa-solid fa-check"></i> Follow-ups and communication support</li>
+                            <li><i class="fa-solid fa-check"></i> Weekly progress updates</li>
+                            <li><i class="fa-solid fa-check"></i> Flexible task planning</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+
+                            <span class="pricing-card-label">Ongoing Support</span>
+                        </div>
+
+                        <h3>Monthly Assistant Package</h3>
+
+                        <p class="pricing-price">
+                            From <strong>KES 12,000 / month</strong>
+                        </p>
+
+                        <p class="pricing-card-description">
+                            Ongoing support for business owners and professionals who
+                            need consistent help with recurring tasks.
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Up to 30 support hours monthly</li>
+                            <li><i class="fa-solid fa-check"></i> Email, scheduling and admin support</li>
+                            <li><i class="fa-solid fa-check"></i> Research, data and document assistance</li>
+                            <li><i class="fa-solid fa-check"></i> Priority task planning</li>
+                            <li><i class="fa-solid fa-check"></i> Monthly support review</li>
+                        </ul>
+
+                        <a href="contact.html" class="pricing-card-link">
+                            Request this package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PAYMENT AND PROJECT NOTES
+        =================================================== -->
+        <section class="pricing-payment-section section-padding">
+            <div class="container">
+
+                <div class="pricing-payment-grid">
+
+                    <div class="pricing-payment-content">
+                        <span class="section-label">Payment Process</span>
+
+                        <h2>
+                            A Clear Process From
+                            <span>Start to Delivery.</span>
+                        </h2>
+
+                        <p>
+                            Every project begins with a clear agreement so that both sides
+                            understand the scope, timeline, payment plan, and expected results.
+                        </p>
+
+                        <a
+                            href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project%20quotation."
+                            class="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Discuss Your Project
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <div class="pricing-payment-list">
+
+                        <div class="payment-step">
+                            <span>01</span>
+                            <div>
+                                <h3>Project Agreement</h3>
+                                <p>We agree on the work to be done, cost, timeline, and deliverables.</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <span>02</span>
+                            <div>
+                                <h3>Deposit Payment</h3>
+                                <p>A deposit is paid before work begins to reserve the project slot.</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <span>03</span>
+                            <div>
+                                <h3>Progress and Review</h3>
+                                <p>You receive updates and can provide feedback during the agreed review stage.</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <span>04</span>
+                            <div>
+                                <h3>Final Delivery</h3>
+                                <p>The final balance is paid before the completed files, website, or service delivery is handed over.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             FAQ
+        =================================================== -->
+        <section class="pricing-faq section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">Common Questions</span>
+
+                    <h2>
+                        Pricing Questions,
+                        <span>Answered Clearly.</span>
+                    </h2>
+
+                    <p>
+                        Here are answers to common questions about quotations, payments,
+                        revisions, and project timelines.
+                    </p>
+                </div>
+
+                <div class="pricing-faq-list">
+
+                    <details class="faq-item">
+                        <summary>
+                            Are these final prices?
+                            <i class="fa-solid fa-plus"></i>
+                        </summary>
+
+                        <p>
+                            No. These are starting prices. The final cost depends on the
+                            number of pages, features, design complexity, content, deadline,
+                            and any additional requirements.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            Do I need to pay a deposit?
+                            <i class="fa-solid fa-plus"></i>
+                        </summary>
+
+                        <p>
+                            Yes. A deposit is required before work begins. The deposit amount
+                            is agreed during the quotation stage and helps secure your project
+                            slot and begin the work.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            How many revisions are included?
+                            <i class="fa-solid fa-plus"></i>
+                        </summary>
+
+                        <p>
+                            Most design and website packages include a reasonable number of
+                            revision rounds. Major changes outside the agreed project scope may
+                            require an additional quotation.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            Can I request a custom package?
+                            <i class="fa-solid fa-plus"></i>
+                        </summary>
+
+                        <p>
+                            Yes. If your needs do not fit one of the listed packages, you can
+                            request a custom quotation based on the exact work you need.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            How long does a project take?
+                            <i class="fa-solid fa-plus"></i>
+                        </summary>
+
+                        <p>
+                            Timelines depend on the project size and how quickly content,
+                            feedback, and approvals are provided. A clear timeline is included
+                            in the quotation before work starts.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             FINAL CTA
+        =================================================== -->
+        <section class="pricing-cta">
+            <div class="container">
+
+                <div class="pricing-cta-content">
+                    <span class="section-label">Ready to Begin?</span>
+
+                    <h2>
+                        Let’s Discuss Your Project
+                        <span>and Create the Right Package.</span>
+                    </h2>
+
+                    <p>
+                        Share what you need, your timeline, and your goals. I will help
+                        you choose the most suitable service package or prepare a custom quote.
+                    </p>
+
+                    <div class="pricing-cta-actions">
+                        <a
+                            href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project%20and%20get%20a%20quotation."
+                            class="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+
+                        <a href="order.html" class="btn btn-outline">
+                            Start a Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        Elvis<span>Mati</span>
+                    </a>
+
+                    <p>
+                        Helping individuals, businesses, and organizations build a stronger
+                        digital presence through web development, graphic design, and
+                        virtual assistance.
+                    </p>
+
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/elvismati/"
+                           aria-label="Visit my LinkedIn profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/elvismati1/"
+                           aria-label="Visit my Instagram profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/sonraz"
+                           aria-label="Visit my GitHub profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="order.html">Start a Project</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>My Services</h3>
+
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Get in Touch</h3>
+
+                    <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project."
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elvismati.work@gmail.com&su=Project%20Inquiry"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Send an Email</span>
+                    </a>
+
+                    <p class="footer-availability">
+                        <i class="fa-solid fa-circle"></i>
+                        Available for freelance projects
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear"></span> Elvis Mati. All rights reserved.
+                </p>
+
+                <p>
+                    Designed and built with <i class="fa-solid fa-heart"></i> by Elvis Mati.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Shared JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/back-to-top.js"></script>
+
 </body>
 </html>
