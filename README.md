@@ -573,3 +573,35 @@ The Pricing page has been designed and completed for the Elvis Mati portfolio we
 
 ### Git commit
 Pricing page completed with responsive light and dark mode styling.
+
+
+## Milestone: Contact Page and Functional Contact Form
+
+Completed the Contact page for the Elvis Mati Portfolio website.
+
+### What was added
+
+- Created a responsive Contact page with a professional hero section.
+- Added a project inquiry card that highlights Web Development, Graphic Design, and Virtual Assistance services.
+- Added floating contact badges and responsive positioning for desktop and mobile screens.
+- Styled the contact page breadcrumb to match the Pricing page design.
+- Added a project inquiry form with fields for:
+  - Full name
+  - Email address
+  - Phone or WhatsApp number
+  - Service needed
+  - Estimated budget
+  - Project details
+- Added a Contact Details card with WhatsApp, Gmail, location, and availability information.
+- Updated email call-to-action links to open a Gmail compose window addressed to `elvismati.work@gmail.com`.
+- Connected the contact form to Formspree so visitors can submit project inquiries directly from the website.
+- Configured the visitor email field as `_replyto`, allowing replies from Formspree notifications to go directly to the visitor.
+- Tested the contact form successfully.
+
+### Contact Form Workflow
+
+1. A visitor fills in the project inquiry form.
+2. The form sends the submitted details to Formspree.
+3. Formspree forwards the inquiry to `elvismati.work@gmail.com`.
+4. The message includes the visitor’s name, email, phone number, service, budget, and project details.
+5. Replying to the notification email addresses the response to the visitor automatically.
