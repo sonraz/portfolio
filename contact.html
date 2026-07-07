@@ -1,12 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Elvis Mati</title>
+    <meta name="description" content="Contact Elvis Mati for web development, graphic design, and virtual assistant services. Discuss your project and request a quotation.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="css/contact.css">
 </head>
+
 <body>
-      
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+
+                <a href="index.html" class="logo">
+                    Elvis<span>Mati</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="services.html">
+                            Services <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="web-development.html">Web Development</a></li>
+                            <li><a href="graphic-design.html">Graphic Design</a></li>
+                            <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="portfolio.html">
+                            Portfolio <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="web-development-portfolio.html">Web Development</a></li>
+                            <li><a href="graphic-design-portfolio.html">Graphic Design</a></li>
+                            <li><a href="virtual-assistant-portfolio.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+
+                    <li class="mobile-theme-item">
+                        <button class="theme-btn mobile-theme-btn" type="button" aria-label="Switch to dark theme">
+                            <i class="fa-solid fa-moon"></i>
+                            <span class="theme-btn-text">Dark</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-btn desktop-theme-btn" type="button" aria-label="Switch to dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span class="theme-btn-text">Dark</span>
+                    </button>
+
+                    <a
+                        href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services.%20I'd%20love%20to%20discuss%20my%20project."
+                        class="whatsapp-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <a
+                    href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20came%20across%20your%20portfolio%20website%20and%20I'm%20interested%20in%20your%20services."
+                    class="mobile-whatsapp-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Chat with Elvis on WhatsApp"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <div class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==================================================
+             CONTACT HERO
+        =================================================== -->
+        <section class="contact-hero">
+            <div class="container">
+
+                <div class="contact-hero-grid">
+
+                    <div class="contact-hero-content">
+                        <span class="section-label">
+                            <i class="fa-solid fa-message"></i>
+                            Get in Touch
+                        </span>
+
+                        <h1>
+                            Let’s Talk About
+                            <span>Your Next Project.</span>
+                        </h1>
+
+                        <p>
+                            Have a website, design, virtual assistant task, or digital idea
+                            you would like to discuss? Send a message and I will get back to
+                            you with the right next steps.
+                        </p>
+
+                        <div class="contact-hero-actions">
+                            <a
+                                href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project."
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Chat on WhatsApp</span>
+                            </a>
+
+                            <a href="#contact-form" class="btn btn-outline">
+                                Send a Message
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact-hero-points">
+                            <span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Clear communication
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Custom project quotations
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Friendly professional support
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="contact-hero-visual">
+                        <div class="contact-visual-card">
+
+                            <div class="contact-visual-top">
+                                <span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    Project Inquiry
+                                </span>
+
+                                <span class="contact-visual-status">
+                                    <i class="fa-solid fa-circle"></i>
+                                    Available
+                                </span>
+                            </div>
+
+                            <div class="contact-visual-title">
+                                <span>Tell me what you need,</span>
+                                <strong>and let’s make it happen.</strong>
+                            </div>
+
+                            <div class="contact-visual-items">
+                                <div class="contact-visual-item">
+                                    <div class="contact-visual-icon">
+                                        <i class="fa-solid fa-code"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3>Web Development</h3>
+                                        <p>Websites and digital systems</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-visual-item">
+                                    <div class="contact-visual-icon">
+                                        <i class="fa-solid fa-palette"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3>Graphic Design</h3>
+                                        <p>Branding and visual content</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-visual-item">
+                                    <div class="contact-visual-icon">
+                                        <i class="fa-solid fa-headset"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3>Virtual Assistance</h3>
+                                        <p>Organized remote support</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-visual-footer">
+                                <span>Response within a reasonable time</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="contact-floating-badge contact-badge-one">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Quick response</span>
+                        </div>
+
+                        <div class="contact-floating-badge contact-badge-two">
+                            <i class="fa-solid fa-handshake"></i>
+                            <span>Let’s collaborate</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             BREADCRUMB
+        =================================================== -->
+        <section class="breadcrumb-section">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="active-page">Contact</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             CONTACT OPTIONS
+        =================================================== -->
+        <section class="contact-options section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">Contact Options</span>
+
+                    <h2>
+                        Choose the Best Way
+                        <span>to Reach Me.</span>
+                    </h2>
+
+                    <p>
+                        Whether you want a quick conversation or a detailed project
+                        discussion, you can reach out through any of the options below.
+                    </p>
+                </div>
+
+                <div class="contact-options-grid">
+
+                    <article class="contact-option-card">
+                        <div class="contact-option-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+
+                        <h3>WhatsApp</h3>
+
+                        <p>
+                            Best for quick questions, project discussions, and requesting
+                            a quotation.
+                        </p>
+
+                        <a
+                            href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project."
+                            class="contact-option-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Chat on WhatsApp
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="contact-option-card">
+                        <div class="contact-option-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <h3>Email</h3>
+
+                        <p>
+                            Best for detailed project requirements, documents, and formal
+                            business inquiries.
+                        </p>
+
+                        <a
+                            href="mailto:elvismati.work@gmail.com?subject=Project%20Inquiry"
+                            class="contact-option-link"
+                        >
+                            Send an Email
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="contact-option-card">
+                        <div class="contact-option-icon">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+
+                        <h3>Project Request</h3>
+
+                        <p>
+                            Share your project details using the project request page and
+                            receive a custom quotation.
+                        </p>
+
+                        <a href="order.html" class="contact-option-link">
+                            Start a Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             CONTACT FORM + DETAILS
+        =================================================== -->
+        <section class="contact-main section-padding" id="contact-form">
+            <div class="container">
+
+                <div class="contact-main-grid">
+
+                    <div class="contact-form-wrapper">
+                        <span class="section-label">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Send a Message
+                        </span>
+
+                        <h2>
+                            Tell Me About
+                            <span>Your Project.</span>
+                        </h2>
+
+                        <p>
+                            Fill in the form below with a few details about what you need.
+                            You can include your preferred service, budget range, timeline,
+                            and any ideas you already have.
+                        </p>
+
+                        <form
+                                class="contact-form"
+                                action="https://formspree.io/f/xvzjngvo"
+                                method="POST"
+                            >
+
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value="New Project Inquiry from Elvis Mati Portfolio"
+                            />
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone / WhatsApp Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="e.g. 0712 345 678">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="service">Service Needed</label>
+                                    <select id="service" name="service" required>
+                                        <option value="" selected disabled>Select a service</option>
+                                        <option value="web-development">Web Development</option>
+                                        <option value="graphic-design">Graphic Design</option>
+                                        <option value="virtual-assistance">Virtual Assistance</option>
+                                        <option value="multiple-services">Multiple Services</option>
+                                        <option value="other">Other / Not Sure Yet</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="" selected disabled>Select your budget range</option>
+                                    <option value="under-5000">Under KES 5,000</option>
+                                    <option value="5000-15000">KES 5,000 – 15,000</option>
+                                    <option value="15000-30000">KES 15,000 – 30,000</option>
+                                    <option value="30000-50000">KES 30,000 – 50,000</option>
+                                    <option value="above-50000">Above KES 50,000</option>
+                                    <option value="not-sure">Not sure yet</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, goals, preferred timeline, and any important details..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary contact-submit-btn">
+                                Send Project Message
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                        </form>
+                    </div>
+
+                    <aside class="contact-details-card">
+                        <span class="section-label">Contact Details</span>
+
+                        <h2>
+                            Ready When
+                            <span>You Are.</span>
+                        </h2>
+
+                        <p>
+                            I work with individuals, students, businesses, organizations,
+                            and teams that need reliable digital support.
+                        </p>
+
+                        <div class="contact-details-list">
+
+                            <a
+                                href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project."
+                                class="contact-detail-item"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="contact-detail-icon">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+
+                                <div>
+                                    <span>WhatsApp</span>
+                                    <strong>Chat about your project</strong>
+                                </div>
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=elvismati.work@gmail.com&su=Project%20Inquiry"
+                                class="contact-detail-item"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="contact-detail-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+
+                                <div>
+                                    <span>Email</span>
+                                    <strong>elvismati.work@gmail.com</strong>
+                                </div>
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <div class="contact-detail-item contact-detail-static">
+                                <div class="contact-detail-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div>
+                                    <span>Location</span>
+                                    <strong>Kenya · Available remotely</strong>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item contact-detail-static">
+                                <div class="contact-detail-icon">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+
+                                <div>
+                                    <span>Availability</span>
+                                    <strong>Open for freelance projects</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="contact-details-note">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <p>
+                                For the fastest response, send a WhatsApp message with a
+                                short description of your project.
+                            </p>
+                        </div>
+                    </aside>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             WHAT HAPPENS NEXT
+        =================================================== -->
+        <section class="contact-process section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">What Happens Next</span>
+
+                    <h2>
+                        A Simple Process
+                        <span>From Message to Delivery.</span>
+                    </h2>
+
+                    <p>
+                        Once you reach out, the goal is to understand your needs clearly
+                        and give you a practical path forward.
+                    </p>
+                </div>
+
+                <div class="contact-process-grid">
+
+                    <article class="contact-process-card">
+                        <span class="contact-process-number">01</span>
+
+                        <div class="contact-process-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <h3>You Send a Message</h3>
+
+                        <p>
+                            Share your idea, service needed, timeline, and any important
+                            details about the work.
+                        </p>
+                    </article>
+
+                    <article class="contact-process-card">
+                        <span class="contact-process-number">02</span>
+
+                        <div class="contact-process-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <h3>We Discuss the Details</h3>
+
+                        <p>
+                            I review your needs, ask any necessary questions, and help
+                            clarify the best approach.
+                        </p>
+                    </article>
+
+                    <article class="contact-process-card">
+                        <span class="contact-process-number">03</span>
+
+                        <div class="contact-process-icon">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+
+                        <h3>You Receive a Quote</h3>
+
+                        <p>
+                            You receive a clear quotation with the scope, deliverables,
+                            estimated timeline, and payment plan.
+                        </p>
+                    </article>
+
+                    <article class="contact-process-card">
+                        <span class="contact-process-number">04</span>
+
+                        <div class="contact-process-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+
+                        <h3>The Project Begins</h3>
+
+                        <p>
+                            After agreement and deposit, work begins with updates and
+                            communication throughout the project.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             FINAL CTA
+        =================================================== -->
+        <section class="contact-cta">
+            <div class="container">
+
+                <div class="contact-cta-content">
+                    <span class="section-label">Ready to Start?</span>
+
+                    <h2>
+                        Your Next Digital Project
+                        <span>Can Start With One Message.</span>
+                    </h2>
+
+                    <p>
+                        Reach out today to discuss your idea, request a quotation, or find
+                        the right service package for your needs.
+                    </p>
+
+                    <div class="contact-cta-actions">
+                        <a
+                            href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project."
+                            class="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+
+                        <a href="pricing.html" class="btn btn-outline">
+                            View Pricing
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        Elvis<span>Mati</span>
+                    </a>
+
+                    <p>
+                        Helping individuals, businesses, and organizations build a stronger
+                        digital presence through web development, graphic design, and
+                        virtual assistance.
+                    </p>
+
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/elvismati/"
+                           aria-label="Visit my LinkedIn profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/elvismati1/"
+                           aria-label="Visit my Instagram profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/sonraz"
+                           aria-label="Visit my GitHub profile"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="order.html">Start a Project</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>My Services</h3>
+
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="virtual-assistant.html">Virtual Assistant</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Get in Touch</h3>
+
+                    <a href="https://wa.me/254700531854?text=Hello%20Elvis,%20I%20would%20like%20to%20discuss%20a%20project."
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+
+                    <a href="mailto:elvismati.work@gmail.com?subject=Project%20Inquiry">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Send an Email</span>
+                    </a>
+
+                    <p class="footer-availability">
+                        <i class="fa-solid fa-circle"></i>
+                        Available for freelance projects
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear"></span> Elvis Mati. All rights reserved.
+                </p>
+
+                <p>
+                    Designed and built with <i class="fa-solid fa-heart"></i> by Elvis Mati.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Back-to-top button -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Shared JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/back-to-top.js"></script>
+
 </body>
 </html>

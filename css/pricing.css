@@ -942,7 +942,7 @@ body:not(.dark-theme) .faq-item {
 }
 
 .pricing-hero .pricing-badge-two {
-    bottom: 28px;
+    bottom: -18px;
     left: -38px;
 }
 
