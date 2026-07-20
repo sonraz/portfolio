@@ -1,557 +1,889 @@
 /* ==================================================
    HEADER AND NAVIGATION
-   Shared navigation used across all website pages.
+   Shared navigation across the entire website.
 ================================================== */
+
 
 /* ==================================================
    HEADER
 ================================================== */
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
-    background-color: rgba(248, 250, 252, 0.92);
-    backdrop-filter: blur(12px);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(248,250,252,.92);
+    backdrop-filter:blur(12px);
+
+    transition:
+        background-color .3s ease,
+        box-shadow .3s ease;
 }
 
-.header.scrolled {
-    background-color: rgba(255, 255, 255, 0.96);
-    box-shadow: var(--shadow-sm);
+.header.scrolled{
+    background:rgba(255,255,255,.96);
+    box-shadow:var(--shadow-sm);
 }
+
 
 /* ==================================================
    NAVBAR LAYOUT
 ================================================== */
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 80px;
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    min-height:80px;
 }
 
-.logo {
-    color: var(--secondary-color);
-    font-family: var(--heading-font);
-    font-size: 1.8rem;
-    font-weight: 700;
-    transition: transform 0.3s ease;
+.logo{
+    font-family:var(--heading-font);
+    font-size:1.8rem;
+    font-weight:700;
+
+    color:var(--secondary-color);
+
+    transition:transform .3s ease;
 }
 
-.logo:hover {
-    transform: scale(1.05);
+.logo:hover{
+    transform:scale(1.05);
 }
 
-.logo span {
-    color: var(--primary-color);
+.logo span{
+    color:var(--primary-color);
 }
+
 
 /* ==================================================
    DESKTOP NAVIGATION
 ================================================== */
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 1.7rem;
-    margin: 0;
-    padding: 0;
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:1.7rem;
+
+    margin:0;
+    padding:0;
 }
 
-.nav-links li {
-    position: relative;
+.nav-links li{
+    position:relative;
+    list-style:none;
 }
 
-.nav-links a {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 0;
-    color: var(--text);
-    font-size: 0.94rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+/* ==========================================
+   Regular Navigation Links
+========================================== */
+
+.nav-links a{
+    position:relative;
+
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+
+    padding:8px 0;
+
+    color:var(--text);
+
+    font-size:.94rem;
+    font-weight:500;
+
+    transition:color .3s ease;
 }
 
-.nav-links a::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    content: "";
-    transition: width 0.3s ease;
+.nav-links a::after{
+    content:"";
+
+    position:absolute;
+    left:0;
+    bottom:0;
+
+    width:0;
+    height:2px;
+
+    background:var(--primary-color);
+
+    transition:width .3s ease;
 }
 
 .nav-links a:hover,
-.nav-links a.active {
-    color: var(--primary-color);
+.nav-links a.active{
+    color:var(--primary-color);
 }
 
 .nav-links a:hover::after,
-.nav-links a.active::after {
-    width: 100%;
+.nav-links a.active::after{
+    width:100%;
 }
 
-.nav-links a i {
-    font-size: 0.72rem;
-    transition: transform 0.3s ease;
+
+/* ==================================================
+   SPLIT DROPDOWN TRIGGER
+================================================== */
+
+/* ==========================================
+   Split Dropdown
+========================================== */
+
+.dropdown-trigger{
+    display:flex;
+    align-items:center;
+    width:100%;
 }
 
-.dropdown:hover > a i,
-.dropdown.active > a i {
-    transform: rotate(180deg);
+.dropdown-link{
+
+    display:flex;
+    align-items:center;
+
+    flex:1;
+
+    padding:15px 20px 15px 20px;
+
+    color:var(--text);
+
+    font-size:1rem;
+
+    text-decoration:none;
+
+    margin-left: 16px;
+}
+
+.dropdown-toggle{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:34px;
+    height:34px;
+
+    border:none;
+    background:transparent;
+
+    cursor:pointer;
+
+    color:var(--text);
+
+    transition:.3s;
+}
+
+.dropdown-toggle i{
+    font-size:.72rem;
+    transition:.3s;
+}
+
+.dropdown.active .dropdown-toggle i,
+.dropdown:hover .dropdown-toggle i{
+    transform:rotate(180deg);
+}
+
+.dropdown-toggle:hover{
+    color:var(--primary-color);
 }
 
 /* ==================================================
-   DROPDOWN MENU
+   DESKTOP DROPDOWN MENU
 ================================================== */
 
-.dropdown-menu {
-    position: absolute;
-    top: calc(100% + 14px);
-    left: -18px;
-    z-index: 1001;
-    width: 235px;
-    padding: 8px;
-    overflow: hidden;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    border-radius: 12px;
-    background-color: var(--white);
-    box-shadow: var(--shadow-md);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(12px);
-    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+.dropdown-menu{
+    position:absolute;
+
+    top:calc(100% + 14px);
+    left:-18px;
+
+    z-index:1001;
+
+    width:235px;
+
+    padding:8px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(15,23,42,.08);
+    border-radius:12px;
+
+    background:var(--white);
+
+    box-shadow:var(--shadow-md);
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(12px);
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease,
+        visibility .25s ease;
 }
 
 .dropdown:hover .dropdown-menu,
-.dropdown.active .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+.dropdown.active .dropdown-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
 }
 
-.dropdown-menu li {
-    border-bottom: 1px solid var(--border);
+.dropdown-menu li{
+    border-bottom:1px solid var(--border);
 }
 
-.dropdown-menu li:last-child {
-    border-bottom: none;
+.dropdown-menu li:last-child{
+    border-bottom:none;
 }
 
-.dropdown-menu a {
-    display: block;
-    padding: 11px 12px;
-    border-radius: 8px;
-    color: var(--text);
+.dropdown-menu a{
+    display:block;
+
+    padding:11px 12px;
+
+    border-radius:8px;
+
+    color:var(--text);
 }
 
-.dropdown-menu a::after {
-    display: none;
+.dropdown-menu a::after{
+    display:none;
 }
 
-.dropdown-menu a:hover {
-    background-color: #eff6ff;
-    color: var(--primary-color);
+.dropdown-menu a:hover{
+    background:#eff6ff;
+    color:var(--primary-color);
 }
+
 
 /* ==================================================
    NAVBAR ACTIONS
 ================================================== */
 
-.nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
 /* ==================================================
    THEME BUTTON
-   A compact pill button. The .theme-flip class is
-   added temporarily by theme.js during theme changes.
 ================================================== */
 
-.theme-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    min-width: 76px;
-    min-height: 38px;
-    padding: 9px 13px;
-    border: 1px solid rgba(37, 99, 235, 0.18);
-    border-radius: 999px;
-    background-color: #eff6ff;
-    color: var(--primary-color);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
-    font-size: 0.82rem;
-    font-weight: 700;
-    line-height: 1;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease,
-        box-shadow 0.3s ease, transform 0.3s ease;
+.theme-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+
+    min-width:76px;
+    min-height:38px;
+
+    padding:9px 13px;
+
+    border:1px solid rgba(37,99,235,.18);
+    border-radius:999px;
+
+    background:#eff6ff;
+    color:var(--primary-color);
+
+    box-shadow:0 4px 12px rgba(37,99,235,.12);
+
+    font-size:.82rem;
+    font-weight:700;
+    line-height:1;
+
+    cursor:pointer;
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        transform .3s ease;
 }
 
-.theme-btn:hover {
-    border-color: rgba(37, 99, 235, 0.38);
-    background-color: var(--primary-color);
-    color: var(--white);
-    box-shadow: 0 7px 16px rgba(37, 99, 235, 0.22);
-    transform: translateY(-2px);
+.theme-btn:hover{
+    border-color:rgba(37,99,235,.38);
+    background:var(--primary-color);
+    color:#fff;
+
+    box-shadow:0 7px 16px rgba(37,99,235,.22);
+
+    transform:translateY(-2px);
 }
 
-.theme-btn i {
-    font-size: 0.9rem;
+.theme-btn i{
+    font-size:.9rem;
 }
 
-.theme-btn-text {
-    font-size: 0.78rem;
-    font-weight: 700;
+.theme-btn-text{
+    font-size:.78rem;
+    font-weight:700;
 }
 
-/* Flip animation applied by JavaScript */
-.theme-btn.theme-flip {
-    animation: themeButtonFlip 0.45s ease;
+/* Flip animation */
+
+.theme-btn.theme-flip{
+    animation:themeButtonFlip .45s ease;
 }
 
-@keyframes themeButtonFlip {
-    0% {
-        transform: rotateY(0);
+@keyframes themeButtonFlip{
+
+    0%{
+        transform:rotateY(0);
     }
 
-    50% {
-        transform: rotateY(90deg);
+    50%{
+        transform:rotateY(90deg);
     }
 
-    100% {
-        transform: rotateY(180deg);
+    100%{
+        transform:rotateY(180deg);
     }
+
 }
+
 
 /* ==================================================
    WHATSAPP BUTTON
 ================================================== */
 
-.whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    padding: 10px 18px;
-    border-radius: 999px;
-    background-color: #25d366;
-    color: var(--white);
-    box-shadow: 0 8px 22px rgba(37, 211, 102, 0.22);
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.whatsapp-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#25d366;
+    color:#fff;
+
+    box-shadow:0 8px 22px rgba(37,211,102,.22);
+
+    font-size:.9rem;
+    font-weight:600;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
 }
 
-.whatsapp-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(37, 211, 102, 0.32);
+.whatsapp-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 28px rgba(37,211,102,.32);
 }
 
-.whatsapp-btn i {
-    font-size: 1.1rem;
+.whatsapp-btn i{
+    font-size:1.08rem;
 }
+
 
 /* ==================================================
-   HAMBURGER BUTTON
+   HAMBURGER
 ================================================== */
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    padding: 8px 0 8px 8px;
-    cursor: pointer;
+.hamburger{
+    display:none;
+
+    flex-direction:column;
+    gap:5px;
+
+    padding:8px 0 8px 8px;
+
+    cursor:pointer;
 }
 
-.hamburger span {
-    display: block;
-    width: 27px;
-    height: 3px;
-    border-radius: 999px;
-    background-color: var(--secondary-color);
-    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+.hamburger span{
+    display:block;
+
+    width:27px;
+    height:3px;
+
+    border-radius:999px;
+
+    background:var(--secondary-color);
+
+    transition:
+        transform .3s ease,
+        opacity .3s ease,
+        background-color .3s ease;
 }
+
 
 /* ==================================================
-   DARK THEME NAVIGATION
+   DARK MODE
 ================================================== */
 
-body.dark-theme .header {
-    background-color: rgba(15, 23, 42, 0.94);
+body.dark-theme .header{
+    background:rgba(15,23,42,.94);
 }
 
-body.dark-theme .header.scrolled {
-    background-color: rgba(15, 23, 42, 0.98);
+body.dark-theme .header.scrolled{
+    background:rgba(15,23,42,.98);
 }
 
 body.dark-theme .logo,
-body.dark-theme .nav-links a {
-    color: #f8fafc;
+body.dark-theme .nav-links a{
+    color:#f8fafc;
+}
+
+body.dark-theme .dropdown-link{
+    color:#f8fafc;
 }
 
 body.dark-theme .nav-links a:hover,
-body.dark-theme .nav-links a.active {
-    color: #60a5fa;
+body.dark-theme .nav-links a.active{
+    color:#60a5fa;
 }
 
-body.dark-theme .dropdown-menu {
-    border-color: rgba(148, 163, 184, 0.2);
-    background-color: #1e293b;
+body.dark-theme .dropdown-menu{
+    border-color:rgba(148,163,184,.2);
+    background:#1e293b;
 }
 
-body.dark-theme .dropdown-menu li {
-    border-color: rgba(148, 163, 184, 0.16);
+body.dark-theme .dropdown-menu li{
+    border-color:rgba(148,163,184,.16);
 }
 
-body.dark-theme .dropdown-menu a {
-    color: #e2e8f0;
+body.dark-theme .dropdown-menu a{
+    color:#e2e8f0;
 }
 
-body.dark-theme .dropdown-menu a:hover {
-    background-color: #334155;
-    color: #ffffff;
+body.dark-theme .dropdown-menu a:hover{
+    background:#334155;
+    color:#fff;
 }
 
-body.dark-theme .theme-btn {
-    border-color: rgba(96, 165, 250, 0.32);
-    background-color: rgba(96, 165, 250, 0.14);
-    color: #bfdbfe;
+body.dark-theme .dropdown-toggle{
+    color:#f8fafc;
 }
 
-body.dark-theme .theme-btn:hover {
-    border-color: #60a5fa;
-    background-color: #60a5fa;
-    color: #0f172a;
+body.dark-theme .theme-btn{
+    border-color:rgba(96,165,250,.32);
+    background:rgba(96,165,250,.14);
+    color:#bfdbfe;
 }
 
-body.dark-theme .hamburger span {
-    background-color: #f8fafc;
+body.dark-theme .theme-btn:hover{
+    border-color:#60a5fa;
+    background:#60a5fa;
+    color:#0f172a;
+}
+
+body.dark-theme .hamburger span{
+    background:#f8fafc;
 }
 
 /* ==================================================
    MOBILE NAVIGATION
 ================================================== */
 
-.mobile-theme-item {
-    display: none;
+.mobile-theme-item{
+    display:none;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        min-height: 72px;
+@media (max-width:768px){
+
+    .navbar{
+        min-height:72px;
     }
 
-    .nav-actions {
-        display: none;
+    .nav-actions{
+        display:none;
     }
 
-    .hamburger {
-        display: flex;
+    .hamburger{
+        display:flex;
     }
 
-    .nav-links {
-        position: fixed;
-        top: 72px;
-        left: -100%;
-        z-index: 999;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        width: 100%;
-        height: calc(100vh - 72px);
-        padding: 24px 5%;
-        overflow-y: auto;
-        background-color: var(--white);
-        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
-        transition: left 0.35s ease, background-color 0.3s ease;
+    /* ===============================
+       Mobile Menu Container
+    =============================== */
+
+    .nav-links{
+
+        position:fixed;
+
+        top:72px;
+        left:-100%;
+
+        z-index:999;
+
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+
+        gap:0;
+
+        width:100%;
+        height:calc(100vh - 72px);
+
+        padding:24px 5%;
+
+        overflow-y:auto;
+
+        background:var(--white);
+
+        box-shadow:0 12px 24px rgba(15,23,42,.08);
+
+        transition:
+            left .35s ease,
+            background-color .3s ease;
     }
 
-    .nav-links.active {
-        left: 0;
+    .nav-links.active{
+        left:0;
     }
 
-    .nav-links > li {
-        width: 100%;
-        border-bottom: 1px solid var(--border);
+    body.dark-theme .nav-links{
+        background:#0f172a;
+        box-shadow:0 12px 24px rgba(0,0,0,.28);
     }
 
-    .nav-links > li:last-child {
-        border-bottom: none;
+    /* ===============================
+       Menu Items
+    =============================== */
+
+    .nav-links > li{
+
+        width:100%;
+
+        border-bottom:1px solid var(--border);
     }
 
-    .nav-links > li > a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 15px 20px;
-    font-size: 1rem;
+    body.dark-theme .nav-links > li{
+
+        border-color:rgba(148,163,184,.18);
     }
 
-    .nav-links a::after {
-        display: none;
+    .nav-links > li:last-child{
+        border-bottom:none;
     }
 
-    .dropdown-menu {
-        position: static;
-        display: none;
-        width: 100%;
-        margin: 0 0 12px;
-        padding: 0 0 0 14px;
-        border: none;
-        border-radius: 0;
-        background: transparent;
-        box-shadow: none;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
+    /* ===============================
+       Regular Links
+    =============================== */
+
+    .nav-links > li > a{
+
+        display:flex;
+        align-items:center;
+
+        width:100%;
+
+        padding:15px 20px;
+
+        font-size:1rem;
     }
 
-    .dropdown.active .dropdown-menu {
-        display: block;
+    .nav-links a::after{
+        display:none;
     }
 
-    .dropdown-menu li {
-        border-bottom: none;
+    /* ===============================
+       Split Dropdown
+    =============================== */
+
+    .dropdown-trigger{
+
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+
+        width:100%;
     }
 
-    .dropdown-menu a {
-        padding: 10px 4px;
-        color: var(--text-light);
-        font-size: 0.92rem;
+    .dropdown-link{
+
+        flex:1;
+
+        padding:15px 20px;
+
+        color:var(--text);
+
+        font-size:1rem;
+
+        text-decoration:none;
     }
 
-    .dropdown-menu a:hover {
-        background: transparent;
+    body.dark-theme .dropdown-link{
+
+        color:#f8fafc;
     }
 
-    .mobile-theme-item {
-    display: flex;
-    align-items: center;
-    padding: 18px 12px 8px;
+    .dropdown-link::after{
+        display:none;
     }
 
-    .mobile-theme-btn {
-        min-width: 76px;
-        min-height: 38px;
-        padding: 9px 13px;
-        border-radius: 10px;
+    .dropdown-toggle{
+
+        display:flex;
+
+        align-items:center;
+        justify-content:center;
+
+        flex-shrink:0;
+
+        width:52px;
+        height:52px;
+
+        border:none;
+        outline:none;
+
+        background:none;
+
+        cursor:pointer;
+
+        color:var(--text);
+
+        transition:color .3s ease;
     }
 
-    body.dark-theme .nav-links {
-        background-color: #0f172a;
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    body.dark-theme .dropdown-toggle{
+
+        color:#f8fafc;
     }
 
-    body.dark-theme .nav-links > li {
-        border-color: rgba(148, 163, 184, 0.18);
+    .dropdown-toggle:hover{
+
+        color:var(--primary-color);
     }
 
-    body.dark-theme .dropdown-menu a {
-        color: #cbd5e1;
+    .dropdown-toggle i{
+
+        font-size:.9rem;
+
+        transition:transform .3s ease;
     }
 
-    body.dark-theme .dropdown-menu a:hover {
-        background: transparent;
-        color: #60a5fa;
-    }
-}
+    .dropdown.active .dropdown-toggle i{
 
-@media (max-width: 480px) {
-    .logo {
-        font-size: 1.55rem;
+        transform:rotate(180deg);
     }
 
-    .whatsapp-btn {
-        padding: 10px 14px;
-    }
-}
+    /* ===============================
+       Mobile Dropdown Menu
+    =============================== */
 
-/* Final mobile theme button shape override */
-@media (max-width: 768px) {
-    .nav-links .mobile-theme-btn {
-        width: auto;
-        min-width: 76px;
-        min-height: 38px;
-        padding: 9px 13px;
-        border-radius: 20px !important;
+    .dropdown-menu{
+
+        position:static;
+
+        display:none;
+
+        width:100%;
+
+        margin:0 0 12px;
+
+        padding:0 0 0 18px;
+
+        border:none;
+        border-radius:0;
+
+        background:transparent;
+
+        box-shadow:none;
+
+        opacity:1;
+        visibility:visible;
+
+        transform:none;
     }
-}
+
+    .dropdown.active .dropdown-menu{
+
+        display:block;
+    }
+
+    .dropdown-menu li{
+
+        border-bottom:none;
+    }
+
+    .dropdown-menu a{
+
+        display:block;
+
+        padding:10px 4px;
+
+        color:var(--text-light);
+
+        font-size:.92rem;
+    }
+
+    body.dark-theme .dropdown-menu a{
+
+        color:#cbd5e1;
+    }
+
+    .dropdown-menu a:hover{
+
+        background:transparent;
+
+        color:var(--primary-color);
+    }
+
+    body.dark-theme .dropdown-menu a:hover{
+
+        color:#60a5fa;
+    }
+
+        /* ===============================
+       Mobile Theme Button
+    =============================== */
+
+    .mobile-theme-item{
+
+        display:flex;
+
+        align-items:center;
+
+        padding:18px 12px 8px;
+    }
+
+    .mobile-theme-btn{
+
+        min-width:76px;
+        min-height:38px;
+
+        padding:9px 13px;
+
+        border-radius:20px;
+    }
+
+    .dropdown-toggle{
+
+    width:50px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border:none;
+    background:none;
+
+    cursor:pointer;
+    }
+
+} /* END OF 768px MEDIA QUERY */
 
 
 /* ==================================================
    MOBILE WHATSAPP BUTTON
-   Compact contact shortcut beside the hamburger.
 ================================================== */
 
-.mobile-whatsapp-btn {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 999px;
-    background-color: #25d366;
-    color: #ffffff;
-    font-size: 1.35rem;
-    text-decoration: none;
-    box-shadow: 0 8px 18px rgba(37, 211, 102, 0.28);
-    transition: transform 0.3s ease, box-shadow 0.3s ease,
-        background-color 0.3s ease;
+.mobile-whatsapp-btn{
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    width:42px;
+    height:42px;
+
+    border-radius:999px;
+
+    background:#25d366;
+
+    color:#fff;
+
+    font-size:1.35rem;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 18px rgba(37,211,102,.28);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background-color .3s ease;
 }
 
-/* Small interaction animation */
-.mobile-whatsapp-btn:hover {
-    color: #ffffff;
-    background-color: #1ebe5d;
-    transform: translateY(-3px) scale(1.04);
-    box-shadow: 0 12px 22px rgba(37, 211, 102, 0.38);
+.mobile-whatsapp-btn:hover{
+
+    background:#1ebe5d;
+
+    color:#fff;
+
+    transform:translateY(-3px) scale(1.04);
+
+    box-shadow:0 12px 22px rgba(37,211,102,.38);
 }
 
-.mobile-whatsapp-btn:active {
-    transform: translateY(0) scale(0.96);
+.mobile-whatsapp-btn:active{
+
+    transform:translateY(0) scale(.96);
 }
 
-/* Keyboard accessibility */
-.mobile-whatsapp-btn:focus-visible {
-    outline: 3px solid rgba(37, 211, 102, 0.35);
-    outline-offset: 3px;
+.mobile-whatsapp-btn:focus-visible{
+
+    outline:3px solid rgba(37,211,102,.35);
+
+    outline-offset:3px;
 }
+
 
 /* ==================================================
-   MOBILE NAVBAR POSITIONING
+   MOBILE LAYOUT
 ================================================== */
 
-@media (max-width: 768px) {
-    .mobile-whatsapp-btn {
-        display: inline-flex;
-        margin-left: auto;
-        margin-right: 12px;
+@media (max-width:768px){
+
+    .mobile-whatsapp-btn{
+
+        display:inline-flex;
+
+        margin-left:auto;
+        margin-right:12px;
     }
 
-    /* Keeps the WhatsApp button directly beside hamburger */
-    .hamburger {
-        margin-left: 0;
+    .hamburger{
+
+        margin-left:0;
     }
 }
 
-/* Slightly smaller on narrow phones */
-@media (max-width: 380px) {
-    .mobile-whatsapp-btn {
-        width: 38px;
-        height: 38px;
-        margin-right: 10px;
-        font-size: 1.2rem;
+
+/* ==================================================
+   SMALL PHONES
+================================================== */
+
+@media (max-width:480px){
+
+    .logo{
+
+        font-size:1.55rem;
+    }
+
+    .whatsapp-btn{
+
+        padding:10px 14px;
+    }
+}
+
+
+@media (max-width:380px){
+
+    .mobile-whatsapp-btn{
+
+        width:38px;
+        height:38px;
+
+        margin-right:10px;
+
+        font-size:1.2rem;
     }
 }

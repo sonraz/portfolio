@@ -31,19 +31,23 @@ navLinks.classList.toggle("active");
 });
 
 /*MOBILE DROPDOWNS*/
+/* ==========================================
+Mobile Dropdown Toggle
+========================================== */
 
-const dropdowns=document.querySelectorAll(".dropdown");
+const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
 
-dropdowns.forEach(dropdown=>{
+dropdownToggles.forEach(toggle => {
 
-dropdown.addEventListener("click",()=>{
+    toggle.addEventListener("click", function(e){
 
-if(window.innerWidth<=768){
+        e.preventDefault();
+        e.stopPropagation();
 
-dropdown.classList.toggle("active");
+        const dropdown = this.closest(".dropdown");
 
-}
+        dropdown.classList.toggle("active");
 
-});
+    });
 
 });

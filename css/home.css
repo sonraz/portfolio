@@ -1542,15 +1542,15 @@ body.dark-theme .site-footer {
 }
 
 /* ==================================================
-   HERO MOBILE IMPROVEMENTS
-   - Keeps statistics cards in one row on mobile.
-   - Uses clear technology-label colours in both themes.
-   - Reduces profile card size on mobile so labels remain visible.
+HERO MOBILE IMPROVEMENTS
+- Keeps statistics cards in one row on mobile.
+- Uses clear technology-label colours in both themes.
+- Reduces profile card size on mobile so labels remain visible.
 ================================================== */
 
 /* ==================================================
-   FLOATING TECHNOLOGY LABEL COLOURS
-   These colours are used in both light and dark themes.
+FLOATING TECHNOLOGY LABEL COLOURS
+These colours are used in both light and dark themes.
 ================================================== */
 
 .tech-icon.html {
