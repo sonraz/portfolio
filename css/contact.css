@@ -376,12 +376,16 @@
 /* ==================================================
    CONTACT FORM SECTION
 ================================================== */
+.contact-form-wrapper p{
+    margin-bottom: 40px;
+}
 
 .contact-form-section {
     background:
         linear-gradient(rgba(38, 101, 235, 0.025), rgba(38, 101, 235, 0.025)),
         var(--section-bg);
 }
+
 
 .contact-form-grid {
     display: grid;
@@ -467,10 +471,13 @@
     font-size: 0.88rem;
     font-weight: 800;
 }
+/* ==================================================
+   FORM FIELDS
+================================================== */
 
 .form-group input,
-.form-group select,
-.form-group textarea {
+.form-group textarea,
+.custom-select-trigger {
     width: 100%;
     padding: 13px 14px;
     border: 1px solid rgba(38, 101, 235, 0.17);
@@ -479,7 +486,10 @@
     background: var(--body-color);
     color: var(--text-color);
     font: inherit;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
 }
 
 .form-group textarea {
@@ -493,11 +503,165 @@
     opacity: 0.75;
 }
 
+/* Focus style shared by inputs and custom dropdowns */
+
 .form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.custom-select.open .custom-select-trigger {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 4px rgba(38, 101, 235, 0.11);
+}
+
+/* ==================================================
+   CUSTOM DROPDOWNS
+================================================== */
+
+.custom-select {
+    position: relative;
+    width: 100%;
+}
+
+.custom-select-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.custom-select-trigger span {
+    color: var(--text-light);
+}
+
+.custom-select-trigger span{
+    color: var(--text-light);
+    opacity: .75;
+}
+
+.custom-select-trigger i {
+    transition: transform .25s ease;
+}
+
+.custom-select.open .custom-select-trigger i {
+    transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+
+.custom-select-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    border: 1px solid rgba(38, 101, 235, 0.17);
+    border-radius: 11px;
+    box-shadow: 0 16px 35px rgba(15, 23, 42, .15);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all .25s ease;
+    z-index: 50;
+}
+
+.custom-select.open .custom-select-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.custom-select-option {
+    padding: 13px 14px;
+    cursor: pointer;
+    transition: background .25s ease, color .25s ease;
+}
+
+.custom-select-option:hover {
+    background: rgba(37, 99, 235, .08);
+    color: var(--primary-color);
+}
+
+.custom-select-option + .custom-select-option {
+    border-top: 1px solid rgba(38, 101, 235, 0.08);
+}
+
+/* ==========================================
+   SELECTED OPTION
+========================================== */
+
+.custom-select-option.selected{
+
+    background:rgba(38,101,235,.08);
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+    position:relative;
+}
+
+.custom-select-option.selected::after{
+
+    content:"✓";
+
+    position:absolute;
+
+    right:16px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-weight:700;
+
+    color:var(--primary-color);
+}
+
+/* ==================================================
+   DARK THEME
+================================================== */
+
+body.dark-theme .custom-select-trigger {
+    background: var(--body-color);
+    color: var(--text-color);
+    border: 1px solid rgba(96, 165, 250, 0.18);
+}
+
+body.dark-theme .custom-select.selected .custom-select-trigger span {
+    color: var(--text-color);
+}
+
+body.dark-theme .custom-select-trigger span {
+    color: var(--text-light);
+}
+
+body.dark-theme .custom-select-menu {
+    background: #1e293b;
+    border-color: rgba(96, 165, 250, 0.18);
+}
+
+body.dark-theme .custom-select-option {
+    color: var(--text-color);
+}
+
+body.dark-theme .custom-select-option:hover {
+    background: #334155;
+    color: #60a5fa;
+}
+
+body.dark-theme .custom-select-option + .custom-select-option {
+    border-color: rgba(96, 165, 250, 0.08);
+}
+
+body.dark-theme .custom-select-option.selected{
+
+    background:#334155;
+
+    color:#60a5fa;
+}
+
+body.dark-theme .custom-select-option.selected::after{
+
+    color:#60a5fa;
 }
 
 .contact-form .btn {
@@ -512,6 +676,8 @@
 .contact-form .btn i {
     margin: 0;
 }
+
+
 
 /* ==================================================
    CONTACT PROCESS
@@ -1954,4 +2120,8 @@ body.dark-theme .contact-details-note p {
     .contact-detail-item > div:nth-child(2) strong {
         font-size: 0.76rem;
     }
+}
+
+.custom-select-trigger{
+    background:#FFFFFF0A !important;
 }
